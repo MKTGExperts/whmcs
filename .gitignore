@@ -24,6 +24,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#Ignore WHMCS Configuration file and Installation Directory
+#Ignore WHMCS configuration file, installation directory, and cache
 configuration.php
 install/
+templates_c/*
