@@ -27,6 +27,14 @@
 </div>
 {/if}
 
+    {if $card_error}
+    <div class="alert alert-danger">
+     Your card could not be saved, please try again or contact support.
+    </div>
+    {/if}
+
+    <div class="alert alert-danger payment-errors" style="display:none;"></div>    
+
   <fieldset class="onecol">
 
     <div class="control-group">
@@ -80,54 +88,29 @@
 
   <br />
 
-<form class="form-horizontal" method="post" action="{$smarty.server.PHP_SELF}?action=creditcard">
+<form class="form-horizontal" method="post"  action="modules/gateways/stripe-php/stripesave.php" id="payment-form" >
 
   <fieldset class="onecol">
 
-    <div class="control-group">
-        <label class="control-label" for="cctype">{$LANG.creditcardcardtype}</label>
-        <div class="controls">
-            <select name="cctype" id="cctype">
-            {foreach key=num item=cardtype from=$acceptedcctypes}
-                <option>{$cardtype}</option>
-            {/foreach}
-            </select>
-        </div>
-    </div>
 
     <div class="control-group">
         <label class="control-label" for="ccnumber">{$LANG.creditcardcardnumber}</label>
         <div class="controls">
-            <input type="text" name="ccnumber" id="ccnumber" autocomplete="off" />
+            <input type="text" class="card-number2" id="ccnumber" autocomplete="off" />
         </div>
     </div>
 
     <div class="control-group">
         <label class="control-label" for="ccexpirymonth">{$LANG.creditcardcardexpires}</label>
         <div class="controls">
-            <select name="ccexpirymonth" id="ccexpirymonth">{foreach from=$months item=month}<option>{$month}</option>{/foreach}</select> / <select name="ccexpiryyear">{foreach from=$expiryyears item=year}<option>{$year}</option>{/foreach}</select>
+            <select name="ccexpirymonth" id="ccexpirymonth" class="card-expiry-month">{foreach from=$months item=month}<option>{$month}</option>{/foreach}</select> / <select name="ccexpiryyear" class="card-expiry-year">{foreach from=$expiryyears item=year}<option>{$year}</option>{/foreach}</select>
         </div>
     </div>
-{if $showccissuestart}
-    <div class="control-group">
-        <label class="control-label" for="ccstartmonth">{$LANG.creditcardcardstart}</label>
-        <div class="controls">
-            <select name="ccstartmonth" id="ccstartmonth">{foreach from=$months item=month}<option>{$month}</option>{/foreach}</select> / <select name="ccstartyear">{foreach from=$startyears item=year}<option>{$year}</option>{/foreach}</select>
-        </div>
-    </div>
-
-    <div class="control-group">
-        <label class="control-label" for="ccissuenum">{$LANG.creditcardcardissuenum}</label>
-        <div class="controls">
-            <input type="text" name="ccissuenum" id="ccissuenum" maxlength="3" class="input-mini" autocomplete="off" />
-        </div>
-    </div>
-{/if}
 
     <div class="control-group">
         <label class="control-label">{$LANG.creditcardcvvnumber}</label>
         <div class="controls">
-            <input type="text" name="cardcvv" id="cardcvv" value="{$cardcvv}" maxlength="3" class="input-mini" autocomplete="off" />
+            <input type="text" id="cardcvv" maxlength="4" class="input-mini card-cvc" autocomplete="off" />
         </div>
     </div>
 
@@ -135,7 +118,7 @@
   </fieldset>
 
   <div class="form-actions">
-    <input class="btn btn-primary" type="submit" name="submit" value="{$LANG.clientareasavechanges}" />
+    <input class="btn btn-primary submit-button" type="submit" id="submit-button" value="{$LANG.clientareasavechanges}" />
     <input class="btn" type="reset" value="{$LANG.cancel}" />
   </div>
 
