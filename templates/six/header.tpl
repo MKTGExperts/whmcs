@@ -93,7 +93,7 @@
 
         </div>
 
-        <a href="{$WEB_ROOT}/index.php"><img src="{$WEB_ROOT}/templates/{$template}/img/logo.png" alt="{$companyname}" /></a>
+        <a href="{$WEB_ROOT}/index.php"><img src="{$WEB_ROOT}/templates/{$template}/img/CircleSystemsInc.png" alt="{$companyname}" /></a>
 
     </div>
 </section>
