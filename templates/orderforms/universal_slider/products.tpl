@@ -84,6 +84,10 @@
                                                         {$LANG.from}
                                                     {/if}
                                                     {$product.pricing.minprice.cycleText}
+                                                    <br>
+                                                    {if $product.pricing.minprice.setupFee}
+                                                        <small>{$product.pricing.minprice.setupFee->toPrefixed()} {$LANG.ordersetupfee}</small>
+                                                    {/if}
                                                 {/if}
                                             </span>
                                             {if $product.qty eq "0"}
@@ -128,6 +132,10 @@
                                                         {$LANG.from}
                                                     {/if}
                                                     {$product.pricing.minprice.cycleText}
+                                                    <br>
+                                                    {if $product.pricing.minprice.setupFee}
+                                                        <small>{$product.pricing.minprice.setupFee} {$LANG.ordersetupfee}</small>
+                                                    {/if}
                                                 {/if}
                                             </span>
                                             {if $product.qty eq "0"}

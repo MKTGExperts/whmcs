@@ -247,7 +247,7 @@ var removeItemText = '{$LANG.cartremoveitemconfirm|escape:"quotes"}';
             </div>
         {/if}
 
-        <form method="post" action="{$smarty.server.PHP_SELF}?a=checkout" name="orderfrm">
+        <form method="post" action="{$smarty.server.PHP_SELF}?a=checkout" name="orderfrm" id="frmCheckout">
             <input type="hidden" name="submit" value="true" />
             <input type="hidden" name="custtype" id="inputCustType" value="{$custtype}" />
 
@@ -545,6 +545,8 @@ var removeItemText = '{$LANG.cartremoveitemconfirm|escape:"quotes"}';
                     </div>
                 </div>
             </div>
+
+            <div class="alert alert-danger text-center gateway-errors hidden"></div>
 
             <div class="line-padded text-center">
                 {foreach key=num item=gateway from=$gateways}

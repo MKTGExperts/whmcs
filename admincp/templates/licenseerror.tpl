@@ -21,11 +21,7 @@
         {/if}
         <title>WHMCS - {$pageTitle}</title>
 
-        <link href="{$BASE_PATH_CSS}/bootstrap.min.css" rel="stylesheet">
-        <link href="templates/login.css" rel="stylesheet">
-
-        <script type="text/javascript" src="{$BASE_PATH_JS}/jquery.min.js"></script>
-        <script type="text/javascript" src="{$BASE_PATH_JS}/bootstrap.min.js"></script>
+        <link href="templates/login.min.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -149,6 +145,6 @@
         <div class="poweredby text-center">
             <a href="http://www.whmcs.com/" target="_blank">Powered by WHMCS</a>
         </div>
-        <script type="text/javascript" src="templates/login.js"></script>
+        <script type="text/javascript" src="templates/login.min.js"></script>
     </body>
 </html>

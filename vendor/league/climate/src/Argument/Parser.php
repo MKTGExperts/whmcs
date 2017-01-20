@@ -18,6 +18,8 @@ class Parser
      */
     protected $summary;
 
+    protected $trailing;
+
     public function __construct()
     {
         $this->summary = new Summary();
@@ -45,7 +47,12 @@ class Parser
      */
     public function parse(array $argv = null)
     {
-        $cliArguments      = $this->arguments($argv);
+        $cliArguments = $this->arguments($argv);
+
+        if (in_array('--', $cliArguments)) {
+            $cliArguments = $this->removeTrailingArguments($cliArguments);
+        }
+
         $unParsedArguments = $this->prefixedArguments($cliArguments);
 
         $this->nonPrefixedArguments($unParsedArguments);
@@ -84,6 +91,32 @@ class Parser
     public function arguments(array $argv = null)
     {
         return $this->getCommandAndArguments($argv)['arguments'];
+    }
+
+    /**
+     * Get the trailing arguments
+     *
+     * @return string|null
+     */
+    public function trailing()
+    {
+        return $this->trailing;
+    }
+
+    /**
+     * Remove the trailing arguments from the parser and set them aside
+     *
+     * @param array $arguments
+     *
+     * @return array
+     */
+    protected function removeTrailingArguments(array $arguments)
+    {
+        $trailing = array_splice($arguments, array_search('--', $arguments));
+        array_shift($trailing);
+        $this->trailing = implode(' ', $trailing);
+
+        return $arguments;
     }
 
     /**
@@ -190,6 +223,10 @@ class Parser
         }
 
         if (is_null($value)) {
+            if (count($argv) === 0) {
+                return $argv;
+            }
+
             // If the value wasn't previously defined in "key=value"
             // format then define it from the next command argument.
             $argument->setValue($argv[++$key]);

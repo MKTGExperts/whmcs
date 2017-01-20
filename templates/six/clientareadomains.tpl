@@ -58,14 +58,14 @@
                             <td>
                                 <span class="label status status-{$domain.statusClass}">{$domain.statustext}</span>
                                 <span class="hidden">
-                                    {if $domain.next30}{$LANG.domainsExpiringInTheNext30Days}<br />{/if}
-                                    {if $domain.next90}{$LANG.domainsExpiringInTheNext90Days}<br />{/if}
-                                    {if $domain.next180}{$LANG.domainsExpiringInTheNext180Days}<br />{/if}
-                                    {if $domain.after180}{$LANG.domainsExpiringInMoreThan180Days}{/if}
+                                    {if $domain.next30}<span>{$LANG.domainsExpiringInTheNext30Days}</span><br />{/if}
+                                    {if $domain.next90}<span>{$LANG.domainsExpiringInTheNext90Days}</span><br />{/if}
+                                    {if $domain.next180}<span>{$LANG.domainsExpiringInTheNext180Days}</span><br />{/if}
+                                    {if $domain.after180}<span>{$LANG.domainsExpiringInMoreThan180Days}</span>{/if}
                                 </span>
                             </td>
                             <td>
-                                <div class="btn-group btn-group-sm">
+                                <div class="btn-group btn-group-sm" style="width:60px;">
                                     <a href="clientarea.php?action=domaindetails&id={$domain.id}" class="btn btn-default"><i class="fa fa-wrench"></i></a>
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                                         <span class="caret"></span>
@@ -139,10 +139,10 @@
                             <td id="status{$renewal.id}">
                                 <span class="label status status-{$renewal.statusClass}">{$renewal.status}</span>
                                 <span class="hidden">
-                                    {if $renewal.next30}{$LANG.domainsExpiringInTheNext30Days}<br />{/if}
-                                    {if $renewal.next90}{$LANG.domainsExpiringInTheNext90Days}<br />{/if}
-                                    {if $renewal.next180}{$LANG.domainsExpiringInTheNext180Days}<br />{/if}
-                                    {if $renewal.after180}{$LANG.domainsExpiringInMoreThan180Days}{/if}
+                                    {if $renewal.next30}<span>{$LANG.domainsExpiringInTheNext30Days}</span><br />{/if}
+                                    {if $renewal.next90}<span>{$LANG.domainsExpiringInTheNext90Days}</span><br />{/if}
+                                    {if $renewal.next180}<span>{$LANG.domainsExpiringInTheNext180Days}</span><br />{/if}
+                                    {if $renewal.after180}<span>{$LANG.domainsExpiringInMoreThan180Days}</span>{/if}
                                 </span>
                             </td>
                             <td id="expiry{$renewal.id}"><span class="hidden">{$renewal.normalisedExpiryDate}</span>{$renewal.expiryDate}</td>

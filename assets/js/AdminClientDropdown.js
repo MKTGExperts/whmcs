@@ -15,6 +15,7 @@ $(document).ready(function(){
         searchField: ['name', 'email', 'companyname'],
         create: false,
         maxItems: 1,
+        preload: 'focus',
         render: {
             item: function(item, escape) {
                 if (typeof dropdownSelectClient == "function") {
@@ -38,13 +39,13 @@ $(document).ready(function(){
             }
         },
         load: function(query, callback) {
-            if (!query.length) return callback();
             jQuery.ajax({
                 url: getClientSearchPostUrl(),
                 type: 'POST',
                 dataType: 'json',
                 data: {
-                    dropdownsearchq: query
+                    dropdownsearchq: query,
+                    clientId: currentValue
                 },
                 error: function() {
                     callback();

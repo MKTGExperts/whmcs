@@ -295,7 +295,6 @@ $_LANG['domainbulksearch'] = "大宗網域搜尋";
 $_LANG['domainbulksearchintro'] = "大宗網域搜尋工具允許您一次進行至多 20 個網域的查詢，請將您想查詢的網域填寫於下方欄位中，一行一筆，且請不要包含 www. 或 http:// 等部分。";
 $_LANG['domainbulktransferdescription'] = "您可以將您目前持有的網域一次性轉移給我們，請將您想轉移的網域填寫於下方欄位中，一行一筆，且請不要包含 www. 或 http:// 等部分。";
 $_LANG['domainbulktransfersearch'] = "大宗網域轉移";
-$_LANG['domaincheckerdescription'] = "檢查網域可用性";
 $_LANG['domaincontactinfo'] = "聯絡資訊";
 $_LANG['domaincurrentrenewaldate'] = "Current Renewal Date";
 $_LANG['domaindnsaddress'] = "地址";
@@ -460,6 +459,7 @@ $_LANG['kbsuggestions'] = "知識庫建議";
 $_LANG['kbsuggestionsexplanation'] = "The following articles were found in the knowledgebase which may answer your question. Please review the suggestions before submission.";
 $_LANG['knowledgebasearticles'] = "文章";
 $_LANG['knowledgebasecategories'] = "分類";
+$_LANG['nokbcategories'] = "No categories exist";
 $_LANG['knowledgebasedescription'] = "Browse our KB for answers to FAQs";
 $_LANG['knowledgebasefavorites'] = "Add to Favourites";
 $_LANG['knowledgebasehelpful'] = "這篇文章有幫助嗎？";
@@ -1248,7 +1248,6 @@ $_LANG['supportticketsintro'] = "提出技術支援要求與查詢過往服務�
 $_LANG['addfundsintro'] = "Deposit money in advance";
 $_LANG['registerintro'] = "Create an account with us . . .";
 $_LANG['masspayintro'] = "一次支付多筆帳單";
-$_LANG['domaincheckerintro'] = "在此處查詢您想要的網域是否可供使用，並從這裡開始您的架站體驗...";
 $_LANG['networkstatusintro'] = "服務狀態與網路架構公告";
 
 $_LANG['creditcardyourinfo'] = "帳務資訊";
@@ -1304,14 +1303,8 @@ $_LANG['creditcardexpirydateinvalid'] = "The expiry date must be entered in the 
 $_LANG['domaincheckerchoosedomain'] = "選擇一個網域名稱...";
 $_LANG['domaincheckerchecknewdomain'] = "輸入您想使用的網域名稱";
 $_LANG['domaincheckerdomainexample'] = " 例如：example.com";
-$_LANG['domaincheckerinvalidtld'] = "並非有效的 TLD，請重新輸入。";
-$_LANG['domaincheckerinvalidtld2'] = "TLD is invalid.";
-$_LANG['domaincheckerinvaliddomain'] = "Requested domain name is invalid.";
-$_LANG['domaincheckernopricing'] = "Pricing not available for this TLD.";
 $_LANG['domaincheckerhostingonly'] = "租用虛擬主機服務";
-$_LANG['domaincheckeravailtransfer'] = "可供轉移";
 $_LANG['domaincheckerenterdomain'] = "請填寫您想要註冊、轉移的網域名稱...";
-$_LANG['domaincheckerbulkinvaliddomain'] = "有一筆或數筆您輸入的網域名稱並非有效值，因此已被自結果中剔除。";
 
 $_LANG['kbquestionsearchere'] = "遇到問題了嗎？在此開始搜尋解決方案。";
 $_LANG['contactus'] = "聯絡我們";
@@ -1657,7 +1650,6 @@ $_LANG['passwordtips'] = "<strong>設定一組強密碼有助於保護您的帳�
 $_LANG['regdate'] = "註冊日期";
 $_LANG['nextdue'] = "續約日期";
 
-$_LANG['domaincheckertagline'] = "Find the perfect domain name for you...";
 $_LANG['findyourdomain'] = "Find your new domain name";
 $_LANG['searchtermrequired'] = "You must enter a domain name or keyword to look for";
 $_LANG['unabletolookup'] = "Sorry, unable to lookup the term as provided";
@@ -1707,6 +1699,7 @@ $_LANG['domainsCancelled'] = "已撤銷";
 $_LANG['domainsFraud'] = "Fraud";
 $_LANG['domainsPending'] = "等待啟用";
 $_LANG['domainsPendingTransfer'] = "等待轉移";
+$_LANG['domainsTransferredAway'] = "Transferred Away";
 $_LANG['domainsExpiringInTheNext30Days'] = "接下來 30 日內過期";
 $_LANG['domainsExpiringInTheNext90Days'] = "接下來 90 日內過期";
 $_LANG['domainsExpiringInTheNext180Days'] = "接下來 180 日內過期";
@@ -1761,7 +1754,7 @@ $_LANG['quoteacceptcontractwarning'] = "Please be aware that accepting a quote i
 $_LANG['clientAlerts']['creditCardExpiring'] = "Your credit card :creditCardType-:creditCardLastFourDigits expires within :days days. Please update it at your earliest convenience.";
 $_LANG['clientAlerts']['domainsExpiringSoon'] = "You have :numberOfDomains domain(s) expiring within the next :days days.";
 $_LANG['clientAlerts']['invoicesUnpaid'] = "You have :numberOfInvoices unpaid invoice(s). Pay them early for peace of mind.";
-$_LANG['clientAlerts']['invoicesOverdue'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interuptions in service.";
+$_LANG['clientAlerts']['invoicesOverdue'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interruptions in service.";
 $_LANG['clientAlerts']['creditBalance'] = "You have a credit balance of :creditBalance.";
 
 // Client homepage panels
@@ -2085,4 +2078,70 @@ $_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to you
 $_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
 $_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
 $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['downloadLoginRequiredTagline'] = "Please login to access the requested file download";
+
+$_LANG['orderForm']['year'] = "Year";
+$_LANG['orderForm']['years'] = "Years";
+$_LANG['orderForm']['domainOrKeyword'] = "Enter a domain or keyword";
+$_LANG['orderForm']['searching'] = "Searching";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> is unavailable";
+$_LANG['orderForm']['add'] = "Add";
+$_LANG['orderForm']['suggestedDomains'] = "Suggested Domains";
+$_LANG['orderForm']['generatingSuggestions'] = "Generating suggestions for you";
+$_LANG['orderForm']['addHosting'] = "Add Web Hosting";
+$_LANG['orderForm']['chooseFromRange'] = "Choose from a range of web hosting packages";
+$_LANG['orderForm']['packagesForBudget'] = "We have packages designed to fit every budget";
+$_LANG['orderForm']['exploreNow'] = "Explore packages now";
+$_LANG['orderForm']['transferToUs'] = "Transfer your domain to us";
+$_LANG['orderForm']['transferExtend'] = "Transfer now to extend your domain by 1 year!";
+$_LANG['orderForm']['transferDomain'] = "Transfer a domain";
+$_LANG['orderForm']['extendExclusions'] = "Excludes certain TLDs and recently renewed domains";
+$_LANG['orderForm']['singleTransfer'] = "Single domain transfer";
+$_LANG['orderForm']['enterDomain'] = "Please enter your domain";
+$_LANG['orderForm']['authCode'] = "Authorization Code";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp Code / Auth Code";
+$_LANG['orderForm']['authCodeTooltip'] = "To initiate a transfer you will need to obtain the authorization code from your current registrar. These can often be referred to as either the epp code or auth code. They act as a password and are unique to the domain name.";
+$_LANG['orderForm']['help'] = "Help";
+$_LANG['orderForm']['required'] = "Required";
+
+$_LANG['orderForm']['checkingAvailability'] = "Checking availability";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "Verifying transfer eligibility";
+$_LANG['orderForm']['verifyingDomain'] = "Verifying your domain selection";
+$_LANG['orderForm']['transferEligible'] = "Your domain is eligible for transfer";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Please ensure you have unlocked your domain at your current registrar before continuing.";
+$_LANG['orderForm']['transferNotEligible'] = "Not Eligible for Transfer";
+$_LANG['orderForm']['transferNotRegistered'] = "The domain you entered does not appear to be registered.";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "If the domain was registered recently, you may need to try again later.";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "Alternatively, you can perform a search to register this domain.";
+$_LANG['orderForm']['domainInvalid'] = "Invalid domain name provided";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "Please check your entry and try again.";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "Continue to register this domain for";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "Transfer to us and extend by 1 year* for";
+
+$_LANG['change'] = "Change";
+
+$_LANG['filemanagement']['nofileuploaded'] = "No file uploaded.";
+$_LANG['filemanagement']['invalidname'] = "Valid filenames contain only alpha-numeric, dot, hyphen and underscore characters.";
+$_LANG['filemanagement']['couldNotSaveFile'] = "Could not save uploaded file.";
+$_LANG['filemanagement']['checkPermissions'] = "Please check permissions.";
+$_LANG['filemanagement']['checkAvailableDiskSpace'] = "Please check available disk space.";
+$_LANG['filemanagement']['fileAlreadyExists'] = "File already exists.";
+$_LANG['filemanagement']['noUniqueName'] = "Unable to find a unique filename.";
+
+$_LANG['cartSimpleCaptcha'] = "Please enter the code shown below";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "Showing the most recent 100 records";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Domains must begin with a letter or a number";
+$_LANG['orderForm']['domainLengthRequirements'] = " and be between <span class=\"min-length\"></span> and <span class=\"max-length\"></span> characters in length";
+
+$_LANG['clientareatransferredaway'] = "Transferred Away";
+$_LANG['clientareacompleted'] = "Completed";
+$_LANG['domainContactUs'] = "Contact Us";
+
+$_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
+$_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
+
+$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
+$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
+$_LANG['domainCheckerSalesGroup']['new'] = "New";
 ////////// End of chinese language file.  Do not place any translation strings below this line!

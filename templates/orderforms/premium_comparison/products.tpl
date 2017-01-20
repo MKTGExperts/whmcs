@@ -83,6 +83,10 @@ jQuery(document).ready(function () {
                                                         {$LANG.from}
                                                     {/if}
                                                     {$product.pricing.minprice.cycleText}
+                                                    <br>
+                                                    {if $product.pricing.minprice.setupFee}
+                                                        <small>{$product.pricing.minprice.setupFee->toPrefixed()} {$LANG.ordersetupfee}</small>
+                                                    {/if}
                                                 {/if}
                                             </div>
                                             {if $product.qty eq "0"}

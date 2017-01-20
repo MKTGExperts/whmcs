@@ -61,9 +61,9 @@ require("../init.php");
     $biennially = $data['biennially'];
     $triennially = $data['triennially'];
 
-    $systemurl = ($CONFIG['SystemSSLURL']) ? $CONFIG['SystemSSLURL'] : $CONFIG['SystemURL'];
+    $systemurl = App::getSystemUrl();
 
-    $output = '<form method="post" action="'.$systemurl.'/cart.php?a=add&pid='.$pid.'">';
+    $output = '<form method="post" action="' . $systemurl . 'cart.php?a=add&pid=' . $pid . '">';
 
     if ($paytype=="free") {
 

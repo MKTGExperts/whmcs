@@ -25,7 +25,7 @@ $_LANG['locale'] = "ru_RU";
 
 $_LANG['accountinfo'] = "Информация об аккаунте";
 $_LANG['accountstats'] = "Статистика аккаунта";
-$_LANG['addfunds'] = "Пополнить баланс";
+$_LANG['addfunds'] = "Пополнить";
 $_LANG['addfundsamount'] = "Сумма пополнения";
 $_LANG['addfundsmaximum'] = "Максимальная сумма";
 $_LANG['addfundsmaximumbalance'] = "Максимальный баланс";
@@ -180,9 +180,9 @@ $_LANG['clientareaerrorpostcode'] = "Вы не ввели почтовый ин�
 $_LANG['clientareaerrorpostcode2'] = "Почтовый индекс может содержать только буквы, числа и пробелы";
 $_LANG['clientareaerrors'] = "Возникла ошибка:";
 $_LANG['clientareaerrorstate'] = "Вы не ввели штат/район";
-$_LANG['clientareaexpired'] = "истекает";
+$_LANG['clientareaexpired'] = "Истекает";
 $_LANG['clientareafirstname'] = "Имя";
-$_LANG['clientareafraud'] = "Мошеннический";
+$_LANG['clientareafraud'] = "Fraud";
 $_LANG['clientareafullname'] = "Имя клиента";
 $_LANG['clientareaheader'] = "Добро пожаловать в панель клиента. Здесь содержится ваша контактная информация, информация о ваших хостинг-пакетах и доменах. Также вы можете задать вопрос тех. поддержке или заказать дополнительные услуги.";
 $_LANG['clientareahostingaddons'] = "Дополнения";
@@ -271,7 +271,7 @@ $_LANG['creditcardccvinvalid'] = "Необходим CVV код кредитно
 $_LANG['creditcardconfirmation'] = "Спасибо! Новые данные кредитной карты приняты, и первый платеж за ваш аккаунт проведен успешно. Письмо с подтверждением было отправлено на ваш email-адрес.";
 $_LANG['creditcardcvvnumber'] = "CVV/CVC2 код";
 $_LANG['creditcardcvvwhere'] = "Где находится?";
-$_LANG['creditcarddeclined'] = "Кредитная карта отклонена. Пожалуйста введите другую кредитную карту или свяжитесь с поддержкой.";
+$_LANG['creditcarddeclined'] = "Кредитная карта отклонена. Пожалуйста, введите другую кредитную карту или свяжитесь с поддержкой.";
 $_LANG['creditcarddetails'] = "Данные кредитной карты";
 $_LANG['creditcardenterexpirydate'] = "Вы не ввели срок истечения кредитной карты";
 $_LANG['creditcardenternewcard'] = "Введите данные новой карты";
@@ -295,7 +295,6 @@ $_LANG['domainbulksearch'] = "Массовый поиск доменов";
 $_LANG['domainbulksearchintro'] = "Массовый поиск доменов позволяет искать до 20 доменов одновременно. Введите домены по одному в строке. Не вводите www. или http://";
 $_LANG['domainbulktransferdescription'] = "Вы можете перенести к нам несколько доменов. Введите домены по одному в строке. Не вводите www. или http://";
 $_LANG['domainbulktransfersearch'] = "Массовый перенос доменов";
-$_LANG['domaincheckerdescription'] = "Проверить доступность домена";
 $_LANG['domaincontactinfo'] = "Контактные данные";
 $_LANG['domaincurrentrenewaldate'] = "Текущая дата продления";
 $_LANG['domaindnsaddress'] = "Адрес";
@@ -409,7 +408,7 @@ $_LANG['headertext'] = "Добро пожаловать на страницу п
 $_LANG['hometitle'] = "Главная";
 $_LANG['imagecheck'] = "Пожалуйста, введите проверочный код.";
 $_LANG['invoiceaddcreditamount'] = "Введите сумму";
-$_LANG['invoiceaddcreditapply'] = "Использовать кредит";
+$_LANG['invoiceaddcreditapply'] = "С кредита";
 $_LANG['invoiceaddcreditdesc1'] = "Ваш кредит составляет";
 $_LANG['invoiceaddcreditdesc2'] = "Вы можете использовать его для оплаты счета.";
 $_LANG['invoiceaddcreditoverbalance'] = "Вы не можете использовать сумму кредита, превышающую сумму к оплате";
@@ -460,6 +459,7 @@ $_LANG['kbsuggestions'] = "Предложения из базы знаний";
 $_LANG['kbsuggestionsexplanation'] = "В нашей базе знаний найдены статьи, содержащие ответ на ваш вопрос. Пожалуйста, прочтите перед тем, как задать вопрос.";
 $_LANG['knowledgebasearticles'] = "Статьи";
 $_LANG['knowledgebasecategories'] = "Категории";
+$_LANG['nokbcategories'] = "No categories exist";
 $_LANG['knowledgebasedescription'] = "Просмотреть базу знаний часто задаваемых вопросов";
 $_LANG['knowledgebasefavorites'] = "Добавить в избранное";
 $_LANG['knowledgebasehelpful'] = "Помог ли вам данный ответ?";
@@ -500,7 +500,7 @@ $_LANG['maxmind_callingnow'] = "Как один из способов защит
 $_LANG['maxmind_countrymismatch'] = "Страна вашего IP-адреса не совпадает с платежным адресом, поэтому мы не можем принять ваш заказ.";
 $_LANG['maxmind_error'] = "Ошибка";
 $_LANG['maxmind_faileddescription'] = "Введен неправильный код. Если вы считаете, что произошла ошибка, пожалуйста, свяжитесь со службой поддержки.";
-$_LANG['maxmind_highfraudriskscore'] = "Система автоматической проверки Maxmind определила, что Ваш заказ может быть мошенническим и требует дополнительной проверки сотрудниками.<br /><br />Если вы считаете, что произошла ошибка, пожалуйста, <a href=\"submitticket.php\">свяжитесь со службой поддержки</a>. Приносим извинения за неудобства.";
+$_LANG['maxmind_highfraudriskscore'] = "Система автоматической проверки Maxmind определила, что Ваш заказ может быть мошенническим и требует дополнительной проверки сотрудниками.<br /><br />Если вы считаете, что произошла ошибка, пожалуйста, <a href=\"submitticket.php\">свяжитесь со службой поддержки</a>. Приносим извинения за неудобство.";
 $_LANG['maxmind_highriskcountry'] = "К сожалению, мы не можем принять заказ из-за большого количества мошеннических заказов из вашей страны. Для осуществления альтернативного способа оплаты, пожалуйста, свяжитесь с нами.";
 $_LANG['maxmind_incorrectcode'] = "Неверный код";
 $_LANG['maxmind_pincode'] = "Пин-код";
@@ -637,9 +637,9 @@ $_LANG['orderregisterdomain'] = "Зарегистрировать домен";
 $_LANG['orderregperiod'] = "Срок регистрации";
 $_LANG['ordersecure'] = "Все данные с формы заказа передаются в зашифрованном виде. В целях безопасности и предотвращения мошенничества, Ваш IP-адрес";
 $_LANG['ordersecure2'] = "будет сохранен.";
-$_LANG['orderserverhostname'] = "Hostname сервера";
-$_LANG['orderservernameservers'] = "Name-серверы";
-$_LANG['orderservernameserversdescription'] = "Вводимые префиксы определят Name-серверы по умолчанию, т.е. ns1.example.com и ns2.example.com";
+$_LANG['orderserverhostname'] = "Имя хоста сервера";
+$_LANG['orderservernameservers'] = "Name-сервера";
+$_LANG['orderservernameserversdescription'] = "Вводимые префиксы определят Name-сервера по умолчанию, например: ns1.example.com и ns2.example.com";
 $_LANG['orderservernameserversprefix1'] = "Префикс 1";
 $_LANG['orderservernameserversprefix2'] = "Префикс 2";
 $_LANG['orderserverrootpassword'] = "Пароль администратора";
@@ -757,7 +757,7 @@ $_LANG['supportticketserrornoemail'] = "Вы не ввели свой email-ад
 $_LANG['supportticketserrornomessage'] = "Вы не ввели сообщение";
 $_LANG['supportticketserrornoname'] = "Вы не ввели свое имя";
 $_LANG['supportticketserrornosubject'] = "Вы не ввели тему";
-$_LANG['supportticketsfilenotallowed'] = "Тип файла, который вы пытаетесь загрузить, не разрешен.";
+$_LANG['supportticketsfilenotallowed'] = "Тип Файла, который вы пытаетесь загрузить, не разрешен.";
 $_LANG['supportticketsheader'] = "Если вы не можете найти решение своей проблемы в базе знаний, вы можете отправить тикет, выбрав соответствующий отдел.";
 $_LANG['supportticketsnotfound'] = "Тикет не найден";
 $_LANG['supportticketsopentickets'] = "Открытых тикетов";
@@ -789,7 +789,7 @@ $_LANG['supportticketsticketurgencymedium'] = "Средняя";
 $_LANG['supportticketsuploadfailed'] = "Вложение не удалось загрузить";
 $_LANG['supportticketsuploadtoolarge'] = "Uploaded file was too large. Please try uploading a smaller file.";
 $_LANG['supportticketsviewticket'] = "Просмотр тикета";
-$_LANG['supportticketclosedmsg'] = "Тикет закрыт.  Вы можете ответить на него, что бы открыть его снова.";
+$_LANG['supportticketclosedmsg'] = "Тикет закрыт.  Вы можете ответить на него что бы открыть снова.";
 $_LANG['telesignincorrectpin'] = "Неправильный пин-код!";
 $_LANG['telesigninitiatephone'] = "Мы не можем запустить телефонную проверку номера. Пожалуйста, свяжитесь с нами.";
 $_LANG['telesigninvalidnumber'] = "Неправильный номер телефона";
@@ -805,7 +805,7 @@ $_LANG['telesigntitle'] = "Телефонная проверка TeleSign.";
 $_LANG['telesigntype'] = "Выберите тип проверки для номера %s:";
 $_LANG['telesignverificationcanceled'] = "Возникла временная проблема со службой телефонной проверки, поэтому запрос на проверку был отменен";
 $_LANG['telesignverificationproblem'] = "Возникла временная проблема со службой телефонной проверки, поэтому ваш заказ не может быть подтвержден. Пожалуйста, попробуйте позже.";
-$_LANG['telesignverify'] = "для завершения заказа необходимо проверить ваш номер телефона %s.";
+$_LANG['telesignverify'] = "для завершения заказа необходимо проверить ваш номер телефона %s .";
 $_LANG['ticketratingexcellent'] = "Отлично";
 $_LANG['ticketratingpoor'] = "Плохо";
 $_LANG['ticketratingquestion'] = "Как вы оцениваете данный ответ?";
@@ -974,7 +974,7 @@ $_LANG['orderformtitle'] = "Форма заказа";
 $_LANG['signup'] = "Ваши данные";
 $_LANG['loading'] = "Загрузка...";
 
-$_LANG['ordersummarybegin'] = "Ваша корзина пуста<br/>Добавьте товар или услугу в корзину.";
+$_LANG['ordersummarybegin'] = "Ваша корзина пуста<br/>Сначала закажите что-нибудь...";
 
 $_LANG['cartchooseproduct'] = "Выбор продукта";
 $_LANG['cartconfigurationoptions'] = "Настраиваемые параметры";
@@ -1087,7 +1087,7 @@ $_LANG['cartfraudcheck'] = "Проверка на мошенничество";
 
 $_LANG['newcustomer'] = "Новый клиент";
 $_LANG['existingcustomer'] = "Зарегистрированный клиент";
-$_LANG['newcustomersignup'] = "<strong>Еще не зарегистрированы?</strong> %s Нажмите здесь%s";
+$_LANG['newcustomersignup'] = "<strong>Еще не зарегистрированы?</strong> %s Нажмите здесь...%s";
 
 $_LANG['upgradeonselectedoptions'] = "(с выбранными)";
 $_LANG['recurringpromodesc'] = "Этот промо-код также включает %s скидку при подписке<br />(эта скидка также будет применена при последующих продлениях продукта)";
@@ -1095,8 +1095,8 @@ $_LANG['recurringpromodesc'] = "Этот промо-код также включ
 # Version 4.5.2
 
 $_LANG['ajaxcartcheckout'] = "Завершить заказ &raquo;";
-$_LANG['ordersummarybegin'] = "Ваша корзина пуста<br/>Добавьте товар или услугу в корзину.";
-$_LANG['ajaxcartconfigreqnotice'] = "Чтобы добавить выбранный продукт/услугу в корзину, вам нужно выбрать домен.";
+$_LANG['ordersummarybegin'] = "Ваша корзина пуста<br/>Сначала закажите что-нибудь...";
+$_LANG['ajaxcartconfigreqnotice'] = "Чтобы добавить выбранный продукт/услугу в корзину, вам нужно выбрать домен...";
 
 # Version 5.0.0
 
@@ -1207,7 +1207,7 @@ $_LANG['navmanagecc'] = "Кредитная карта";
 $_LANG['navemailssent'] = "Отправленные email";
 
 $_LANG['hello'] = "Здравствуйте";
-$_LANG['helloname'] = "%s";
+$_LANG['helloname'] = "%s!";
 $_LANG['account'] = "Аккаунт";
 $_LANG['login'] = "Вход";
 $_LANG['register'] = "Регистрация";
@@ -1248,7 +1248,6 @@ $_LANG['supportticketsintro'] = "Отправить и отслеживать в
 $_LANG['addfundsintro'] = "Пополните счет заранее";
 $_LANG['registerintro'] = "Создать новый аккаунт...";
 $_LANG['masspayintro'] = "Объедините и оплатите все счета одной транзакцией.";
-$_LANG['domaincheckerintro'] = "Закажите хостинг здесь, начав с поиска доступного домена...";
 $_LANG['networkstatusintro'] = "Информация о статусе услуг и уведомления о работе сети";
 
 $_LANG['creditcardyourinfo'] = "Финансовая информация";
@@ -1303,15 +1302,9 @@ $_LANG['creditcardexpirydateinvalid'] = "Дата окончания должн�
 
 $_LANG['domaincheckerchoosedomain'] = "Выберите домен...";
 $_LANG['domaincheckerchecknewdomain'] = "Проверить доступность нового домена";
-$_LANG['domaincheckerdomainexample'] = "например. example.com";
-$_LANG['domaincheckerinvalidtld'] = "некорректный TLD. Попробуйте еще раз.";
-$_LANG['domaincheckerinvalidtld2'] = "Запрошенный TLD некорректен.";
-$_LANG['domaincheckerinvaliddomain'] = "Запрошенный домен некорректен.";
-$_LANG['domaincheckernopricing'] = "Для данного TLD не установлены цены.";
+$_LANG['domaincheckerdomainexample'] = " например. example.com";
 $_LANG['domaincheckerhostingonly'] = "Заказать только хостинг";
-$_LANG['domaincheckeravailtransfer'] = "Доступен для переноса";
 $_LANG['domaincheckerenterdomain'] = "Начните хостинг с нами, введя доменное имя, которое вы хотите зарегистрировать или перенести, или просто закажите хостинг... ";
-$_LANG['domaincheckerbulkinvaliddomain'] = "Один или несколько доменов были введены неправильно и потому исключены из результатов";
 
 $_LANG['kbquestionsearchere'] = "Есть вопрос? Начните поиск здесь.";
 $_LANG['contactus'] = "Связь с нами";
@@ -1333,12 +1326,12 @@ $_LANG['downloadproductrequired'] = "Для загрузки нужна хотя
 $_LANG['affiliatesignuptitle'] = "Получайте выплаты по партнерской программе, ссылаясь на нас";
 $_LANG['affiliatesignupintro'] = "Активируйте партнерский аккаунт и начните зарабатывать прямо сейчас...";
 $_LANG['affiliatesignupinfo1'] = "Мы платим комиссию за каждый заказ, сделанный через вашу партнерскую ссылку.";
-$_LANG['affiliatesignupinfo2'] = "Мы отслеживаем посетителей, пришедших по вашей партнерской ссылке через cookie, поэтому не обязательно делать заказ сразу. Мы учтем заказ сделанный позже, т.к. информация в cookie храниться 90 дней с первого визита.";
+$_LANG['affiliatesignupinfo2'] = "Мы отслеживаем посетителей, пришедших по вашей партнерской ссылке через cookie, поэтому не обязательно делать заказ сразу. Мы учтем заказ сделанный позже, т.к. информация в cookie хранится 90 дней с первого визита.";
 $_LANG['affiliatesignupinfo3'] = "Если вы хотите узнать больше - свяжитесь с нами.";
 
 # Version 5.1
 
-$_LANG['copyright'] = "Авторское право";
+$_LANG['copyright'] = "Copyright";
 $_LANG['allrightsreserved'] = "Все права защищены";
 $_LANG['supportticketsclose'] = "Закрыть тикет";
 $_LANG['affiliatesinitialthen'] = "Изначально";
@@ -1451,7 +1444,7 @@ $_LANG['twofadisableclickhere'] = "Нажмите для отключения";
 $_LANG['twofaenforced'] = "Прежде чем вы сможете продолжить, необходимо настроить двухэтапную аутентификацию для повышения уровня безопасности.";
 $_LANG['twofasetup'] = "Процесс установки двухэтапной аутентификации";
 $_LANG['twofasetupgetstarted'] = "Начать";
-$_LANG['twofaactivationintro'] = "Двухэтапная аутентификация подразумевает дополнительный уровень защиты при авторизации. После включения и настройки двухэтапной аутентификации, для входа в систему потребуется ввести не только имя пользователя и пароль, но и дополнительный ключ, к примеру: код безопасности.";
+$_LANG['twofaactivationintro'] = "Двухэтапная аутентификация подразумевает дополнительный уровень защиты при аутентификации. После включения и настройки двухэтапной аутентификации, для входа в систему потребуется ввести не только имя пользователя и пароль, но и дополнительный ключ, к примеру: код безопасности.";
 $_LANG['twofaactivationmultichoice'] = "Чтобы продолжить, выберите один из способов двухэтапной аутентификации.";
 $_LANG['twofadisableintro'] = "Для отключения двухэтапной аутентификации необходимо ввести пароль.";
 $_LANG['twofaactivationerror'] = "При попытке включения двухэтапной аутентификации для вашего аккаунта произошла ошибка. Пожалуйста, попробуйте еще раз.";
@@ -1482,7 +1475,7 @@ $_LANG['quoteacceptancewarning'] = "Имейте в виду, что, приня
 $_LANG['contactform'] = "Форма для связи";
 
 $_LANG['twoipverificationstep'] = "Проверочный шаг";
-$_LANG['twoipverificationstepmsg'] = "Введите секретный код сгенерированный вашим мобильным приложением безопасности, чтобы мы смогли проверить корректность настройки";
+$_LANG['twoipverificationstepmsg'] = "Введите секретный код сгенерированный вашим мобильным приложением безопасности чтобы мы смогли проверить корректность настройки";
 $_LANG['twoipverificationerror'] = "Похоже возникла проблема...";
 $_LANG['twoipcodemissmatch'] = "Ваш код введен неправильно. Попробуйте еще раз.";
 $_LANG['twoiptimebasedpassword'] = "Одноразовый пароль двухэтапной аутентификации";
@@ -1518,9 +1511,9 @@ $_LANG['domaincontactdetails']['Phone'] = "Телефон";
 $_LANG['domaincontactdetails']['Phone Number'] = "Телефон";
 $_LANG['domaincontactdetails']['Fax'] = "Факс";
 
-$_LANG['serverhostnameexample'] = "eg. server1(.example.com)";
-$_LANG['serverns1prefixexample'] = "eg. ns1(.example.com)";
-$_LANG['serverns2prefixexample'] = "eg. ns2(.example.com)";
+$_LANG['serverhostnameexample'] = "т.е. server1(.yourdomain.com)";
+$_LANG['serverns1prefixexample'] = "т.е. ns1(.example.com)";
+$_LANG['serverns2prefixexample'] = "т.е. ns2(.example.com)";
 
 $_LANG['hosting'] = "Хостинг";
 
@@ -1633,7 +1626,7 @@ $_LANG['transferinadomain'] = "Перенос домена";
 
 $_LANG['nodomainextensions'] = "Для заказа нет настроенных дополнений для домена";
 
-$_LANG['homebegin'] = "Начните поиска вашего домена...";
+$_LANG['homebegin'] = "Начните поиск вашего домена...";
 $_LANG['howcanwehelp'] = "Чем мы можем вам помочь?";
 $_LANG['exampledomain'] = "например, example.com";
 $_LANG['buyadomain'] = "Купить домен";
@@ -1657,7 +1650,6 @@ $_LANG['passwordtips'] = "<strong>Подсказка для надежного �
 $_LANG['regdate'] = "Дата регистрации";
 $_LANG['nextdue'] = "Следующий платеж";
 
-$_LANG['domaincheckertagline'] = "Найти подходящий домен для вас...";
 $_LANG['findyourdomain'] = "Найдите подходящий домен";
 $_LANG['searchtermrequired'] = "Вы должны ввести домен или фразу для поиска";
 $_LANG['unabletolookup'] = "Извините, по вашим условиям ничего не найдено";
@@ -1682,12 +1674,12 @@ $_LANG['ticketsyourhistory'] = "История тикетов";
 $_LANG['clientareaemaildesc'] = "История сообщений";
 
 $_LANG['sslconfssl'] = "Настроить SSL";
-$_LANG['sslnoconfigurationpossible'] = "Настройка завершена! Свяжитесь с поддержкой если у вас возникли проблемы.";
+$_LANG['sslnoconfigurationpossible'] = "Настройка завершена!  Свяжитесь с поддержкой если у вас возникли проблемы.";
 
 $_LANG['adminloggedin'] = "Вы вошли как админ.";
-$_LANG['returntoadminarea'] = "Выйти и вернуться в панель администратора";
+$_LANG['returntoadminarea'] = "Выйти и вернуться в админку";
 $_LANG['adminmasqueradingasclient'] = "Вы сейчас действуете от имени клиента.";
-$_LANG['logoutandreturntoadminarea'] = "Выйти и вернуться в панель администратора";
+$_LANG['logoutandreturntoadminarea'] = "Выйти и вернуться в админку";
 
 $_LANG['supportAndUpdatesExpired'] = "Поддержка и обновление истекли.";
 $_LANG['supportAndUpdatesExpiredLicense'] = "Период поддержки и обновления для этой лицензии уже истек";
@@ -1698,19 +1690,20 @@ $_LANG['pwresetemailneeded'] = "Забыли пароль? Введите ваш
 
 $_LANG['quotestageexpired'] = "Истекший";
 
-$_LANG['ticketinfo'] = "Ticket Information";
+$_LANG['ticketinfo'] = "Детали тикета";
 $_LANG['customfield'] = "Дополнительные поля";
 
 $_LANG['domainsActive'] = "Активный";
 $_LANG['domainsExpired'] = "Истекла регистрация";
 $_LANG['domainsCancelled'] = "Отменен";
-$_LANG['domainsFraud'] = "Мошеннический";
+$_LANG['domainsFraud'] = "Fraud";
 $_LANG['domainsPending'] = "В ожидании";
 $_LANG['domainsPendingTransfer'] = "Ожидает переноса";
-$_LANG['domainsExpiringInTheNext30Days'] = "Истекают в течение 30 дней";
-$_LANG['domainsExpiringInTheNext90Days'] = "Истекают в течение 90 дней";
-$_LANG['domainsExpiringInTheNext180Days'] = "Истекают в течение 180 дней";
-$_LANG['domainsExpiringInMoreThan180Days'] = "Истекают более чем через 180 дней";
+$_LANG['domainsTransferredAway'] = "Transferred Away";
+$_LANG['domainsExpiringInTheNext30Days'] = "Истекают в теч. 30 дней";
+$_LANG['domainsExpiringInTheNext90Days'] = "Истекают в теч. 90 дней";
+$_LANG['domainsExpiringInTheNext180Days'] = "Истекают в теч. 180 дней";
+$_LANG['domainsExpiringInMoreThan180Days'] = "Истекают более 180 дней";
 
 $_LANG['kbtagcloud'] = "Облако меток";
 
@@ -1760,7 +1753,7 @@ $_LANG['quoteacceptcontractwarning'] = "Имейте в виду, что при�
 // Client alerts
 $_LANG['clientAlerts']['creditCardExpiring'] = "Срок действия вашей карты :creditCardType-:creditCardLastFourDigits заканчивается через :days дней. Пожалуйста, обновите ее при первой возможности.";
 $_LANG['clientAlerts']['domainsExpiringSoon'] = "У вас есть истекающие в течение :days дней домены (:numberOfDomains шт.)";
-$_LANG['clientAlerts']['invoicesUnpaid'] = "У вас неоплаченных счетов: :numberOfInvoices. Пожалуйста, оплатите их.";
+$_LANG['clientAlerts']['invoicesUnpaid'] = "У вас неоплаченных счетов: :numberOfInvoices. Оплатите их ради душевного спокойствия.";
 $_LANG['clientAlerts']['invoicesOverdue'] = "У вас есть счета с просроченной оплатой (:numberOfInvoices шт.) на общую сумму :balanceDue. Оплатите их чтобы избежать перерывов в обслуживании.";
 $_LANG['clientAlerts']['creditBalance'] = "Ваш баланс составляет :creditBalance.";
 
@@ -1770,9 +1763,9 @@ $_LANG['clientHomePanels']['unpaidInvoicesMsg'] = "У вас есть неопл
 $_LANG['clientHomePanels']['overdueInvoices'] = "Счета с просроченной оплатой";
 $_LANG['clientHomePanels']['overdueInvoicesMsg'] = "У вас есть счета с просроченной оплатой (:numberOfInvoices шт.) на общую сумму :balanceDue. Оплатите их чтобы избежать перерывов в обслуживании.";
 $_LANG['clientHomePanels']['domainsExpiringSoon'] = "Истекающие домены";
-$_LANG['clientHomePanels']['domainsExpiringSoonMsg'] = "У вас есть истекающие в течение :days дней домены (:numberOfDomains шт.).";
+$_LANG['clientHomePanels']['domainsExpiringSoonMsg'] = "У вас есть истекающие в течение :days дней домены (:numberOfDomains шт.). Продлите их, чтобы избежать недоступности данных услуг.";
 $_LANG['clientHomePanels']['activeProductsServices'] = "Активные продукты/услуги";
-$_LANG['clientHomePanels']['activeProductsServicesNone'] = "У вас нет каких-либо продуктов/услуг. <a href=\"cart.php\">Оформить заказ</a>?";
+$_LANG['clientHomePanels']['activeProductsServicesNone'] = "Похоже у вас нет каких-либо продуктов/услуг. <a href=\"cart.php\">Оформить заказ</a>?";
 $_LANG['clientHomePanels']['recentNews'] = "Последние новости";
 $_LANG['clientHomePanels']['affiliateProgram'] = "Партнерская программа";
 $_LANG['clientHomePanels']['recentSupportTickets'] = "Последние тикеты";
@@ -1796,7 +1789,7 @@ $_LANG['downdoadsdesc'] = "Инструкции, программы и друг�
 
 $_LANG['doToday'] = "Что вы хотите сделать?";
 $_LANG['changeDomainNS'] = "Изменить ДНС у домена";
-$_LANG['updateWhoisContact'] = "Обновить контактную информацию в  WHOIS";
+$_LANG['updateWhoisContact'] = "Обновить контактную информацию в WHOIS";
 $_LANG['changeRegLock'] = "Изменить статус блокировки (от переноса) домена";
 $_LANG['renewYourDomain'] = "Продлить домен";
 
@@ -1888,201 +1881,267 @@ $_LANG['cPanel']['create'] = "Создать";
 $_LANG['cPanel']['emailAccountCreateSuccess'] = "Почтовый аккаунт успешно создан!";
 $_LANG['cPanel']['emailAccountCreateFailed'] = "Ошибка при создании почтового аккаунта: ";
 
-$_LANG['cPanel']['packageNotActive'] = "This hosting package is currently";
-$_LANG['cPanel']['statusPendingNotice'] = "You cannot begin using this hosting account until it is activated.";
-$_LANG['cPanel']['statusSuspendedNotice'] = "You cannot continue to use or manage this package until it is reactivated.";
+$_LANG['cPanel']['packageNotActive'] = "Этот аккаунт";
+$_LANG['cPanel']['statusPendingNotice'] = "Вы не можете начать использовать этот аккаунт пока он не активирован.";
+$_LANG['cPanel']['statusSuspendedNotice'] = "Вы не можете продолжать использовать этот аккаунт или управлять им пока он не реактивирован.";
 
 $_LANG['cPanel']['billingOverview'] = "Просмотр биллинга";
 
 $_LANG['liveHelp']['chatNow'] = "Chat Now";
 
-$_LANG['quotes'] = "Quotes";
+$_LANG['quotes'] = "Предложения/оценки";
 
-$_LANG['productMustBeActiveForModuleCmds'] = "Product must be active to perform this action";
-$_LANG['domainCannotBeManagedUnlessActive'] = "This domain is not currently active. Domains cannot be managed unless active.";
+$_LANG['productMustBeActiveForModuleCmds'] = "Для выполнения этого действия продукт должен быть активным";
+$_LANG['domainCannotBeManagedUnlessActive'] = "Чтобы управлять доменом он должен быть активным.";
 
-$_LANG['actionRequiresAtLeastOneDomainSelected'] = "Please select at least one domain to perform the selected action on.";
+$_LANG['actionRequiresAtLeastOneDomainSelected'] = "Выберите хотя бы один домен для этой операции .";
 
-$_LANG['clientAreaProductDownloadsAvailable'] = "The following download items are available for your product/service";
-$_LANG['clientAreaProductAddonsAvailable'] = "Addons are available for your product/service. <a href=\"cart.php?gid=addons\">Click here to view &amp; order &raquo;</a>";
-$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "We strongly encourage you to enable Two-Factor Authentication for added security.";
-$_LANG['clientAreaSecurityNoSecurityQuestions'] = "Setting a security question and answer helps protect your account from unauthorized password resets and allows us to verify your identity when requesting account changes.";
-$_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "The security question helps protect your account from unauthorized password resets and allows us to verify your identity when requesting account changes.";
+$_LANG['clientAreaProductDownloadsAvailable'] = "Файлы, доступные для скачивания для этого продукта/услуги";
+$_LANG['clientAreaProductAddonsAvailable'] = "Дополнения, доступные для продукта/услуги. <a href=\"cart.php?gid=addons\">нажмите для просмотра и заказа &raquo;</a>";
+$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "Мы рекомендуем включить двухэтапную авторизацию по соображениям безопасности.";
+$_LANG['clientAreaSecurityNoSecurityQuestions'] = "Установка секретного вопроса позволяет защитить ваш аккаунт от неавторизированных сбросов пароля и позволяет идентифицировать вас при запросах на изменение данных.";
+$_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "Секретный вопрос позволяет защитить ваш аккаунт от неавторизированных сбросов пароля и позволяет идентифицировать вас при запросах на изменение данных.";
 
-$_LANG['billingAddress'] = "Billing Address";
+$_LANG['billingAddress'] = "Платежный адрес";
 
-$_LANG['noPasswordResetWhenLoggedIn'] = "You cannot request a password reset when logged in. Please logout to begin.";
+$_LANG['noPasswordResetWhenLoggedIn'] = "Чтобы запросить восстановление пароля вам небходимо сначала выйти.";
 
-$_LANG['unableToLoadShoppingCart'] = "Unable to load your shopping cart. Please contact support.";
+$_LANG['unableToLoadShoppingCart'] = "Невозможно загрузить корзину. Свяжитесь с поддержкой.";
 
-$_LANG['showMenu'] = "Show Menu";
-$_LANG['hideMenu'] = "Hide Menu";
+$_LANG['showMenu'] = "Показать меню";
+$_LANG['hideMenu'] = "Скрыть меню";
 
-$_LANG['from'] = "From";
-$_LANG['featuredProduct'] = "Most Popular";
-$_LANG['shoppingCartProductPerMonth'] = "<span>:price</span>/:countмес.";
-$_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countг.";
+$_LANG['from'] = "От";
+$_LANG['featuredProduct'] = "Популярное";
+$_LANG['shoppingCartProductPerMonth'] = "<span>:price</span>/:countmo";
+$_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countyr";
 
-$_LANG['orderForm']['findNewDomain'] = "Find your new domain name. Enter your name or keywords below to check availability.";
-$_LANG['orderForm']['transferExistingDomain'] = "Transfer your existing domain names to us and save.";
+$_LANG['orderForm']['findNewDomain'] = "Найдите ваше новое доменное имя. введите имя или ключевое слово для проверки доступности.";
+$_LANG['orderForm']['transferExistingDomain'] = "Перенесите ваш домен к нам и начните экономить";
 $_LANG['orderForm']['www'] = "www.";
-$_LANG['orderForm']['check'] = "Check";
-$_LANG['orderForm']['returnToClientArea'] = "Return to Client Area";
-$_LANG['orderForm']['checkout'] = "Оплатить";
-$_LANG['orderForm']['alreadyRegistered'] = "Already Registered?";
-$_LANG['orderForm']['createAccount'] = "Create a New Account";
-$_LANG['orderForm']['enterPersonalDetails'] = "Please enter your personal details and billing information to checkout.";
-$_LANG['orderForm']['correctErrors'] = "Please correct the following errors before continuing";
-$_LANG['orderForm']['existingCustomerLogin'] = "Existing Customer Login";
-$_LANG['orderForm']['emailAddress'] = "Email Address";
-$_LANG['orderForm']['personalInformation'] = "Personal Information";
+$_LANG['orderForm']['check'] = "Проверить";
+$_LANG['orderForm']['returnToClientArea'] = "Вернуться в панель клиента";
+$_LANG['orderForm']['checkout'] = "Оформить";
+$_LANG['orderForm']['alreadyRegistered'] = "Уже зарегистрированы?";
+$_LANG['orderForm']['createAccount'] = "Создать аккаунт";
+$_LANG['orderForm']['enterPersonalDetails'] = "Для оформления заказа введите ваши данные и платежную информацию.";
+$_LANG['orderForm']['correctErrors'] = "Для продолжения исправьте ошибки";
+$_LANG['orderForm']['existingCustomerLogin'] = "Существующий клиент";
+$_LANG['orderForm']['emailAddress'] = "Email-адрес";
+$_LANG['orderForm']['personalInformation'] = "Личные данные";
 $_LANG['orderForm']['firstName'] = "Имя";
 $_LANG['orderForm']['lastName'] = "Фамилия";
 $_LANG['orderForm']['phoneNumber'] = "Телефон";
-$_LANG['orderForm']['billingAddress'] = "Адрес оплаты";
+$_LANG['orderForm']['billingAddress'] = "Платежный адрес";
 $_LANG['orderForm']['companyName'] = "Компания";
-$_LANG['orderForm']['optional'] = "Optional";
-$_LANG['orderForm']['streetAddress'] = "Адрес";
-$_LANG['orderForm']['streetAddress2'] = "Адрес (прод.)";
+$_LANG['orderForm']['optional'] = "Необязательно";
+$_LANG['orderForm']['streetAddress'] = "Адрес, улица";
+$_LANG['orderForm']['streetAddress2'] = "Адрес, улица 2";
 $_LANG['orderForm']['city'] = "Город";
-$_LANG['orderForm']['state'] = "Штат/Регион";
+$_LANG['orderForm']['state'] = "Область/штат";
 $_LANG['orderForm']['country'] = "Страна";
 $_LANG['orderForm']['postcode'] = "Индекс";
-$_LANG['orderForm']['domainAlternativeContact'] = "You may specify alternative registered contact details for the domain registration(s) in your order when placing an order on behalf of another person or entity. If you do not require this, you can skip this section.";
-$_LANG['orderForm']['accountSecurity'] = "Account Security";
-$_LANG['orderForm']['mediumStrength'] = "Medium Strength";
-$_LANG['orderForm']['paymentDetails'] = "Payment Details";
-$_LANG['orderForm']['preferredPaymentMethod'] = "Please choose your preferred method of payment.";
-$_LANG['orderForm']['cardNumber'] = "Card Number";
-$_LANG['orderForm']['cvv'] = "CVV Security Number";
-$_LANG['orderForm']['additionalNotes'] = "Additional Notes";
-$_LANG['orderForm']['continueToClientArea'] = "Continue To Client Area";
-$_LANG['orderForm']['reviewDomainAndAddons'] = "Please review your domain name selections and any addons that are available for them.";
+$_LANG['orderForm']['domainAlternativeContact'] = "Вы можете указать для регистрации домена другие контактные данные. Если вам это не нужно - пропустите эту секцию";
+$_LANG['orderForm']['accountSecurity'] = "Безопасность";
+$_LANG['orderForm']['mediumStrength'] = "Средняя надежность";
+$_LANG['orderForm']['paymentDetails'] = "Детали платежа";
+$_LANG['orderForm']['preferredPaymentMethod'] = "Выберите способ оплаты.";
+$_LANG['orderForm']['cardNumber'] = "Номер карты";
+$_LANG['orderForm']['cvv'] = "Код CVV";
+$_LANG['orderForm']['additionalNotes'] = "Дополнительная информация";
+$_LANG['orderForm']['continueToClientArea'] = "Перейти в личный кабинет";
+$_LANG['orderForm']['reviewDomainAndAddons'] = "Проверьте выбор домена и доступных дополнений.";
 $_LANG['orderForm']['addToCart'] = "Добавить в корзину";
 $_LANG['orderForm']['addedToCartRemove'] = "В корзине (убрать)";
-$_LANG['orderForm']['configureDesiredOptions'] = "Выберите параметры продукта.";
-$_LANG['orderForm']['haveQuestionsContact'] = "Есть вопросы? Свяжитесь с нами для получения помощи.";
+$_LANG['orderForm']['configureDesiredOptions'] = "Настройте и перейдите к оформлению.";
+$_LANG['orderForm']['haveQuestionsContact'] = "Есть вопросы? Свяжитесь с нашим отделом продаж.";
 $_LANG['orderForm']['haveQuestionsClickHere'] = "Связаться";
-$_LANG['orderForm']['use'] = "Use";
-$_LANG['orderForm']['check'] = "Check";
-$_LANG['orderForm']['transfer'] = "Transfer";
-$_LANG['orderForm']['domainAddedToCart'] = "This domain has been added to your cart.";
-$_LANG['orderForm']['registerLongerAndSave'] = "Register for longer and save!";
-$_LANG['orderForm']['tryRegisteringInstead'] = "Try registering this domain instead.";
-$_LANG['orderForm']['domainAvailabilityCached'] = "Domain availability results are cached which may lead to recently registered domains being shown as available.";
-$_LANG['orderForm']['submitTicket'] = "Submit a Ticket";
-$_LANG['orderForm']['promotionAccepted'] = "Promotion Code Accepted! Your order total has been updated.";
-$_LANG['orderForm']['productOptions'] = "Product/Options";
-$_LANG['orderForm']['qty'] = "Qty";
-$_LANG['orderForm']['priceCycle'] = "Price/Cycle";
-$_LANG['orderForm']['edit'] = "Edit";
-$_LANG['orderForm']['update'] = "Update";
-$_LANG['orderForm']['remove'] = "Remove";
-$_LANG['orderForm']['applyPromoCode'] = "Apply Promo Code";
-$_LANG['orderForm']['estimateTaxes'] = "Estimate Taxes";
-$_LANG['orderForm']['removePromotionCode'] = "Remove Promotion Code";
+$_LANG['orderForm']['use'] = "Использовать";
+$_LANG['orderForm']['check'] = "Проверить";
+$_LANG['orderForm']['transfer'] = "Перенести";
+$_LANG['orderForm']['domainAddedToCart'] = "Этот домен был добавлен в корзину.";
+$_LANG['orderForm']['registerLongerAndSave'] = "Зарегистрируйте на более длительный срок и экономьте!";
+$_LANG['orderForm']['tryRegisteringInstead'] = "Попробуйте зарегистрировать домен вместо этого.";
+$_LANG['orderForm']['domainAvailabilityCached'] = "Результат проверки домена кэшируется, поэтому только что зарегистрированные домены могут отображаться как доступные к регистрации.";
+$_LANG['orderForm']['submitTicket'] = "Отправить тикет";
+$_LANG['orderForm']['promotionAccepted'] = "Код скидки применен. Итоговая сума обновлена.";
+$_LANG['orderForm']['productOptions'] = "Продукт/Опции";
+$_LANG['orderForm']['qty'] = "Кол-во";
+$_LANG['orderForm']['priceCycle'] = "Цена/Период оплаты";
+$_LANG['orderForm']['edit'] = "Изменить";
+$_LANG['orderForm']['update'] = "Обновить";
+$_LANG['orderForm']['remove'] = "Удалить";
+$_LANG['orderForm']['applyPromoCode'] = "Код скидки";
+$_LANG['orderForm']['estimateTaxes'] = "Налоги";
+$_LANG['orderForm']['removePromotionCode'] = "Удалить код скидки";
 $_LANG['orderForm']['updateTotals'] = "Обновить сумму";
-$_LANG['orderForm']['continueShopping'] = "Выбрать другие услуги";
-$_LANG['orderForm']['removeItem'] = "Remove Item";
+$_LANG['orderForm']['continueShopping'] = "Продолжить заказ";
+$_LANG['orderForm']['removeItem'] = "Удалить";
 $_LANG['orderForm']['yes'] = "Да";
 $_LANG['orderForm']['cancel'] = "Отмена";
 $_LANG['orderForm']['close'] = "Закрыть";
 $_LANG['orderForm']['totals'] = "Итого";
-$_LANG['orderForm']['includedWithPlans'] = "Included With Every Plan";
-$_LANG['orderForm']['whatIsIncluded'] = "What is Included?";
-$_LANG['orderForm']['errorNoProductGroup'] = "Could not load any product groups.";
-$_LANG['orderForm']['errorNoProducts'] = "Product group does not contain any visible products";
+$_LANG['orderForm']['includedWithPlans'] = "Включено в каждом плане";
+$_LANG['orderForm']['whatIsIncluded'] = "Что включено?";
+$_LANG['orderForm']['errorNoProductGroup'] = "Невозможно загрузить категорию.";
+$_LANG['orderForm']['errorNoProducts'] = "Категория не содержит выдимых продуктов";
 
-$_LANG['cloudSlider']['feature01Title'] = "Maximum Server Uptime";
-$_LANG['cloudSlider']['feature01Description'] = "Server uptime is critical for all businesses - consider it the heart beat of hosting your business. File and databases servers, email and web servers are an indispensable part of most business processes, and downtimes have direct negative effects on productivity, sales, employee and customer satisfaction. That's why ensuring the maximum server uptime is so important to us - we want to make sure your business processes are running healthy so your customers are happy.";
-$_LANG['cloudSlider']['feature01DescriptionTwo'] = "By trusting us with your business needs, we promise you a 99.9% uptime on any services we provide, outside of any standard maintenance we may provide.";
-$_LANG['cloudSlider']['feature02Title'] = "World Wide Data Delivery";
-$_LANG['cloudSlider']['feature02Description'] = "Our services are powered by hundreds of servers and data centers located all over the world, so you can rest easy knowing that customers can access your website from anywhere. In addition, we provide monitoring tools to provide you with expert analytics - website traffic is an important step in improving your site's efficiency and popularity, as well as keeping track of where your visitors are coming from, what time of day they're visiting you, and how long they're staying. Our dedication to a global marketplace extends to domain registrations, as we offer the most popular TLD's for registration.";
-$_LANG['cloudSlider']['feature02DescriptionTwo'] = "Our dedication to customer support reaches across the globe as well. We are here to help you with your hosting in any way possible, and you can reach us via phone, email, or live chat.";
-$_LANG['cloudSlider']['feature03Title'] = "Top Tier Security";
-$_LANG['cloudSlider']['feature03Description'] = "Rest easy knowing that we provide 24/7 security monitoring and DDoS protection. You take protecting your customer's data seriously, and so do we. Our security team and safeguards are on the job all day, every day to provide the level of security needed in today's digital age.";
-$_LANG['cloudSlider']['feature03DescriptionTwo'] = "A wide range of security tools are at your disposal, including SSL certificates, firewall configuration, security monitoring services, VPN access, and more.";
+$_LANG['cloudSlider']['feature01Title'] = "Максимальный аптайм сервера";
+$_LANG['cloudSlider']['feature01Description'] = "Время непрерывной работы сервера имеет решающее значение для бизнеса. Серверы файлов, баз данных, электронной почты и веб-серверы являются неотъемлемой частью большинства бизнес-процессов и простои имеют негативные последствия для производительности, продаж, сотрудников и клиентов. Вот почему обеспечение максимального времени безотказной работы сервера так важно для нас - мы хотим, чтобы ваши бизнес-процессы всегда были запущены, а клиенты - довольны.";
+$_LANG['cloudSlider']['feature01DescriptionTwo'] = "Доверьтесь нам, мы обещаем вам 99,9%-uptime на все наши услуги вне зависимости от планового обслуживания наших систем.";
+$_LANG['cloudSlider']['feature02Title'] = "Доступность по всему миру";
+$_LANG['cloudSlider']['feature02Description'] = "Наши услуги работают на сотнях серверов в датаценах по всему миру, так что вы можете спокойно отдыхать, зная, что клиенты могут получить доступ к веб-сайту из любой точки. Кроме того, мы предоставляем инструменты мониторинга, чтобы предоставить вам аналитику - трафик сайтов является важным шагом в повышении эффективности и популярности вашего сайта; Вы сможете отслеживать откуда  ваши посетители, в какое время суток они посещают сайт и как долго на нем остаются. Наша нацеленность на мировой рынок распространяется и на регистрацию доменов - предлагаем наиболее популярные зоны для регистрации.";
+$_LANG['cloudSlider']['feature02DescriptionTwo'] = "Мы оказываем поддержку по всему миру. Мы здесь, чтобы помочь с вашим хостингом и вы можете связаться с нами по телефону, электронной почте или в чате.";
+$_LANG['cloudSlider']['feature03Title'] = "Усиленная безопасность";
+$_LANG['cloudSlider']['feature03Description'] = "Вы можете спать спокойно, зная, что мы обеспечиваем мониторинг и защиту от DDoS-атак 24 часа в сутки 7 дней в неделю. Вы подходите к защите данных ваших клиентов серьезно, и мы тоже. Наша команда по обеспечению безопасности находтися на работе весь день, каждый день. Мы стараемся обеспечить уровень безопасности, необходимый в современном цифровом веке.";
+$_LANG['cloudSlider']['feature03DescriptionTwo'] = "В вашем распоряжении большой выбор инструментов безопасности, в том числе SSL-сертификаты, конфигуратор брандмауэра, услуга мониторинга безопасности, доступ к VPN, и многое другое.";
 $_LANG['cloudSlider']['selectProductLevel'] = "Select the Perfect Level for You!";
 
-$_LANG['domainChecker.additionalPricingOptions'] = "Additional Pricing Options For :domain";
+$_LANG['domainChecker.additionalPricingOptions'] = "Дополнительные варианты :domain";
 
-$_LANG['orderpaymenttermfree'] = "Free";
+$_LANG['orderpaymenttermfree'] = "Бесплатно";
 
-$_LANG['cPanel']['usageStatsBwOverLimit'] = "You have exceeded your bandwidth limit.";
-$_LANG['cPanel']['usageStatsDiskOverLimit'] = "You have exceeded your disk space limit.";
-$_LANG['insufficientstockmessage'] = "Некоторые товары доступны в ограниченном количестве. Количество товаров в корзине было автоматически скорректировано.";
+$_LANG['cPanel']['usageStatsBwOverLimit'] = "Вы израсходовали лимит трафика.";
+$_LANG['cPanel']['usageStatsDiskOverLimit'] = "Вы заполнили дисковое пространство.";
+$_LANG['insufficientstockmessage'] = "Один или более продуктов в заказе на данный момент доступны в ограниченном количестве. Заказ был скорректирован в соответствии с складскими остатками на данный момент.";
 
-$_LANG['only'] = "Only";
-$_LANG['startingat'] = "Starting at";
+$_LANG['only'] = "всего";
+$_LANG['startingat'] = "От";
 
 $_LANG['yourdomainplaceholder'] = "example";
 $_LANG['yourtldplaceholder'] = "com";
 
-$_LANG['subaccountpermsproductsso'] = "Perform Single Sign-On";
+$_LANG['subaccountpermsproductsso'] = "Выполнять единый вход";
 
-$_LANG['sso']['title'] = "Single Sign-On";
+$_LANG['sso']['title'] = "Единый вход";
 $_LANG['sso']['summary'] = "Third party applications leverage the Single Sign-On functionality to provide direct access to your billing account without you having to re-authenticate.";
 $_LANG['sso']['disablenotice'] = "You may wish to disable this functionality if you provide access to any of your third party applications to users who you do not wish to be able to access your billing account.";
-$_LANG['sso']['enabled'] = "Single Sign-On is currently permitted for your account.";
-$_LANG['sso']['disabled'] = "Single Sign-On is currently disabled for your account.";
-$_LANG['sso']['redirectafterlogin'] = "You will be redirected after login";
+$_LANG['sso']['enabled'] = "Единый вход разрешен для вашего аккаунта.";
+$_LANG['sso']['disabled'] = "Единый вход отключен для вашего аккаунта.";
+$_LANG['sso']['redirectafterlogin'] = "Вы будете перенаправлены после входа";
 
-$_LANG['oauth']['badTwoFactorAuthModule'] = "Bad Two-Factor Auth Module. Please contact support.";
-$_LANG['oauth']['permAccessNameAndEmail'] = "Access your name and email address";
+$_LANG['oauth']['badTwoFactorAuthModule'] = "Некорректный модуль двухэтапной авторизации. Свяжитесь с поддержкой.";
+$_LANG['oauth']['permAccessNameAndEmail'] = "Доступ к имени и email";
 
-$_LANG['errorButTryAgain'] = "An error occurred.  Please try again.";
-$_LANG['emailSent'] = "Email Sent";
-$_LANG['verificationKeyExpired'] = "This email verification key has expired. Please login to request a new one.";
-$_LANG['emailAddressVerified'] = "Thank you for confirming your email address.";
-$_LANG['emailKeyExpired'] = "This email verification key has expired. Please request a new one.";
-$_LANG['verifyEmailAddress'] = "Please check your email and follow the link to verify your email address.";
-$_LANG['resendEmail'] = "Resend Verification Email";
+$_LANG['errorButTryAgain'] = "Возникла ошибка. Попробуйте еще раз.";
+$_LANG['emailSent'] = "Письмо отправлено";
+$_LANG['verificationKeyExpired'] = "У этого ключа истек срок действия. Пожалуйста, войдите снова, чтобы получить новый.";
+$_LANG['emailAddressVerified'] = "Благодарим за подтверждение вашего email-адреса.";
+$_LANG['emailKeyExpired'] = "У этого ключа истек срок действия. Пожалуйста, получите новый ключ.";
+$_LANG['verifyEmailAddress'] = "Пожалуйста, проверьте вашу почту и следуйте инструкциям в письме для подтверждения вашего email-адреса.";
+$_LANG['resendEmail'] = "Переслать письмо с подтверждением";
 
 // Markdown Editor Help
-$_LANG['markdown']['title'] = "Markdown Guide";
-$_LANG['markdown']['emphasis'] = "Emphasis";
-$_LANG['markdown']['bold'] = "bold";
-$_LANG['markdown']['italics'] = "italics";
-$_LANG['markdown']['strikeThrough'] = "strikethrough";
-$_LANG['markdown']['headers'] = "Headers";
-$_LANG['markdown']['bigHeader'] = "Big header";
-$_LANG['markdown']['mediumHeader'] = "Medium header";
-$_LANG['markdown']['smallHeader'] = "Small header";
-$_LANG['markdown']['tinyHeader'] = "Tiny header";
-$_LANG['markdown']['lists'] = "Lists";
-$_LANG['markdown']['genericListItem'] = "Generic list item";
-$_LANG['markdown']['numberedListItem'] = "Numbered list item";
-$_LANG['markdown']['links'] = "Links";
-$_LANG['markdown']['textToDisplay'] = "Text to display";
+$_LANG['markdown']['title'] = "Инструкция по разметке";
+$_LANG['markdown']['emphasis'] = "Выделение";
+$_LANG['markdown']['bold'] = "полужирный";
+$_LANG['markdown']['italics'] = "курсив";
+$_LANG['markdown']['strikeThrough'] = "перечеркнутый";
+$_LANG['markdown']['headers'] = "Заголовки";
+$_LANG['markdown']['bigHeader'] = "Большой заголовок";
+$_LANG['markdown']['mediumHeader'] = "Средний заголовок";
+$_LANG['markdown']['smallHeader'] = "Маленький заголовок";
+$_LANG['markdown']['tinyHeader'] = "Очень маленький заголовок";
+$_LANG['markdown']['lists'] = "Списки";
+$_LANG['markdown']['genericListItem'] = "Обычный список";
+$_LANG['markdown']['numberedListItem'] = "Нумерованный список";
+$_LANG['markdown']['links'] = "Ссылки";
+$_LANG['markdown']['textToDisplay'] = "Текст ссылки";
 $_LANG['markdown']['exampleLink'] = "http://www.example.com";
-$_LANG['markdown']['quotes'] = "Quotes";
-$_LANG['markdown']['thisIsAQuote'] = "This is a quote.";
-$_LANG['markdown']['quoteMultipleLines'] = "It can span multiple lines!";
-$_LANG['markdown']['tables'] = "Tables";
-$_LANG['markdown']['columnOne'] = "Column 1";
-$_LANG['markdown']['columnTwo'] = "Column 2";
-$_LANG['markdown']['columnThree'] = "Column 3";
-$_LANG['markdown']['withoutAligning'] = "Or without aligning the columns...";
+$_LANG['markdown']['quotes'] = "Цитаты";
+$_LANG['markdown']['thisIsAQuote'] = "Это цитата.";
+$_LANG['markdown']['quoteMultipleLines'] = "Она может быть из нескольких строк!";
+$_LANG['markdown']['tables'] = "Таблицы";
+$_LANG['markdown']['columnOne'] = "Колонка 1";
+$_LANG['markdown']['columnTwo'] = "Колонка 2";
+$_LANG['markdown']['columnThree'] = "Колонка 3";
+$_LANG['markdown']['withoutAligning'] = "или без выравнивания колонок...";
 $_LANG['markdown']['john'] = "John";
 $_LANG['markdown']['doe'] = "Doe";
 $_LANG['markdown']['male'] = "Male";
 $_LANG['markdown']['mary'] = "Mary";
 $_LANG['markdown']['smith'] = "Smith";
 $_LANG['markdown']['female'] = "Female";
-$_LANG['markdown']['displayingCode'] = "Displaying code";
+$_LANG['markdown']['displayingCode'] = "Показать код";
 $_LANG['markdown']['spanningMultipleLines'] = "Or spanning multiple lines...";
-$_LANG['markdown']['saved'] = "saved";
-$_LANG['markdown']['saving'] = "autosaving";
+$_LANG['markdown']['saved'] = "сохранено";
+$_LANG['markdown']['saving'] = "автосохранение";
 
-$_LANG['oauth']['authoriseAppToAccess'] = "Authorise :appName<br />to access your account?";
-$_LANG['oauth']['willBeAbleTo'] = "This application will be able to";
-$_LANG['oauth']['authorise'] = "Authorise";
-$_LANG['oauth']['currentlyLoggedInAs'] = "You are currently logged in as :firstName :lastName";
-$_LANG['oauth']['notYou'] = "Not You?";
-$_LANG['oauth']['returnToApp'] = "Return to :appName";
-$_LANG['oauth']['copyrightFooter'] = "Copyright &copy; :dateYear :companyName. All Rights Reserved.";
-$_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to your account";
-$_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
-$_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
-$_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['oauth']['authoriseAppToAccess'] = "Разрешить доступ :appName<br />к вашему аккаунту?";
+$_LANG['oauth']['willBeAbleTo'] = "Это приложение будет способно";
+$_LANG['oauth']['authorise'] = "Авторизировать";
+$_LANG['oauth']['currentlyLoggedInAs'] = "Вы вошли как :firstName :lastName";
+$_LANG['oauth']['notYou'] = "Это не вы?";
+$_LANG['oauth']['returnToApp'] = "Вернуться к :appName";
+$_LANG['oauth']['copyrightFooter'] = "Copyright &copy; :dateYear :companyName. Все права защищены.";
+$_LANG['oauth']['loginToGrantApp'] = "Войдите в :appName<br />для предоставления доступа к аккаунту";
+$_LANG['oauth']['redirectDescriptionOne'] = "Перенаправляю обратно в приложение. Это может занять некоторое время.";
+$_LANG['oauth']['redirectDescriptionTwo'] = "Если ваш браузер не перенаправил вас, пожалуйста,";
+$_LANG['oauth']['redirectDescriptionThree'] = "нажмите здесь для продолжения";
+$_LANG['downloadLoginRequiredTagline'] = "Войдите, чтобы получить доступ к файлу";
+
+$_LANG['orderForm']['year'] = "год";
+$_LANG['orderForm']['years'] = "лет";
+$_LANG['orderForm']['domainOrKeyword'] = "Введите домен или ключевое слово";
+$_LANG['orderForm']['searching'] = "Поиск";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> недоступен";
+$_LANG['orderForm']['add'] = "Добавить";
+$_LANG['orderForm']['suggestedDomains'] = "Возможные домены";
+$_LANG['orderForm']['generatingSuggestions'] = "Поиск возможных доменов";
+$_LANG['orderForm']['addHosting'] = "Добавить хостинг";
+$_LANG['orderForm']['chooseFromRange'] = "Выберите из тариф списка";
+$_LANG['orderForm']['packagesForBudget'] = "Мы разработали тарифы для любых возможностей";
+$_LANG['orderForm']['exploreNow'] = "Посмотреть тарифы";
+$_LANG['orderForm']['transferToUs'] = "Перенести домен к нам";
+$_LANG['orderForm']['transferExtend'] = "Перенесите домен к нам для продления на 1 год!";
+$_LANG['orderForm']['transferDomain'] = "Перенос домена";
+$_LANG['orderForm']['extendExclusions'] = "Не включает некоторые зоны и недавно продленые домены";
+$_LANG['orderForm']['singleTransfer'] = "Перенос домена";
+$_LANG['orderForm']['enterDomain'] = "Введите ваш домен";
+$_LANG['orderForm']['authCode'] = "Код переноса";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp-код переноса";
+$_LANG['orderForm']['authCodeTooltip'] = "Чтобы начать перенос вам необходимо получить код домена у текущего регистратора. These can often be referred to as either the epp code or auth code. They act as a password and are unique to the domain name.";
+$_LANG['orderForm']['help'] = "Помощь";
+$_LANG['orderForm']['required'] = "Требуется";
+
+$_LANG['orderForm']['checkingAvailability'] = "Проверка доступности";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "Проверка возможности переноса";
+$_LANG['orderForm']['verifyingDomain'] = "Проверка выбранного домена";
+$_LANG['orderForm']['transferEligible'] = "Этот домен можно перенести";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Убедитесь в том, что домен разблокирован у текущего регистратора.";
+$_LANG['orderForm']['transferNotEligible'] = "Перенос невозможен";
+$_LANG['orderForm']['transferNotRegistered'] = "Введеный домен не зарегистрирован";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "Если домен был зарегистрирован недавно - попробуйте перенести его позже.";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "В качестве альтернативы вы можете попробовать зарегистрировать этот домен";
+$_LANG['orderForm']['domainInvalid'] = "Некорректный домен";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "Проверте ввод и попробуйте еще раз.";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "Продолжить регистрацию домена - ";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "Перенести к нам и продлить* на 1 год";
+
+$_LANG['change'] = "Изменить";
+
+$_LANG['filemanagement']['nofileuploaded'] = "No file uploaded.";
+$_LANG['filemanagement']['invalidname'] = "Valid filenames contain only alpha-numeric, dot, hyphen and underscore characters.";
+$_LANG['filemanagement']['couldNotSaveFile'] = "Could not save uploaded file.";
+$_LANG['filemanagement']['checkPermissions'] = "Please check permissions.";
+$_LANG['filemanagement']['checkAvailableDiskSpace'] = "Please check available disk space.";
+$_LANG['filemanagement']['fileAlreadyExists'] = "File already exists.";
+$_LANG['filemanagement']['noUniqueName'] = "Unable to find a unique filename.";
+
+$_LANG['cartSimpleCaptcha'] = "Введите код на картинке";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "Последние 100 записей";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Домен должен начинаться с буквы или числа";
+$_LANG['orderForm']['domainLengthRequirements'] = " и длиной от <span class=\"min-length\"></span> до <span class=\"max-length\"></span> символов";
+
+$_LANG['clientareatransferredaway'] = "Transferred Away";
+$_LANG['clientareacompleted'] = "Completed";
+$_LANG['domainContactUs'] = "Contact Us";
+
+$_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
+$_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
+
+$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
+$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
+$_LANG['domainCheckerSalesGroup']['new'] = "New";
 ////////// End of russian language file.  Do not place any translation strings below this line!

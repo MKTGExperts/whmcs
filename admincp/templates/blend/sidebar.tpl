@@ -149,7 +149,7 @@ No Replies Yet
 
 <span class="ticketheader">{$_ADMINLANG.support.tags}</span>
 <div class="ticketinfo">
-<textarea id="ticketTags" rows="1" style="width:175px;"></textarea>
+    <input id="ticketTags" value="{$tags|implode:','}" class="selectize-tags" placeholder="{lang key='support.addTag'}" />
 </div>
 
 <div class="watch-ticket">
@@ -245,32 +245,15 @@ No Replies Yet
     {/foreach}
 </ul>
 
-{elseif $sidebar eq "browser"}
-
-<span class="header"><img src="images/icons/browser.png" class="absmiddle" width="16" height="16" /> {$_ADMINLANG.browser.bookmarks}</span>
-<ul class="menu">
-    <li><a href="http://www.whmcs.com/" target="brwsrwnd">WHMCS Homepage</a></li>
-    <li><a href="https://www.whmcs.com/clients/" target="brwsrwnd">WHMCS Client Area</a></li>
-    {foreach from=$browserlinks item=link}
-    <li><a href="{$link.url}" target="brwsrwnd">{$link.name} <img src="images/delete.gif" width="10" border="0" onclick="doDelete('{$link.id}')"></a></li>
-    {/foreach}
-</ul>
-
-<form method="post" action="browser.php?action=add">
-<input type="hidden" name="token" value="{$csrfToken}" />
-<span class="header"><img src="images/icons/browseradd.png" class="absmiddle" width="16" height="16" /> {$_ADMINLANG.browser.addnew}</span>
-<ul class="menu">
-    <li>{$_ADMINLANG.browser.sitename}:<br><input type="text" name="sitename" size="25" style="font-size:9px;"><br>{$_ADMINLANG.browser.url}:<br><input type="text" name="siteurl" size="25" value="http://" style="font-size:9px;"><br><input type="submit" value="{$_ADMINLANG.browser.add}" style="font-size:9px;"></li>
-</ul>
-</form>
-
 {elseif $sidebar eq "utilities"}
 
 <span class="header"><img src="images/icons/utilities.png" class="absmiddle" width="16" height="16" /> {$_ADMINLANG.utilities.title}</span>
 <ul class="menu">
+    {if in_array("View Module Queue", $admin_perms)}
+        <li><a href="modulequeue.php">{$_ADMINLANG.utilities.moduleQueue}</a></li>
+    {/if}
     <li><a href="utilitiesemailmarketer.php">{$_ADMINLANG.utilities.emailmarketer}</a></li>
     <li><a href="utilitieslinktracking.php">{$_ADMINLANG.utilities.linktracking}</a></li>
-    <li><a href="browser.php">{$_ADMINLANG.utilities.browser}</a></li>
     <li><a href="calendar.php">{$_ADMINLANG.utilities.calendar}</a></li>
     <li><a href="todolist.php">{$_ADMINLANG.utilities.todolist}</a></li>
     <li><a href="whois.php">{$_ADMINLANG.utilities.whois}</a></li>

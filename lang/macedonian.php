@@ -295,7 +295,6 @@ $_LANG['domainbulksearch'] = "Провери повеќе домени одед�
 $_LANG['domainbulksearchintro'] = "Проверете ја достапноста на 20 домени одеднаш. Во полето за текст внесете ги имињата на домените (секој домен треба да биде внесен во една линија). Не внесувајте 'http://' или 'www' пред името на доменот.";
 $_LANG['domainbulktransferdescription'] = "Извршете трансфер на повеќе домени одеднаш (секој домен треба да биде внесен во една линија). Не внесувајте 'http://' или 'www' пред името на доменот.";
 $_LANG['domainbulktransfersearch'] = "Трансфер на повеќе домени";
-$_LANG['domaincheckerdescription'] = "Проверете дали доменот е достапен";
 $_LANG['domaincontactinfo'] = "Контакт информации";
 $_LANG['domaincurrentrenewaldate'] = "Датум за обнова";
 $_LANG['domaindnsaddress'] = "Адреса";
@@ -460,6 +459,7 @@ $_LANG['kbsuggestions'] = "Алатки за помош";
 $_LANG['kbsuggestionsexplanation'] = "Следниве резултати беа пронајдени во базата на ЧПП кој што може да одговорат на вашето прашање. Ве молиме погледнете предлози пред поднесување на тикет.";
 $_LANG['knowledgebasearticles'] = "Прашања";
 $_LANG['knowledgebasecategories'] = "Категории на прашања";
+$_LANG['nokbcategories'] = "No categories exist";
 $_LANG['knowledgebasedescription'] = "Погледнете ја нашата база на одговори на често поставувани прашања";
 $_LANG['knowledgebasefavorites'] = "Додате го во листа на фаворитни прашања";
 $_LANG['knowledgebasehelpful'] = "Дали Ви помогна овој одговор?";
@@ -1248,7 +1248,6 @@ $_LANG['supportticketsintro'] = "Преглед на сите барања до 
 $_LANG['addfundsintro'] = "Дополнете ја вашата сметка со кредит";
 $_LANG['registerintro'] = "Ви благодариме на довербата.";
 $_LANG['masspayintro'] = "со само еден клик";
-$_LANG['domaincheckerintro'] = "-";
 $_LANG['networkstatusintro'] = "Статус на сервери и мрежни информации";
 
 $_LANG['creditcardyourinfo'] = "Начин на плаќање";
@@ -1304,14 +1303,8 @@ $_LANG['creditcardexpirydateinvalid'] = "Истекот на рокот мора
 $_LANG['domaincheckerchoosedomain'] = "Регистрирај свој официјален македонски домен";
 $_LANG['domaincheckerchecknewdomain'] = "Проверете достапност за регистрација на нов домен";
 $_LANG['domaincheckerdomainexample'] = "processin.mk";
-$_LANG['domaincheckerinvalidtld'] = "не е со валиден TLD (екстензија). Обидете се повторно.";
-$_LANG['domaincheckerinvalidtld2'] = "TLD is invalid.";
-$_LANG['domaincheckerinvaliddomain'] = "Requested domain name is invalid.";
-$_LANG['domaincheckernopricing'] = "Pricing not available for this TLD.";
 $_LANG['domaincheckerhostingonly'] = "Нарачај хостинг пакет";
-$_LANG['domaincheckeravailtransfer'] = "Доменот е достапен за трансфер";
 $_LANG['domaincheckerenterdomain'] = "Впишете го избраниот домен и нарачајте го истиот за регистрација, трансфер или хостинг пакет.";
-$_LANG['domaincheckerbulkinvaliddomain'] = " Еден или повеќе од домените што ги внесовте беа невалидни и за истите немаме резултати!";
 
 $_LANG['kbquestionsearchere'] = "Имате прашање? Започнете го вашето пребарување тука.";
 $_LANG['contactus'] = "Контакт";
@@ -1518,9 +1511,9 @@ $_LANG['domaincontactdetails']['Phone'] = "Телефон";
 $_LANG['domaincontactdetails']['Phone Number'] = "Телефонски број";
 $_LANG['domaincontactdetails']['Fax'] = "Мобилен";
 
-$_LANG['serverhostnameexample'] = "eg. subdomain(.yourdomain.com)";
-$_LANG['serverns1prefixexample'] = "eg. ns1(.yourdomain.com)";
-$_LANG['serverns2prefixexample'] = "eg. ns2(.yourdomain.com)";
+$_LANG['serverhostnameexample'] = "eg. subdomain(.example.com)";
+$_LANG['serverns1prefixexample'] = "eg. ns1(.example.com)";
+$_LANG['serverns2prefixexample'] = "eg. ns2(.example.com)";
 
 $_LANG['hosting'] = "Хостинг пакет";
 
@@ -1657,7 +1650,6 @@ $_LANG['passwordtips'] = "<strong>Совети за безбедна лозин�
 $_LANG['regdate'] = "Регистриран";
 $_LANG['nextdue'] = "Обнова";
 
-$_LANG['domaincheckertagline'] = "Се започнува со избор на совршен домен...";
 $_LANG['findyourdomain'] = "Пронајдете го вашиот омилен домен";
 $_LANG['searchtermrequired'] = "Внесете посакувано име и започнете...";
 $_LANG['unabletolookup'] = "Извинете, побарувањето неможе да се проследи поради грешка.";
@@ -1707,6 +1699,7 @@ $_LANG['domainsCancelled'] = "Откажан";
 $_LANG['domainsFraud'] = "Заштитен";
 $_LANG['domainsPending'] = "Се процесира";
 $_LANG['domainsPendingTransfer'] = "Трансферот се процесира";
+$_LANG['domainsTransferredAway'] = "Transferred Away";
 $_LANG['domainsExpiringInTheNext30Days'] = "Истекува за 30 дена";
 $_LANG['domainsExpiringInTheNext90Days'] = "Истекува за 90 дена";
 $_LANG['domainsExpiringInTheNext180Days'] = "Истекува за 180 дена";
@@ -2085,4 +2078,70 @@ $_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to you
 $_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
 $_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
 $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['downloadLoginRequiredTagline'] = "Please login to access the requested file download";
+
+$_LANG['orderForm']['year'] = "Year";
+$_LANG['orderForm']['years'] = "Years";
+$_LANG['orderForm']['domainOrKeyword'] = "Enter a domain or keyword";
+$_LANG['orderForm']['searching'] = "Searching";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> is unavailable";
+$_LANG['orderForm']['add'] = "Add";
+$_LANG['orderForm']['suggestedDomains'] = "Suggested Domains";
+$_LANG['orderForm']['generatingSuggestions'] = "Generating suggestions for you";
+$_LANG['orderForm']['addHosting'] = "Add Web Hosting";
+$_LANG['orderForm']['chooseFromRange'] = "Choose from a range of web hosting packages";
+$_LANG['orderForm']['packagesForBudget'] = "We have packages designed to fit every budget";
+$_LANG['orderForm']['exploreNow'] = "Explore packages now";
+$_LANG['orderForm']['transferToUs'] = "Transfer your domain to us";
+$_LANG['orderForm']['transferExtend'] = "Transfer now to extend your domain by 1 year!";
+$_LANG['orderForm']['transferDomain'] = "Transfer a domain";
+$_LANG['orderForm']['extendExclusions'] = "Excludes certain TLDs and recently renewed domains";
+$_LANG['orderForm']['singleTransfer'] = "Single domain transfer";
+$_LANG['orderForm']['enterDomain'] = "Please enter your domain";
+$_LANG['orderForm']['authCode'] = "Authorization Code";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp Code / Auth Code";
+$_LANG['orderForm']['authCodeTooltip'] = "To initiate a transfer you will need to obtain the authorization code from your current registrar. These can often be referred to as either the epp code or auth code. They act as a password and are unique to the domain name.";
+$_LANG['orderForm']['help'] = "Help";
+$_LANG['orderForm']['required'] = "Required";
+
+$_LANG['orderForm']['checkingAvailability'] = "Checking availability";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "Verifying transfer eligibility";
+$_LANG['orderForm']['verifyingDomain'] = "Verifying your domain selection";
+$_LANG['orderForm']['transferEligible'] = "Your domain is eligible for transfer";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Please ensure you have unlocked your domain at your current registrar before continuing.";
+$_LANG['orderForm']['transferNotEligible'] = "Not Eligible for Transfer";
+$_LANG['orderForm']['transferNotRegistered'] = "The domain you entered does not appear to be registered.";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "If the domain was registered recently, you may need to try again later.";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "Alternatively, you can perform a search to register this domain.";
+$_LANG['orderForm']['domainInvalid'] = "Invalid domain name provided";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "Please check your entry and try again.";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "Continue to register this domain for";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "Transfer to us and extend by 1 year* for";
+
+$_LANG['change'] = "Change";
+
+$_LANG['filemanagement']['nofileuploaded'] = "No file uploaded.";
+$_LANG['filemanagement']['invalidname'] = "Valid filenames contain only alpha-numeric, dot, hyphen and underscore characters.";
+$_LANG['filemanagement']['couldNotSaveFile'] = "Could not save uploaded file.";
+$_LANG['filemanagement']['checkPermissions'] = "Please check permissions.";
+$_LANG['filemanagement']['checkAvailableDiskSpace'] = "Please check available disk space.";
+$_LANG['filemanagement']['fileAlreadyExists'] = "File already exists.";
+$_LANG['filemanagement']['noUniqueName'] = "Unable to find a unique filename.";
+
+$_LANG['cartSimpleCaptcha'] = "Please enter the code shown below";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "Showing the most recent 100 records";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Domains must begin with a letter or a number";
+$_LANG['orderForm']['domainLengthRequirements'] = " and be between <span class=\"min-length\"></span> and <span class=\"max-length\"></span> characters in length";
+
+$_LANG['clientareatransferredaway'] = "Transferred Away";
+$_LANG['clientareacompleted'] = "Completed";
+$_LANG['domainContactUs'] = "Contact Us";
+
+$_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
+$_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
+
+$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
+$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
+$_LANG['domainCheckerSalesGroup']['new'] = "New";
 ////////// End of macedonian language file.  Do not place any translation strings below this line!

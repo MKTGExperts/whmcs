@@ -75,7 +75,8 @@
                 <div class="clearfix"></div>
             {/if}
 
-            <form method="post" action="{$smarty.server.PHP_SELF}?a=checkout" name="orderfrm" id="mainfrm">
+            <form method="post" action="{$smarty.server.PHP_SELF}?a=checkout" name="orderfrm" id="frmCheckout">
+                <input type="hidden" name="submit" value="true" />
                 <input type="hidden" name="custtype" id="inputCustType" value="{$custtype}" />
 
                 <div id="containerExistingUserSignin"{if $loggedin || $custtype neq "existing"} class="hidden"{/if}>
@@ -221,7 +222,7 @@
                                 {foreach $customfields as $customfield}
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">{$customfield.name}</label>
+                                            <label for="customfield{$customfield.id}">{$customfield.name}</label>
                                             {$customfield.input}
                                             {if $customfield.description}
                                                 <span class="field-help-text">
@@ -440,10 +441,113 @@
                     </div>
                 </div>
 
+                <div class="alert alert-danger text-center gateway-errors hidden"></div>
+
                 <div class="clearfix"></div>
 
-                {include file="orderforms/ccforms/cardformstandardcart.tpl"}
-
+                <div id="creditCardInputFields"{if $selectedgatewaytype neq "CC"} class="hidden"{/if}>
+                    {if $clientsdetails.cclastfour}
+                        <div class="row margin-bottom">
+                            <div class="col-sm-12">
+                                <div class="text-center">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="ccinfo" value="useexisting" id="useexisting" {if $clientsdetails.cclastfour} checked{else} disabled{/if} />
+                                        {$LANG.creditcarduseexisting}
+                                        {if $clientsdetails.cclastfour}
+                                            ({$clientsdetails.cclastfour})
+                                        {/if}
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="ccinfo" value="new" id="new" {if !$clientsdetails.cclastfour || $ccinfo eq "new"} checked{/if} />
+                                        {$LANG.creditcardenternewcard}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    {else}
+                        <input type="hidden" name="ccinfo" value="new" />
+                    {/if}
+                    <div id="newCardInfo" class="row{if $clientsdetails.cclastfour && $ccinfo neq "new"} hidden{/if}">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="hidden" id="cctype" name="cctype" value="{$acceptedcctypes.0}" />
+                                <div class="dropdown" id="cardType">
+                                    <button class="btn btn-default dropdown-toggle field" type="button" id="creditCardType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <span id="selectedCardType">
+                                            <i class="fa {getFontAwesomeCCIcon ccType=$acceptedcctypes.0} fa-fw"></i>
+                                            {$acceptedcctypes.0}
+                                        </span>
+                                        <span class="fa fa-caret-down fa-fw"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="creditCardTypeDropDown" aria-labelledby="creditCardType">
+                                        {foreach $acceptedcctypes as $cardType}
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa {getFontAwesomeCCIcon ccType=$cardType} fa-fw"></i>
+                                                    <span class="type">
+                                                        {$cardType}
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        {/foreach}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group prepend-icon">
+                                <label for="inputCardNumber" class="field-icon">
+                                    <i class="fa fa-credit-card"></i>
+                                </label>
+                                <input type="tel" name="ccnumber" id="inputCardNumber" class="field" placeholder="{$LANG.orderForm.cardNumber}" autocomplete="cc-number">
+                            </div>
+                        </div>
+                        {if $showccissuestart}
+                            <div class="col-sm-6">
+                                <div class="form-group prepend-icon">
+                                    <label for="inputCardStart" class="field-icon">
+                                        <i class="fa fa-calendar-check-o"></i>
+                                    </label>
+                                    <input type="tel" name="ccstartdate" id="inputCardStart" class="field" placeholder="MM / YY ({$LANG.creditcardcardstart})" autocomplete="cc-exp">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group prepend-icon">
+                                    <label for="inputCardIssue" class="field-icon">
+                                        <i class="fa fa-asterisk"></i>
+                                    </label>
+                                    <input type="tel" name="ccissuenum" id="inputCardIssue" class="field" placeholder="{$LANG.creditcardcardissuenum}">
+                                </div>
+                            </div>
+                        {/if}
+                        <div class="col-sm-6">
+                            <div class="form-group prepend-icon">
+                                <label for="inputCardExpiry" class="field-icon">
+                                    <i class="fa fa-calendar"></i>
+                                </label>
+                                <input type="tel" name="ccexpirydate" id="inputCardExpiry" class="field" placeholder="MM / YY{if $showccissuestart} ({$LANG.creditcardcardexpires}){/if}" autocomplete="cc-exp">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group prepend-icon">
+                                <label for="inputCardCVV" class="field-icon">
+                                    <i class="fa fa-barcode"></i>
+                                </label>
+                                <input type="tel" name="cccvv" id="inputCardCVV" class="field" placeholder="{$LANG.orderForm.cvv}" autocomplete="cc-cvc">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="existingCardInfo" class="row{if !$clientsdetails.cclastfour || $ccinfo eq "new"} hidden{/if}">
+                        <div class="col-sm-12">
+                            <div class="form-group prepend-icon">
+                                <label for="inputCardCvvExisting" class="field-icon">
+                                    <i class="fa fa-barcode"></i>
+                                </label>
+                                <input type="tel" name="cccvvexisting" id="inputCardCvvExisting" class="field" placeholder="{$LANG.orderForm.cvv}" autocomplete="cc-cvc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {if $shownotesfield}
 
@@ -480,10 +584,12 @@
                 </div>
             </form>
 
-            <div class="alert alert-warning checkout-security-msg">
-                <i class="fa fa-lock"></i>
-                {$LANG.ordersecure} (<strong>{$ipaddress}</strong>) {$LANG.ordersecure2}
-            </div>
+            {if $servedOverSsl}
+                <div class="alert alert-warning checkout-security-msg">
+                    <i class="fa fa-lock"></i>
+                    {$LANG.ordersecure} (<strong>{$ipaddress}</strong>) {$LANG.ordersecure2}
+                </div>
+            {/if}
 
         </div>
     </div>

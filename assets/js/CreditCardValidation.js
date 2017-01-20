@@ -15,7 +15,10 @@ jQuery(document).ready(function() {
         if (cc.toLowerCase().indexOf("american express") !== -1) {
             return true;
         }
-        return (ccInfo.toLowerCase() == 'useexisting');
+        if (typeof ccInfo != 'undefined') {
+            return (ccInfo.toLowerCase() == 'useexisting');
+        }
+        return false;
     }
 
     jQuery(cvvname).focus(function() {

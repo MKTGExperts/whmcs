@@ -13,6 +13,8 @@
  * @link       http://www.whmcs.com/
  */
 
+use WHMCS\Utility\Country;
+
 if (!defined("WHMCS"))
     die("This file cannot be accessed directly");
 
@@ -103,8 +105,8 @@ if ($queryStartDate && $queryEndDate) {
         . '</h2>';
 
     // Fetch country names.
-    $countries = array();
-    require ROOTDIR . '/includes/countries.php';
+    $countries = new Country();
+    $countries = $countries->getCountryNameArray();
 
     // Fetch all configured country based tax rates.
     $taxRates = array();

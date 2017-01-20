@@ -6,11 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WHMCS - Login</title>
 
-        <link href="{$BASE_PATH_CSS}/bootstrap.min.css" rel="stylesheet">
-        <link href="templates/login.css" rel="stylesheet">
-
-        <script type="text/javascript" src="{$BASE_PATH_JS}/jquery.min.js"></script>
-        <script type="text/javascript" src="{$BASE_PATH_JS}/bootstrap.min.js"></script>
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="templates/login.min.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,17 +26,17 @@
             <div class="login-body">
                 <h2>{$displayTitle}</h2>
                 {if $infoMsg}
-                    <div class="alert alert-info text-center" role="alert">
+                    <div id="alertLoginInfo" class="alert alert-info text-center" role="alert">
                         {$infoMsg}
                     </div>
                 {/if}
                 {if $successMsg}
-                    <div class="alert alert-success text-center" role="alert">
+                    <div id="alertLoginSuccess" class="alert alert-success text-center" role="alert">
                         {$successMsg}
                     </div>
                 {/if}
                 {if $errorMsg}
-                    <div class="alert alert-danger text-center" role="alert">
+                    <div id="alertLoginError" class="alert alert-danger text-center" role="alert">
                         {$errorMsg}
                     </div>
                 {/if}
@@ -68,15 +65,31 @@
                         </div>
                     </form>
                 {elseif $step eq "reset"}
-                    <form action="login.php" method="post">
+                    <form action="login.php" method="post" id="{if $verify}frmPasswordChange{else}frmResetPassword{/if}">
                         <input type="hidden" name="action" value="reset" />
-                        <input type="hidden" name="sub" value="send" />
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Email address" autofocus />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Reset Password" class="btn btn-primary btn-block" />
-                        </div>
+                        {if $verify}
+                            <input type="hidden" name="sub" value="newPassword" />
+                            <input type="hidden" name="verify" value="{$verify}" />
+                            <div class="form-group">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="New Password" autofocus autocomplete="off" data-placement="left" data-trigger="manual" />
+                                <span class="form-control-feedback glyphicon glyphicon-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="passwordConfirm" name="password2" class="form-control" placeholder="New Password (verify)" autocomplete="off" data-placement="left" data-trigger="manual" />
+                                <span class="form-control-feedback glyphicon glyphicon-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" id="setPasswordButton" value="Reset Password" class="btn btn-primary btn-block" />
+                            </div>
+                        {else}
+                            <input type="hidden" name="sub" value="send" />
+                            <div class="form-group">
+                                <input type="text" name="email" class="form-control" placeholder="Username or Email address" autofocus />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Reset Password" class="btn btn-primary btn-block" />
+                            </div>
+                        {/if}
                     </form>
                 {elseif $step eq "twofa"}
                     <div class="text-center" align="center">
@@ -140,6 +153,6 @@
         <div class="poweredby text-center">
             <a href="http://www.whmcs.com/" target="_blank">Powered by WHMCS</a>
         </div>
-        <script type="text/javascript" src="templates/login.js"></script>
+        <script type="text/javascript" src="templates/login.min.js"></script>
     </body>
 </html>

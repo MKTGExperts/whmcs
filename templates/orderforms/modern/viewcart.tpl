@@ -216,7 +216,7 @@ window.langPasswordStrong = "{$LANG.pwstrengthstrong}";
 
     {if $cartitems!=0}
 
-        <form method="post" action="{$smarty.server.PHP_SELF}?a=checkout" id="mainfrm">
+        <form method="post" action="{$smarty.server.PHP_SELF}?a=checkout" id="frmCheckout">
             <input type="hidden" name="submit" value="true" />
             <input type="hidden" name="custtype" id="custtype" value="{$custtype}" />
 
@@ -474,7 +474,7 @@ window.langPasswordStrong = "{$LANG.pwstrengthstrong}";
             {if $taxenabled && !$loggedin}
                 <div class="carttaxwarning">
                     {$LANG.carttaxupdateselections}
-                    <input type="submit" value="{$LANG.carttaxupdateselectionsupdate}" name="updateonly" class="btn btn-info btn-sm" />
+                    <input type="submit" value="{$LANG.carttaxupdateselectionsupdate}" name="updateonly" id="btnUpdateOnly" class="btn btn-info btn-sm" />
                 </div>
             {/if}
 
@@ -589,6 +589,7 @@ window.langPasswordStrong = "{$LANG.pwstrengthstrong}";
                         {/foreach}
 
                         <br /><br />
+                        <div class="alert alert-danger text-center gateway-errors hidden"></div>
 
                         <div id="ccinputform" class="signupfields{if $selectedgatewaytype neq "CC"} hidden{/if}">
                             <table width="100%" cellspacing="0" cellpadding="0" class="configtable textleft">

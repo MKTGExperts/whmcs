@@ -295,7 +295,6 @@ $_LANG['domainbulksearch'] = "Pesquisa de Vários Domínios";
 $_LANG['domainbulksearchintro'] = "A pesquisa de nome de domínio em massa, em tempo-real, permite que você procure até 20 domínios de uma vez só. Informe os domínios no campo abaixo, um por linha (sem o www. ou http:// na frente).";
 $_LANG['domainbulktransferdescription'] = "Você pode transferir seus domínios existentes para nossa empresa hoje. Para começar, basta digitar os domínios abaixo, um por linha - não inclua o www. ou http://";
 $_LANG['domainbulktransfersearch'] = "Transferir Domínios em Massa";
-$_LANG['domaincheckerdescription'] = "Verifique a disponibilidade de um domínio";
 $_LANG['domaincontactinfo'] = "Informações de Contato";
 $_LANG['domaincurrentrenewaldate'] = "Data Atual de Renovação";
 $_LANG['domaindnsaddress'] = "Endereço";
@@ -460,6 +459,7 @@ $_LANG['kbsuggestions'] = "Sugestões para Base de Conhecimento";
 $_LANG['kbsuggestionsexplanation'] = "Os seguintes artigos foram encontrados na base de conhecimento e podem responder sua pergunta. Por favor verifique-os antes de enviar.";
 $_LANG['knowledgebasearticles'] = "Artigos";
 $_LANG['knowledgebasecategories'] = "Categorias";
+$_LANG['nokbcategories'] = "No categories exist";
 $_LANG['knowledgebasedescription'] = "Navegue pela Base de Conhecimento para ver as Perguntas Mais Freqüentes";
 $_LANG['knowledgebasefavorites'] = "Adicionar aos Favoritos";
 $_LANG['knowledgebasehelpful'] = "Esta resposta lhe foi útil?";
@@ -1197,7 +1197,7 @@ $_LANG['navdomains'] = "Domínios";
 $_LANG['navrenewdomains'] = "Renovar Domínios";
 $_LANG['navregisterdomain'] = "Registrar um novo Domínio";
 $_LANG['navtransferdomain'] = "Transferir Domínios para Nós";
-$_LANG['navdomainsearch'] = "pProcurar Domínio";
+$_LANG['navdomainsearch'] = "Procurar Domínio";
 $_LANG['navbilling'] = "Fatura";
 $_LANG['navinvoices'] = "Faturas";
 $_LANG['navsupport'] = "Suporte";
@@ -1248,7 +1248,6 @@ $_LANG['supportticketsintro'] = "Enviar e rastrear tickets";
 $_LANG['addfundsintro'] = "Adicionar fundos";
 $_LANG['registerintro'] = "Criar uma conta conosco";
 $_LANG['masspayintro'] = "Pagar todas as faturas listadas abaixo em uma única transação, escolhendo a forma de pagamento";
-$_LANG['domaincheckerintro'] = "Inicie a sua empresa procurando aqui se o domínio desejado está disponível...";
 $_LANG['networkstatusintro'] = "Informações do Status do Serviço e Anúncios de Rede";
 
 $_LANG['creditcardyourinfo'] = "Informações de Pagamento";
@@ -1304,14 +1303,8 @@ $_LANG['creditcardexpirydateinvalid'] = "A data de expiração deve ser colocada
 $_LANG['domaincheckerchoosedomain'] = "Escolha um Domínio...";
 $_LANG['domaincheckerchecknewdomain'] = "Verificar disponibilidade de um Domínio";
 $_LANG['domaincheckerdomainexample'] = " ex. example.com";
-$_LANG['domaincheckerinvalidtld'] = "não é um TLD válido. Por favor, tente novamente.";
-$_LANG['domaincheckerinvalidtld2'] = "O TLD é inválido.";
-$_LANG['domaincheckerinvaliddomain'] = "O domínio requerido é inválido.";
-$_LANG['domaincheckernopricing'] = "O preço ainda não disponível para este TLD.";
 $_LANG['domaincheckerhostingonly'] = "Assinar Somente Produto/Serviço";
-$_LANG['domaincheckeravailtransfer'] = "Disponível para transferência";
 $_LANG['domaincheckerenterdomain'] = "Comece sua experiência na web colocando o domínio que você deseja registrar, tranferir ou somente assinar produtos/serviços abaixo...";
-$_LANG['domaincheckerbulkinvaliddomain'] = "Um ou mais dos domínios que você colocou abaixo são inválidos e foram omitidos dos resultados";
 
 $_LANG['kbquestionsearchere'] = "Tem dúvidas? Comece sua busca aqui.";
 $_LANG['contactus'] = "Contato";
@@ -1657,7 +1650,6 @@ $_LANG['passwordtips'] = "<strong>Dicas para uma boa senha</strong><br />Use let
 $_LANG['regdate'] = "Reg Data";
 $_LANG['nextdue'] = "Próximo devido";
 
-$_LANG['domaincheckertagline'] = "Encontre o domínio perfeito para você ...";
 $_LANG['findyourdomain'] = "Encontre o seu novo domínio";
 $_LANG['searchtermrequired'] = "Você deve digitar um nome de domínio ou palavra-chave para procurar ";
 $_LANG['unabletolookup'] = "Desculpe, incapaz de procurar o termo, tal como previsto";
@@ -1707,6 +1699,7 @@ $_LANG['domainsCancelled'] = "Cancelado";
 $_LANG['domainsFraud'] = "Fraude";
 $_LANG['domainsPending'] = "Pendente";
 $_LANG['domainsPendingTransfer'] = "Transferencia Pendente";
+$_LANG['domainsTransferredAway'] = "Transferred Away";
 $_LANG['domainsExpiringInTheNext30Days'] = "Empira em 30 Dias";
 $_LANG['domainsExpiringInTheNext90Days'] = "Empira em 90 Dias";
 $_LANG['domainsExpiringInTheNext180Days'] = "Empira em 180 Dias";
@@ -1766,7 +1759,7 @@ $_LANG['clientAlerts']['creditBalance'] = "Você tem um saldo de crédito de :cr
 
 // Client homepage panels
 $_LANG['clientHomePanels']['unpaidInvoices'] = "Faturas não pagas";
-$_LANG['clientHomePanels']['unpaidInvoicesMsg'] = "Você tem :numberOfInvoices numberOfInvoices fatura não paga (s) com um saldo total devido de  :balanceDue.";
+$_LANG['clientHomePanels']['unpaidInvoicesMsg'] = "Você tem :numberOfInvoices fatura não paga (s) com um saldo total devido de :balanceDue.";
 $_LANG['clientHomePanels']['overdueInvoices'] = "Faturas em atraso";
 $_LANG['clientHomePanels']['overdueInvoicesMsg'] = "Voçê tem :numberOfInvoices fatura em atraso (s) com um saldo total devido de :balanceDue. Pagar-lhes agora para evitar qualquer interuptions em seus serviços";
 $_LANG['clientHomePanels']['domainsExpiringSoon'] = "Domínios expirando em breve";
@@ -1823,7 +1816,7 @@ $_LANG['domaincheckeradding'] = "Adicionando";
 $_LANG['domaincheckeradded'] = "Adicionado";
 $_LANG['domaincheckernomoresuggestions'] = "Isso é todos os resultados que temos! Se você ainda não encontrou o que você está procurando, por favor tente um termo de pesquisa diferente ou palavra-chave.";
 $_LANG['domaincheckerunabletooffertld'] = "Infelizmente nós somos incapazes de registrar este TLD neste momento";
-$_LANG['domaincheckerbulkplaceholder'] = "Digite até 20 nomes de domínio.\nCada nome deve estar em uma linha separada.\nExemplos:\nexemplo.com\nexemplo.net";
+$_LANG['domaincheckerbulkplaceholder'] = "Digite até 20 nomes de domínio.\nCada nome deve estar em uma linha separada.\nExemplos:\nexample.com\nexample.net";
 
 $_LANG['domainchecker']['suggestiontakentitle'] = "Domínio Indisponível";
 $_LANG['domainchecker']['suggestiontakenmsg'] = "Infelizmente, o domínio que você selecionou não está disponível. Isso às vezes pode ocorrer se o domínio foi registrado recentemente. Por favor, volte e escolha um outro domínio.";
@@ -2085,4 +2078,70 @@ $_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to you
 $_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
 $_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
 $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['downloadLoginRequiredTagline'] = "Please login to access the requested file download";
+
+$_LANG['orderForm']['year'] = "Year";
+$_LANG['orderForm']['years'] = "Years";
+$_LANG['orderForm']['domainOrKeyword'] = "Enter a domain or keyword";
+$_LANG['orderForm']['searching'] = "Searching";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> is unavailable";
+$_LANG['orderForm']['add'] = "Add";
+$_LANG['orderForm']['suggestedDomains'] = "Suggested Domains";
+$_LANG['orderForm']['generatingSuggestions'] = "Generating suggestions for you";
+$_LANG['orderForm']['addHosting'] = "Add Web Hosting";
+$_LANG['orderForm']['chooseFromRange'] = "Choose from a range of web hosting packages";
+$_LANG['orderForm']['packagesForBudget'] = "We have packages designed to fit every budget";
+$_LANG['orderForm']['exploreNow'] = "Explore packages now";
+$_LANG['orderForm']['transferToUs'] = "Transfer your domain to us";
+$_LANG['orderForm']['transferExtend'] = "Transfer now to extend your domain by 1 year!";
+$_LANG['orderForm']['transferDomain'] = "Transfer a domain";
+$_LANG['orderForm']['extendExclusions'] = "Excludes certain TLDs and recently renewed domains";
+$_LANG['orderForm']['singleTransfer'] = "Single domain transfer";
+$_LANG['orderForm']['enterDomain'] = "Please enter your domain";
+$_LANG['orderForm']['authCode'] = "Authorization Code";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp Code / Auth Code";
+$_LANG['orderForm']['authCodeTooltip'] = "To initiate a transfer you will need to obtain the authorization code from your current registrar. These can often be referred to as either the epp code or auth code. They act as a password and are unique to the domain name.";
+$_LANG['orderForm']['help'] = "Help";
+$_LANG['orderForm']['required'] = "Required";
+
+$_LANG['orderForm']['checkingAvailability'] = "Checking availability";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "Verifying transfer eligibility";
+$_LANG['orderForm']['verifyingDomain'] = "Verifying your domain selection";
+$_LANG['orderForm']['transferEligible'] = "Your domain is eligible for transfer";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Please ensure you have unlocked your domain at your current registrar before continuing.";
+$_LANG['orderForm']['transferNotEligible'] = "Not Eligible for Transfer";
+$_LANG['orderForm']['transferNotRegistered'] = "The domain you entered does not appear to be registered.";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "If the domain was registered recently, you may need to try again later.";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "Alternatively, you can perform a search to register this domain.";
+$_LANG['orderForm']['domainInvalid'] = "Invalid domain name provided";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "Please check your entry and try again.";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "Continue to register this domain for";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "Transfer to us and extend by 1 year* for";
+
+$_LANG['change'] = "Change";
+
+$_LANG['filemanagement']['nofileuploaded'] = "No file uploaded.";
+$_LANG['filemanagement']['invalidname'] = "Valid filenames contain only alpha-numeric, dot, hyphen and underscore characters.";
+$_LANG['filemanagement']['couldNotSaveFile'] = "Could not save uploaded file.";
+$_LANG['filemanagement']['checkPermissions'] = "Please check permissions.";
+$_LANG['filemanagement']['checkAvailableDiskSpace'] = "Please check available disk space.";
+$_LANG['filemanagement']['fileAlreadyExists'] = "File already exists.";
+$_LANG['filemanagement']['noUniqueName'] = "Unable to find a unique filename.";
+
+$_LANG['cartSimpleCaptcha'] = "Please enter the code shown below";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "Showing the most recent 100 records";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Domains must begin with a letter or a number";
+$_LANG['orderForm']['domainLengthRequirements'] = " and be between <span class=\"min-length\"></span> and <span class=\"max-length\"></span> characters in length";
+
+$_LANG['clientareatransferredaway'] = "Transferred Away";
+$_LANG['clientareacompleted'] = "Completed";
+$_LANG['domainContactUs'] = "Contact Us";
+
+$_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
+$_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
+
+$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
+$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
+$_LANG['domainCheckerSalesGroup']['new'] = "New";
 ////////// End of portuguese-br language file.  Do not place any translation strings below this line!

@@ -1,11 +1,10 @@
-/**
+/*
  * Admin Login Page Stylesheet
  *
  * @author    WHMCS Limited <development@whmcs.com>
- * @copyright Copyright (c) WHMCS Limited 2005-2015
+ * @copyright Copyright (c) WHMCS Limited 2005-2016
+ * @license   http://www.whmcs.com/license/
  */
-
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 
 body {
     background-color: #1A4D80;

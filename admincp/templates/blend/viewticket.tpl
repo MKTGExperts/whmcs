@@ -183,7 +183,7 @@
   </div>
   <div class="tab-pane" id="tab1">
 
-    <form method="post" action="{$smarty.server.PHP_SELF}?action=viewticket&id={$ticketid}" enctype="multipart/form-data" id="frmAddTicketNote" data-no-clear="true">
+    <form method="post" action="{$smarty.server.PHP_SELF}?action=viewticket&id={$ticketid}" enctype="multipart/form-data" id="frmAddTicketNote" data-no-clear="false">
         <input type="hidden" name="postaction" value="note" />
 
         <textarea name="message" id="replynote" rows="14" class="form-control"></textarea>
@@ -442,6 +442,7 @@
                     </div>
                     <div class="tools">
                         <div class="editbtns{if $reply.id}r{$reply.id}{else}t{$ticketid}{/if}">
+                            <img src="../assets/img/spinner.gif" width="16" height="16" class="saveSpinner" style="display: none" />
                             {if !$reply.note}
                                 <input type="button" value="{$_ADMINLANG.global.edit}" onclick="editTicket('{if $reply.id}r{$reply.id}{else}t{$ticketid}{/if}')" class="btn btn-xs btn-small btn-default" />
                             {/if}
@@ -450,6 +451,7 @@
                             {/if}
                         </div>
                         <div class="editbtns{if $reply.id}r{$reply.id}{else}t{$ticketid}{/if}" style="display:none">
+                            <img src="../assets/img/spinner.gif" width="16" height="16" class="saveSpinner" style="display: none" />
                             <input type="button" value="{$_ADMINLANG.global.save}" onclick="editTicketSave('{if $reply.id}r{$reply.id}{else}t{$ticketid}{/if}')" class="btn btn-xs btn-small btn-success" />
                             <input type="button" value="{$_ADMINLANG.global.cancel}" onclick="editTicketCancel('{if $reply.id}r{$reply.id}{else}t{$ticketid}{/if}')" class="btn btn-xs btn-small btn-default" />
                         </div>
@@ -488,19 +490,25 @@
                             {foreach $reply.attachments as $num => $attachment}
                                 {if $thumbnails}
                                     <div class="ticketattachmentcontainer">
-                                        <a href="../{$attachment.dllink}"{if $attachment.isImage} data-lightbox="image-{if $reply.id}{if $reply.note}n{else}r{/if}{$reply.id}{else}t{$ticketid}{/if}"{/if}><img src="../includes/thumbnail.php?{if $reply.id}{if $reply.note}nid={else}rid={/if}{$reply.id}{else}tid={$ticketid}{/if}&amp;i={$num}" class="ticketattachmentthumb" /><br />
-                                            <img src="images/icons/attachment.png" align="top" />
-                                            {$attachment.filename}
+                                        <a href="../{$attachment.dllink}"{if $attachment.isImage} data-lightbox="image-{if $reply.id}{if $reply.note}n{else}r{/if}{$reply.id}{else}t{$ticketid}{/if}"{/if}>
+                                            <span class="ticketattachmentthumbcontainer">
+                                                <img src="../includes/thumbnail.php?{if $reply.id}{if $reply.note}nid={else}rid={/if}{$reply.id}{else}tid={$ticketid}{/if}&amp;i={$num}" class="ticketattachmentthumb" />
+                                            </span>
+                                            <span class="ticketattachmentinfo">
+                                                <img src="images/icons/attachment.png" align="top" />
+                                                {$attachment.filename}
+                                            </span>
                                         </a>
-                                        <br />
-                                        <small>
-                                            {if $attachment.isImage}
-                                                <a href="../{$attachment.dllink}">{lang key='support.download'}</a> |
-                                            {/if}
-                                            <a href="{$attachment.deletelink}" onclick="return confirm('{$_ADMINLANG.support.delattachment|escape:'javascript'}')" style="color:#cc0000">
-                                                {$_ADMINLANG.support.remove}
-                                            </a>
-                                        </small>
+                                        <div class="ticketattachmentlinks">
+                                            <small>
+                                                {if $attachment.isImage}
+                                                    <a href="../{$attachment.dllink}">{lang key='support.download'}</a> |
+                                                {/if}
+                                                <a href="{$attachment.deletelink}" onclick="return confirm('{$_ADMINLANG.support.delattachment|escape:'javascript'}')" style="color:#cc0000">
+                                                    {$_ADMINLANG.support.remove}
+                                                </a>
+                                            </small>
+                                        </div>
                                     </div>
                                 {else}
                                     <a href="../{$attachment.dllink}"{if $attachment.isImage} data-lightbox="image-{if $reply.id}r{$reply.id}{else}t{$ticketid}{/if}"{/if}>
@@ -546,3 +554,5 @@
 </form>
 
 {$statusChangedModal}
+
+<script src="../assets/js/lightbox.js"></script>

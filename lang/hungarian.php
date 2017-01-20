@@ -282,9 +282,9 @@ $_LANG['creditcardsecuritynotice'] = "Minden itt megadott adatai benyújtásána
 $_LANG['creditcarduseexisting'] = "Használja meglévő kártyát";
 $_LANG['customfieldvalidationerror'] = "érték nem érvényes";
 $_LANG['days'] = "Napok";
-$_LANG['hours'] = "Hours";
-$_LANG['minutes'] = "Minutes";
-$_LANG['seconds'] = "Seconds";
+$_LANG['hours'] = "Órák";
+$_LANG['minutes'] = "Percek";
+$_LANG['seconds'] = "Másodpercek";
 $_LANG['defaultbillingcontact'] = "Alapértelmezett Számlázási Kapcsolat";
 $_LANG['domainalternatives'] = "Próbálja ki ezeket az alternatívákat:";
 $_LANG['domainavailable'] = "Elérhető! Rendelje meg most";
@@ -295,7 +295,6 @@ $_LANG['domainbulksearch'] = "Tömeges Domain Keresés";
 $_LANG['domainbulksearchintro'] = "A tömeges valós idejű domain név keresés lehetővé teszi, hogy ön-hoz kutatás valameddig 20, domainek egyszerre. Adja meg a domainek területen az alábbi, soronként - nem www. vagy http:// előtt.";
 $_LANG['domainbulktransferdescription'] = "Akkor Transzfer a meglévő domainek nekünk ma. A kezdéshez egyszerűen írja be a domainek alatt, soronként - nem tartalmazzák a www. vagy http://";
 $_LANG['domainbulktransfersearch'] = "Tömeges Domain Transzfer";
-$_LANG['domaincheckerdescription'] = "Ellenőrizze a rendelkezésre álló domaint";
 $_LANG['domaincontactinfo'] = "Kapcsolattartási információk";
 $_LANG['domaincurrentrenewaldate'] = "Jelenlegi megújítása dátuma";
 $_LANG['domaindnsaddress'] = "Cím";
@@ -377,9 +376,9 @@ $_LANG['domaintransfer'] = "Domain Transzfer";
 $_LANG['domainunavailable'] = "Nem elérhető";
 $_LANG['domainunavailable1'] = "Bocsánat!";
 $_LANG['domainunavailable2'] = "már foglalt!";
-$_LANG['domainreserved'] = "Reserved";
+$_LANG['domainreserved'] = "Fenntartott";
 $_LANG['domainreserved1'] = "Domain";
-$_LANG['domainreserved2'] = "is available, but reserved.";
+$_LANG['domainreserved2'] = "rendelkezésre áll, de a fenntartott.";
 $_LANG['domainviewwhois'] = "whois jelentés megtekintése";
 $_LANG['downloaddescription'] = "Leírás";
 $_LANG['downloadloginrequired'] = "Hozzáférés megtagadva - Be kell jelentkezned, hogy letölti ezt a fájlt";
@@ -438,7 +437,7 @@ $_LANG['invoicesnotes'] = "Jegyzetek";
 $_LANG['invoicesoutstandinginvoices'] = "Kiemelkedő számlák";
 $_LANG['invoicespaid'] = "Fizetett";
 $_LANG['invoicespaynow'] = "Fizetés Most";
-$_LANG['invoicespayto'] = "Számlakibocsátó";
+$_LANG['invoicespayto'] = "Fizet";
 $_LANG['invoicesrefunded'] = "Visszatérítés";
 $_LANG['invoicesstatus'] = "Állapot";
 $_LANG['invoicessubtotal'] = "Részösszeg";
@@ -453,13 +452,14 @@ $_LANG['invoicestransgateway'] = "Átjáró";
 $_LANG['invoicestransid'] = "Tranzakció ID";
 $_LANG['invoicestransnonefound'] = "Nem található kapcsolódó tranzakció";
 $_LANG['invoicesunpaid'] = "Kifizetetlen";
-$_LANG['invoicesdraft'] = "Draft";
+$_LANG['invoicesdraft'] = "Tervezet";
 $_LANG['invoicesview'] = "Számla megtekintése";
 $_LANG['jobtitle'] = "Beosztás";
 $_LANG['kbsuggestions'] = "Tudásbázis-javaslatok";
 $_LANG['kbsuggestionsexplanation'] = "Az alábbi cikkek találhatók a tudásbázisban, amely választ a kérdésére. Kérjük, olvassa el a javaslatok benyújtása előtt.";
 $_LANG['knowledgebasearticles'] = "Cikkek";
 $_LANG['knowledgebasecategories'] = "Kategóriák";
+$_LANG['nokbcategories'] = "No categories exist";
 $_LANG['knowledgebasedescription'] = "Böngésszen a Tudásbázisban vagy választ a FAQ-ban";
 $_LANG['knowledgebasefavorites'] = "Hozzáadás a Kedvencekhez";
 $_LANG['knowledgebasehelpful'] = "Hasznosnak találta ezt a választ?";
@@ -479,7 +479,7 @@ $_LANG['knowledgebaseviews'] = "Megtekintések";
 $_LANG['knowledgebasevote'] = "Szavazás";
 $_LANG['knowledgebasevotes'] = "Szavazat";
 $_LANG['knowledgebaseyes'] = "Igen";
-$_LANG['knowledgebaseArticleRatingThanks'] = "Thanks for rating the article for us";
+$_LANG['knowledgebaseArticleRatingThanks'] = "Köszönjük az értékelést a cikket nekünk";
 $_LANG['language'] = "Nyelv";
 $_LANG['latefee'] = "Késedelmi díj";
 $_LANG['latefeeadded'] = "Hozzáad";
@@ -500,7 +500,7 @@ $_LANG['maxmind_callingnow'] = "Mi helyezünk automatikus hívás telefonszámá
 $_LANG['maxmind_countrymismatch'] = "Az ország az IP-cím nem egyezik a számlázási cím országban megadott, így nem tudjuk elfogadni a megrendelést";
 $_LANG['maxmind_error'] = "Hiba";
 $_LANG['maxmind_faileddescription'] = "A kód, amit beírtál, helytelen volt. Ha érzed ezt hogy egy hiba legyél, lépj kapcsolatba a támogatásosztályunkkal amint lehet.";
-$_LANG['maxmind_highfraudriskscore'] = "Your order has been flagged as potentially high risk and therefore it has been held for manual review.<br /><br />If you feel you have received this message in error, then please accept our apologies and <a href=\"submitticket.php\">submit a support ticket</a> to our Customer Service Team.  Thank you.";
+$_LANG['maxmind_highfraudriskscore'] = "A rendelését lett megjelölve nagy kockázatot, ezért került sor a kézi ellenőrzés.<br /><br />Ha úgy érzi, ezt az üzenetet tévedésből kapta, majd elnézést kérünk és <a href=\"submitticket.php\">támogatási jegy beküldése</a> hogy ügyfélszolgálati csoportunk. Köszönjük.";
 $_LANG['maxmind_highriskcountry'] = "Sajnos, nem tudjuk elfogadni a megrendelést, mivel már nagyon sok csaló tevékenység az országban. Ha szeretné gondoskodjon alternatív fizetőeszközök, kérjük lépjen kapcsolatba velünk.";
 $_LANG['maxmind_incorrectcode'] = "Hibás kód";
 $_LANG['maxmind_pincode'] = "Pin kód";
@@ -540,7 +540,7 @@ $_LANG['or'] = "vagy";
 $_LANG['orderadditionalrequiredinfo'] = "További szükséges információk";
 $_LANG['orderaddon'] = "Kiegészítő";
 $_LANG['orderaddondescription'] = "Az alábbi Kiegészítések állnak rendelkezésre erről a termékről. Válassza ki a Kiegészítések meg szeretné rendelni az alábbiakban.";
-$_LANG['orderavailable'] = "Available";
+$_LANG['orderavailable'] = "Elérhető";
 $_LANG['orderavailableaddons'] = "Kattintson az elérhető Kiegészítésekre";
 $_LANG['orderbillingcycle'] = "Számlázási ciklus";
 $_LANG['ordercategories'] = "Kategóriák";
@@ -675,7 +675,7 @@ $_LANG['proformainvoicenumber'] = "Proforma számla #";
 $_LANG['promoexistingclient'] = "Engedélyeznie kell egy aktív terméket/szolgáltatást használd ezt a kódot";
 $_LANG['promoonceperclient'] = "Ez a kód csak egyszer használható egy Ügyfél";
 $_LANG['pwstrengthfail'] = "A megadott jelszó nem elég erős - kérjük adjon meg egy bonyolultabb jelszót";
-$_LANG['pwdoesnotmatch'] = "The passwords entered do not match";
+$_LANG['pwdoesnotmatch'] = "A megadott jelszavak nem egyeznek";
 $_LANG['quicknav'] = "Gyors Navigáció";
 $_LANG['recordsfound'] = "Rekordok Találatok";
 $_LANG['recurring'] = "Ismétlődő";
@@ -787,9 +787,9 @@ $_LANG['supportticketsticketurgencyhigh'] = "Magas";
 $_LANG['supportticketsticketurgencylow'] = "Alacsony";
 $_LANG['supportticketsticketurgencymedium'] = "Közepes";
 $_LANG['supportticketsuploadfailed'] = "Nem lehet feltölteni a fájlt";
-$_LANG['supportticketsuploadtoolarge'] = "Uploaded file was too large. Please try uploading a smaller file.";
+$_LANG['supportticketsuploadtoolarge'] = "A feltöltött fájl túl nagy. Kérjük, próbálja meg feltölteni egy kisebb fájlt.";
 $_LANG['supportticketsviewticket'] = "Jegy megtekintése";
-$_LANG['supportticketclosedmsg'] = "This ticket is closed.  You may reply to this ticket to reopen it.";
+$_LANG['supportticketclosedmsg'] = "Ez a jegy le van zárva. Lehet válaszolni ezt a jegyet újra megnyitni.";
 $_LANG['telesignincorrectpin'] = "Helytelen PIN-kód!";
 $_LANG['telesigninitiatephone'] = "Nem tudunk kezdeményezni telefon-ellenőrzés az Ön számát. Kérjük, lépjen kapcsolatba velünk.";
 $_LANG['telesigninvalidnumber'] = "Érvénytelen telefonszám";
@@ -879,7 +879,7 @@ $_LANG['invoicepaymentfailedconfirmation'] = "Sajnos a fizetési kísérlet nem 
 $_LANG['promoappliedbutnodiscount'] = "A promóciós kódot beírni került sor a kosárban, de üres jogosult a kedvezmény még - kérjük ellenőrizze a promóció feltételei";
 
 $_LANG['upgradeerroroverdueinvoice'] = "Ön jelenleg nem vagy következő verziójára ezt a terméket, mert a számla már létre a következő megújítás.<br /><br />A folytatáshoz, kérjük, először kifizeti a kiemelkedő számlát, és akkor lesz képes frissíteni, vagy visszalépés közvetlenül követő, és terhelik a különbség, vagy jóvá kell.";
-$_LANG['upgradeexistingupgradeinvoice'] = "You cannot currently upgrade or downgrade this product because an upgrade or downgrade is already in progress.<br /><br />To proceed, please first pay the outstanding invoice and then you will be able to upgrade or downgrade immediately following that and be charged the difference or credited as appropriate.<br/><br/>If you believe you are receiving this message in error, please submit a trouble ticket.";
+$_LANG['upgradeexistingupgradeinvoice'] = "Jelenleg nem tud feljavít vagy ereszkedő ezt a terméket, mert egy feljavít vagy ereszkedő már folyamatban van.<br /><br />A folytatáshoz, kérjük, először kifizeti a fennálló számlát, és akkor képes lesz arra, hogy magasabb vagy alacsonyabb közvetlenül követő és terhelik a különbözetet, vagy jóváírják a megfelelő.<br/><br/>Ha úgy gondolja, ez az üzenet a hiba, kérjük küldjön egy hibajegyet.";
 
 $_LANG['subaccountactivate'] = "Aktiválása Al fiók";
 $_LANG['subaccountactivatedesc'] = "Jelölje be beállítani, mint egy al fiók a kliens területen való";
@@ -898,16 +898,16 @@ $_LANG['subaccountpermsorders'] = "Helyezze Új megrendelések/Frissítések/Lem
 $_LANG['subaccountpermissiondenied'] = "Nem rendelkezik a szükséges jogosultsággal erre a lapra";
 $_LANG['subaccountallowedperms'] = "Az Ön megengedett engedélyei:";
 $_LANG['subaccountcontactmaster'] = "Lépjen kapcsolatba a fő fiók tulajdonosa, ha úgy érzi, hogy ez hiba.";
-$_LANG['subaccountSsoDenied'] = "You do not have permission to login using Single Sign-On.";
+$_LANG['subaccountSsoDenied'] = "Nem kell engedély a bejelentkezéshez használ Egyszeri bejelentkezés.";
 
-$_LANG['knowledgebasealsoread'] = "Olvassa el is";
+$_LANG['knowledgebasealsoread'] = "Ezenkívül olvassa el";
 
 $_LANG['orderpaymenttermtriennially'] = "Háromévente";
 $_LANG['orderpaymentterm36month'] = "36 Havi ár";
 
 $_LANG['domainrenewals'] = "Domain megújítás";
 $_LANG['domaindaysuntilexpiry'] = "Napok lejártáig";
-$_LANG['domainrenewalsnoneavailable'] = "Nincs domain elligible megújítása a fiókban";
+$_LANG['domainrenewalsnoneavailable'] = "Nincs domain választható megújítása a fiókban";
 $_LANG['domainrenewalspastgraceperiod'] = "Múltbeli megújítható időszakra";
 $_LANG['domainrenewalsingraceperiod'] = "Utolsó esély a Megújítás!";
 $_LANG['domainrenewalsdays'] = "Nappal";
@@ -1163,7 +1163,7 @@ $_LANG['domainmassrenew'] = "Megújítás Domainok";
 $_LANG['captchatitle'] = "Spam Bot ellenőrzése";
 $_LANG['captchaverify'] = "Kérjük, írja be a képen látható karaktereket az alábbi képen a szöveges mezőben. Erre azért van szükség, hogy megakadályozzák az automatizált beadványt.";
 $_LANG['captchaverifyincorrect'] = "A beírt karakterek nem egyeznek a képen láthatóval. Kérjük, próbálja újra.";
-$_LANG['googleRecaptchaIncorrect'] = "Please complete the captcha and try again.";
+$_LANG['googleRecaptchaIncorrect'] = "Kérjük, töltse ki a captcha és próbálkozzon újra.";
 $_LANG['recaptcha-invalid-site-private-key'] = "Hiba történt, kérjük lépjen kapcsolatba ügyfélszolgálatunkkal (hiba kódja: cap1)";
 $_LANG['recaptcha-invalid-request-cookie'] = "Hiba történt, kérjük, próbálja újra (hiba kódja: cap2)";
 $_LANG['recaptcha-incorrect-captcha-sol'] = "A beírt karakterek nem egyeznek a szó ellenőrzést. Kérjük, próbálja újra.";
@@ -1248,7 +1248,6 @@ $_LANG['supportticketsintro'] = "Beküldése és nyomon követheti minden vizsg�
 $_LANG['addfundsintro'] = "Előzetes pénzbefizetés";
 $_LANG['registerintro'] = "Hozzon létre egy fiókot a velünk . . .";
 $_LANG['masspayintro'] = "Fizessen összes számlát az alább felsorolt??, egyetlen könnyű tranzakció kiválasztásával fizetési mód";
-$_LANG['domaincheckerintro'] = "Indítsa el a web tárhely keresés itt ellenőrzése, ha a domain név elérhető...";
 $_LANG['networkstatusintro'] = "Szolgáltatás állapota Információ és Hálózat Közlemények";
 
 $_LANG['creditcardyourinfo'] = "Számlázási adatok";
@@ -1263,8 +1262,8 @@ $_LANG['supportticketsnoneopen'] = "Jelenleg nincs megnyitott támogató jegyek"
 $_LANG['invoicesnoneunpaid'] = "Jelenleg nincs kifizetetlen számla";
 
 $_LANG['registerdisablednotice'] = "A regisztrációhoz kérjük feladni <strong><a href=\"cart.php\">Rendelés</a></strong>";
-$_LANG['registerCreateAccount'] = "To create an account, please";
-$_LANG['registerCreateAccountOrder'] = "place an order with us";
+$_LANG['registerCreateAccount'] = "Ahhoz, hogy hozzon létre egy fiókot, kérjük,";
+$_LANG['registerCreateAccountOrder'] = "megrendelés velünk";
 
 $_LANG['pwstrength'] = "Jelszó erőssége";
 $_LANG['pwstrengthenter'] = "Adja meg a jelszavát";
@@ -1304,14 +1303,8 @@ $_LANG['creditcardexpirydateinvalid'] = "A lejárati dátum MM/YY formátumban k
 $_LANG['domaincheckerchoosedomain'] = "Domainnév választása...";
 $_LANG['domaincheckerchecknewdomain'] = "Rendelkezésre állás ellenőrzése a Új Domain";
 $_LANG['domaincheckerdomainexample'] = " pl. example.com";
-$_LANG['domaincheckerinvalidtld'] = "nem érvényes TLD. Kérjük, próbálja újra.";
-$_LANG['domaincheckerinvalidtld2'] = "TLD is invalid.";
-$_LANG['domaincheckerinvaliddomain'] = "Requested domain name is invalid.";
-$_LANG['domaincheckernopricing'] = "Pricing not available for this TLD.";
 $_LANG['domaincheckerhostingonly'] = "Rendelés Tárhely csak";
-$_LANG['domaincheckeravailtransfer'] = "Átadáshoz rendelkezésre áll";
 $_LANG['domaincheckerenterdomain'] = "Indítsa el a web tárhely velünk a tapasztalataikat beírja a domain nevet regisztrálni, átutalással vagy egyszerűen csak vásárolni hosting alatt...";
-$_LANG['domaincheckerbulkinvaliddomain'] = "Egy vagy több domaint, amit fent megadott érvénytelen volt, ezért kimaradt az eredményekből";
 
 $_LANG['kbquestionsearchere'] = "Kérdése van? Kezdje itt a keresést.";
 $_LANG['contactus'] = "Kapcsolat";
@@ -1331,7 +1324,7 @@ $_LANG['jobtitlereqforcompany'] = "(Szükséges, ha a szervezet neve be van áll
 $_LANG['downloadproductrequired'] = "Letöltés ezt az elemet megköveteli, hogy egy aktív példánya a következő termék/szolgáltatás:";
 
 $_LANG['affiliatesignuptitle'] = "Kap Fizetett Hivatkozó ügyfelek hozzánk";
-$_LANG['affiliatesignupintro'] = "Aktiválja Ön affiliate számla és kezdj el pénzt keresni még ma...";
+$_LANG['affiliatesignupintro'] = "Aktiválja Ön partner számla és kezdj el pénzt keresni még ma...";
 $_LANG['affiliatesignupinfo1'] = "Jutalékot fizetünk minden egyes regisztrációért, hogy jön keresztül az egyedi regisztrációs linket.";
 $_LANG['affiliatesignupinfo2'] = "Nyomon követjük a látogatók akkor nézze meg velünk a cookie-kat, így a felhasználók akkor nézze nem kell azonnal megvásárolni az Ön számára, hogy megkapja a jutalékot. A cookie-k utolsó legfeljebb 90 követő napokban az első látogatás.";
 $_LANG['affiliatesignupinfo3'] = "Ha szeretne többet megtudni, kérjük lépjen kapcsolatba velünk.";
@@ -1413,7 +1406,7 @@ $_LANG['unsubscribehashinvalid'] = "Leiratkozás sikertelen, kérjük, kapcsolat
 $_LANG['unsubscribesuccess'] = "Leiratkozás sikeres";
 $_LANG['newsletterremoved'] = "Köszönöm, Ön e-mail már törölték a levelezési listáról.";
 $_LANG['erroroccured'] = "Egy hiba történt";
-$_LANG['pwresetsuccessdesc'] = "Jelszava most már alaphelyzetben. %sClick here%s hogy továbbra is az ügyfél területre...";
+$_LANG['pwresetsuccessdesc'] = "Jelszava most már alaphelyzetben. %sKattintson ide%s hogy továbbra is az ügyfél területre...";
 $_LANG['pwresetenternewpw'] = "Kérjük, adja meg a kívánt új jelszót alábbiakban.";
 $_LANG['ordererrorsbudomainbanned'] = "Az aldomain prefix beírt nem engedélyezett - kérjük, próbálja meg egy másik";
 
@@ -1438,7 +1431,7 @@ $_LANG['feedbackworst'] = "Legrosszabb";
 $_LANG['feedbackbest'] = "Legjobb";
 $_LANG['feedbackimprove'] = "Hogyan lehet akkor, hogy a tapasztalatok jobban a jövőben?";
 $_LANG['pleaserate2'] = "e támogatási kérelem kezelése";
-$_LANG['feedbacksupplyrating'] = "Please supply at least a rating for :staffname (comments are optional)";
+$_LANG['feedbacksupplyrating'] = "Kérjük, adjon meg legalább egy értékelés a :staffname (megjegyzések szabadon választható)";
 
 $_LANG['returnclient'] = "Vissza az Ügyfél terület";
 
@@ -1475,74 +1468,74 @@ $_LANG['disable'] = "Letiltás";
 $_LANG['manage'] = "Kezelés";
 
 # Version 5.3
-$_LANG['quoteacceptancetitle'] = "Quote Acceptance";
-$_LANG['quoteacceptancehowto'] = "To accept the quote, please confirm your acceptance of our terms of service which can be viewed @";
-$_LANG['quoteacceptancewarning'] = "Please be aware that accepting a quote is considered entering into a contract and you will not be able to cancel once accepted.";
+$_LANG['quoteacceptancetitle'] = "Ajánlat elfogadása";
+$_LANG['quoteacceptancehowto'] = "Ha elfogadja az ajánlatot, kérjük, erősítse meg, hogy elfogadja a szolgáltatás feltételeit, amely megtekinthető @";
+$_LANG['quoteacceptancewarning'] = "Felhívjuk figyelmét, hogy elfogadja az ajánlatot tekinthető a szerződés megkötésére, és akkor nem lesz képes, hogy megszünteti egyszer elfogadták.";
 
-$_LANG['contactform'] = "Contact Form";
+$_LANG['contactform'] = "Kapcsolat űrlap";
 
-$_LANG['twoipverificationstep'] = "Verification Step";
-$_LANG['twoipverificationstepmsg'] = "Enter the security code generated by your mobile authenticator app and we'll make sure it's configured correctly before enabling it.";
-$_LANG['twoipverificationerror'] = "It seem's there's a problem...";
-$_LANG['twoipcodemissmatch'] = "The code you entered did not match what was expected. Please try again.";
-$_LANG['twoiptimebasedpassword'] = "Time-based One-Time Password";
-$_LANG['twoiptimebasedexplain'] = "This authentication option get's it's second factor using a time based algorithm.  Your mobile phone can be used to generate the codes.  If you don't already have an app that can do this, we recommend Google Authenticator which is available for iOS, Android and Windows mobile devices.";
-$_LANG['twoipconfigureapp'] = "To configure your authenticator app:";
-$_LANG['twoipconfigurestep1'] = "Begin by selecting to add a new time based token";
-$_LANG['twoipconfigurestep2'] = "Then use your app to scan the barcode below, or alternatively enter this secret key manually: ";
-$_LANG['twoipgdmissing'] = "GD is missing from the PHP build on your server so unable to generate image";
+$_LANG['twoipverificationstep'] = "Ellenőrzési lépés";
+$_LANG['twoipverificationstepmsg'] = "Írja be a biztonsági kódot által generált mobil hitelesítő app, és gondoskodunk róla, hogy ez rendesen beállítva engedélyezése előtt is.";
+$_LANG['twoipverificationerror'] = "Úgy tűnik, ott van egy probléma...";
+$_LANG['twoipcodemissmatch'] = "A megadott kód nem egyezik, amit vártak. Kérjük, próbálja újra.";
+$_LANG['twoiptimebasedpassword'] = "Idő-alapú egyszeri jelszó";
+$_LANG['twoiptimebasedexplain'] = "Ez a hitelesítési lehetőség kap ennyi második tényező egy idő alapú algoritmust. A mobiltelefon lehet generálni a kódokat. Ha még nem rendelkezik egy alkalmazást, amely képes erre, javasoljuk a Google Hitelesítő amely elérhető az iOS, Android és Windows mobil eszközök.";
+$_LANG['twoipconfigureapp'] = "Állítsd be a hitelesítő alkalmazást:";
+$_LANG['twoipconfigurestep1'] = "Első lépésként válassza ki, hogy egy új idő alapú tokent";
+$_LANG['twoipconfigurestep2'] = "Akkor használja az alkalmazást, hogy átvizsgálja a vonalkód alatti, vagy pedig be ezt a titkos kulcsot manuálisan: ";
+$_LANG['twoipgdmissing'] = "GD hiányzik a PHP építeni a szerver, így nem tud generálni képet";
 
-$_LANG['domaincontactdetails']['First Name'] = "First Name";
-$_LANG['domaincontactdetails']['Last Name'] = "Last Name";
-$_LANG['domaincontactdetails']['Full Name'] = "Full Name";
-$_LANG['domaincontactdetails']['Contact Name'] = "Contact Name";
+$_LANG['domaincontactdetails']['First Name'] = "Keresztnév";
+$_LANG['domaincontactdetails']['Last Name'] = "Vezetéknév";
+$_LANG['domaincontactdetails']['Full Name'] = "Teljes név";
+$_LANG['domaincontactdetails']['Contact Name'] = "Kapcsolattartó neve";
 $_LANG['domaincontactdetails']['Email'] = "Email";
-$_LANG['domaincontactdetails']['Email Address'] = "Email Address";
-$_LANG['domaincontactdetails']['Job Title'] = "Job Title";
-$_LANG['domaincontactdetails']['Company Name'] = "Company Name";
-$_LANG['domaincontactdetails']['Organisation Name'] = "Organisation Name";
-$_LANG['domaincontactdetails']['Address'] = "Address";
-$_LANG['domaincontactdetails']['Street'] = "Street";
-$_LANG['domaincontactdetails']['Address 1'] = "Address 1";
-$_LANG['domaincontactdetails']['Address 2'] = "Address 2";
-$_LANG['domaincontactdetails']['Address 3'] = "Address 3";
-$_LANG['domaincontactdetails']['City'] = "City";
-$_LANG['domaincontactdetails']['State'] = "State";
-$_LANG['domaincontactdetails']['County'] = "County";
-$_LANG['domaincontactdetails']['Region'] = "Region";
-$_LANG['domaincontactdetails']['Postcode'] = "Postcode";
-$_LANG['domaincontactdetails']['ZIP Code'] = "ZIP Code";
-$_LANG['domaincontactdetails']['ZIP'] = "ZIP";
-$_LANG['domaincontactdetails']['Country'] = "Country";
-$_LANG['domaincontactdetails']['Phone'] = "Phone";
-$_LANG['domaincontactdetails']['Phone Number'] = "Phone Number";
+$_LANG['domaincontactdetails']['Email Address'] = "Email Cím";
+$_LANG['domaincontactdetails']['Job Title'] = "Munkaköri beosztása";
+$_LANG['domaincontactdetails']['Company Name'] = "Cégnév";
+$_LANG['domaincontactdetails']['Organisation Name'] = "Szervezet Név";
+$_LANG['domaincontactdetails']['Address'] = "Cím";
+$_LANG['domaincontactdetails']['Street'] = "Utca";
+$_LANG['domaincontactdetails']['Address 1'] = "Cím 1";
+$_LANG['domaincontactdetails']['Address 2'] = "Cím 2";
+$_LANG['domaincontactdetails']['Address 3'] = "Cím 3";
+$_LANG['domaincontactdetails']['City'] = "Város";
+$_LANG['domaincontactdetails']['State'] = "Állam";
+$_LANG['domaincontactdetails']['County'] = "Megye";
+$_LANG['domaincontactdetails']['Region'] = "Régió";
+$_LANG['domaincontactdetails']['Postcode'] = "Postai irányítószám";
+$_LANG['domaincontactdetails']['ZIP Code'] = "Irányítószám Kód";
+$_LANG['domaincontactdetails']['ZIP'] = "Irányítószám";
+$_LANG['domaincontactdetails']['Country'] = "Ország";
+$_LANG['domaincontactdetails']['Phone'] = "Telefon";
+$_LANG['domaincontactdetails']['Phone Number'] = "Telefonszám";
 $_LANG['domaincontactdetails']['Fax'] = "Fax";
 
-$_LANG['serverhostnameexample'] = "eg. server1(.example.com)";
-$_LANG['serverns1prefixexample'] = "eg. ns1(.example.com)";
-$_LANG['serverns2prefixexample'] = "eg. ns2(.example.com)";
+$_LANG['serverhostnameexample'] = "pl. server1(.example.com)";
+$_LANG['serverns1prefixexample'] = "pl. ns1(.example.com)";
+$_LANG['serverns2prefixexample'] = "pl. ns2(.example.com)";
 
-$_LANG['hosting'] = "Hosting";
+$_LANG['hosting'] = "Tárhely";
 
-$_LANG['enomfrregistration']['Heading'] = ".fr domains have different required values depending on your nationality and type of registration:";
-$_LANG['enomfrregistration']['French Individuals']['Name'] = "French Individuals";
-$_LANG['enomfrregistration']['French Individuals']['Requirements'] = "Please provide your \"Birthdate\", \"Birthplace City\", and \"Birthplace Postcode\".";
-$_LANG['enomfrregistration']['EU Non-French Individuals']['Name'] = "EU Non-French Individuals";
-$_LANG['enomfrregistration']['EU Non-French Individuals']['Requirements'] = "Please provide your \"Birthdate\".";
-$_LANG['enomfrregistration']['French Companies']['Name'] = "French Companies";
-$_LANG['enomfrregistration']['French Companies']['Requirements'] = "Please provide the \"Birthdate\", \"Birthplace City\", and \"Birthplace Postcode\" for the owner contact, along with your SIRET number.";
-$_LANG['enomfrregistration']['EU Non-French Companies']['Name'] = "EU Non-French Companies";
-$_LANG['enomfrregistration']['EU Non-French Companies']['Requirements'] = "Please provide the company \"DUNS Number\", and the \"Birthdate\" of the Owner Contact.";
-$_LANG['enomfrregistration']['Non-EU Warning'] = "Client contact information must be within the EU or else registration will fail.";
+$_LANG['enomfrregistration']['Heading'] = ".fr domainek különböző szükséges értéket attól függően, hogy az állampolgárság és a regisztráció típusát:";
+$_LANG['enomfrregistration']['French Individuals']['Name'] = "Francia Magánszemélyek";
+$_LANG['enomfrregistration']['French Individuals']['Requirements'] = "Kérjük, adja meg \"Születési dátum\", \"Születési hely Város\", és \"Születési hely Postai irányítószám\".";
+$_LANG['enomfrregistration']['EU Non-French Individuals']['Name'] = "EU Nem Francia Magánszemélyek";
+$_LANG['enomfrregistration']['EU Non-French Individuals']['Requirements'] = "Kérjük, adja meg \"Születési dátum\".";
+$_LANG['enomfrregistration']['French Companies']['Name'] = "Francia Vállalatok";
+$_LANG['enomfrregistration']['French Companies']['Requirements'] = "Kérjük adja meg a \"Születési dátum\", \"Születési hely Város\", és \"Születési hely Postai irányítószám\" a tulajdonos kapcsolatot, valamint a SIRET száma.";
+$_LANG['enomfrregistration']['EU Non-French Companies']['Name'] = "EU Nem Francia Vállalatok";
+$_LANG['enomfrregistration']['EU Non-French Companies']['Requirements'] = "Kérjük, adja meg a vállalat \"DUNS Szám\", és a \"Születési dátum\" a Tulajdonos Kapcsolat.";
+$_LANG['enomfrregistration']['Non-EU Warning'] = "Ügyfél kapcsolattartó információkat kell az EU-ban vagy máshol regisztrációja sikertelen lesz.";
 
-$_LANG['confirm'] = "Confirm";
+$_LANG['confirm'] = "Erősítse meg";
 
-$_LANG['maxmind_checkconfiguration'] = "An error occurred with the Fraud Check. Please contact support.";
-$_LANG['maxmind_addressinvalid'] = "Your address is not recognised. Please check and re-enter.";
-$_LANG['maxmind_invalidip'] = "IP Address invalid or a local address. Please contact support.";
+$_LANG['maxmind_checkconfiguration'] = "Hiba történt a Csalás ellenőrzés. Kérjük, lépjen kapcsolatba támogatásal.";
+$_LANG['maxmind_addressinvalid'] = "A címed rendszer nem ismeri fel. Kérjük, ellenőrizze és adja meg újra.";
+$_LANG['maxmind_invalidip'] = "IP címét Érvénytelen vagy a helyi cím. Kérjük, lépjen kapcsolatba támogatásal.";
 
-$_LANG['ssounabletologin'] = "Unable to auto-login. Please contact support.";
-$_LANG['ssofatalerror'] = "A fatal error occurred. Please contact support.";
+$_LANG['ssounabletologin'] = "Nem lehet automatikus bejelentkezés. Kérjük, kapcsolatba a támogatási szolgálattal.";
+$_LANG['ssofatalerror'] = "Végzetes hiba történt. Kérjük, lépjen kapcsolatba a támogatási szolgálattal.";
 
 # Version 6.0
 
@@ -1567,7 +1560,7 @@ $_LANG['sidebars']['viewAccount']['securitySettings'] = "Biztonsági beállítá
 $_LANG['sidebars']['viewAccount']['emailHistory'] = "Email előmények";
 
 $_LANG['aboutsecurityquestions'] = "Miért kell biztonsági kérdés?";
-$_LANG['registersecurityquestionblurb'] = "Setting a security question will provide extra security, as all changes to your account require providing the additional information from your question.";
+$_LANG['registersecurityquestionblurb'] = "Beállítása egy biztonsági kérdést nyújt extra biztonságot, mint az összes módosításokat fiókjában szükség kiegészítő adatszolgáltatás az Ön kérdése.";
 
 $_LANG['update'] = "Frissítés";
 $_LANG['yourinfo'] = "Az Ön adatai";
@@ -1581,8 +1574,8 @@ $_LANG['billingdetails'] = "Számlázási Adatok";
 $_LANG['homechooseproductservice'] = "Válassza ki a szolgáltatást:";
 
 $_LANG['invoicesdue'] = "Esedékes számlák";
-$_LANG['invoicesduemsg'] = "You have %s invoice(s) currently unpaid with a total balance of %s";
-$_LANG['noinvoicesduemsg'] = "You have no unpaid invoices at this time.";
+$_LANG['invoicesduemsg'] = "Ön %s számlát jelenleg nem fizetett, összesen egyenlegét %s";
+$_LANG['noinvoicesduemsg'] = "Ön nincs kifizetetlen számlák ebben az időben.";
 
 $_LANG['expiringsoon'] = "Hamarosan Lejár";
 
@@ -1599,8 +1592,8 @@ $_LANG['whoisinfo'] = "WHOIS Információ";
 
 $_LANG['tableshowing'] = "_START_ - _END_ bejegyzés. _TOTAL_ bejegyzés";
 $_LANG['tableempty'] = "Nincs elérhető bejegyzés";
-$_LANG['tablefiltered'] = "(filtered from _MAX_ total entries)";
-$_LANG['tablelength'] = "Show _MENU_ entries";
+$_LANG['tablefiltered'] = "(szűri a _MAX_ összes bejegyzés)";
+$_LANG['tablelength'] = "Mutat _MENU_ bejegyzés";
 $_LANG['tableloading'] = "Betöltés...";
 $_LANG['tableprocessing'] = "Feldolgozás...";
 $_LANG['tablepagesfirst'] = "Első";
@@ -1629,20 +1622,20 @@ $_LANG['kbviewingarticlestagged'] = "Bejelölt bejegyzések";
 
 $_LANG['domainprivatenameservers'] = "Egyéni névszerverek";
 
-$_LANG['transferinadomain'] = "Transfer in a Domain";
+$_LANG['transferinadomain'] = "A Domain átadása";
 
-$_LANG['nodomainextensions'] = "There are no Domain Extensions currently configured for purchase";
+$_LANG['nodomainextensions'] = "Nincsenek Domain kiterjesztések jelenleg beállított vásárlás";
 
 $_LANG['homebegin'] = "Találja meg a tökéletes domain nevet...";
 $_LANG['howcanwehelp'] = "Hogyan segíthetünk ma?";
-$_LANG['exampledomain'] = "pl. example.hu";
+$_LANG['exampledomain'] = "pl. example.com";
 $_LANG['buyadomain'] = "Domain";
 $_LANG['orderhosting'] = "Webtárhely";
 $_LANG['makepayment'] = "Befizetés";
 $_LANG['getsupport'] = "Támogatás";
 
 $_LANG['news'] = "Hírek";
-$_LANG['allthelatest'] = "All the latest from";
+$_LANG['allthelatest'] = "A legfrissebb ettől";
 $_LANG['readmore'] = "Több...";
 $_LANG['noannouncements'] = "Nincs megjeleníthető közlemény";
 
@@ -1652,207 +1645,207 @@ $_LANG['readyforquestions'] = "Mi készen állunk és várjuk a kérdéseket.";
 $_LANG['restrictedpage'] = "Hozzáférés korlátozva";
 $_LANG['enteremail'] = "Email megadása";
 
-$_LANG['passwordtips'] = "<strong>Tips for a good password</strong><br />Use both upper and lowercase characters<br />Include at least one symbol (# $ ! % &amp; etc...)<br />Don't use dictionary words";
+$_LANG['passwordtips'] = "<strong>Tippek a jó jelszóválasztás</strong><br />Használja a felső és nagybetűket<br />Tartalmazhat legalább egy szimbólum (# $ ! % &amp; stb...)<br />Ne használjon szótári szavakat";
 
-$_LANG['regdate'] = "Reg Date";
+$_LANG['regdate'] = "Regisztráció dátuma";
 $_LANG['nextdue'] = "Következő esedékes";
 
-$_LANG['domaincheckertagline'] = "Találja meg a tökéletes domain nevet...";
-$_LANG['findyourdomain'] = "Találja meg az új domain nevét";
-$_LANG['searchtermrequired'] = "You must enter a domain name or keyword to look for";
-$_LANG['unabletolookup'] = "Sorry, unable to lookup the term as provided";
-$_LANG['invalidchars'] = "Please remove spaces or special punctuation characters";
-$_LANG['bulkoptions'] = "Bulk Options";
-$_LANG['checkingdomain'] = "Checking if the domain you requested is available...";
-$_LANG['domainsgotocheckout'] = "Pénztár";
-$_LANG['domainssearchresults'] = "Search Results";
-$_LANG['domainssuggestions'] = "javaslatok";
-$_LANG['domainsothersuggestions'] = "You might also be interested in the following alternative names";
-$_LANG['domainsmoresuggestions'] = "Give me more suggestions!";
-$_LANG['domainssuggestionswarnings'] = "Domain name suggestions may not always be available. Availability is checked in real-time at the point of adding to the cart.";
-$_LANG['disclaimers'] = "Disclaimers";
-$_LANG['tldpricing'] = "TLD Pricing";
-$_LANG['alltldpricing'] = "All TLD Pricing";
+$_LANG['findyourdomain'] = "Keresse meg új domain név";
+$_LANG['searchtermrequired'] = "Meg kell adnia a domain név vagy kulcsszó keresni";
+$_LANG['unabletolookup'] = "Sajnálom, nem a keresés a kifejezés szerinti";
+$_LANG['invalidchars'] = "Kérjük, távolítsa el, szóközöket vagy speciális írásjelet";
+$_LANG['bulkoptions'] = "Tömeges opciók";
+$_LANG['checkingdomain'] = "Ellenőrzésével, hogy a domain amit kért elérhető...";
+$_LANG['domainsgotocheckout'] = "Tovább a pénztárhoz";
+$_LANG['domainssearchresults'] = "Keresési eredmények";
+$_LANG['domainssuggestions'] = "Javaslatok";
+$_LANG['domainsothersuggestions'] = "Önt is érdekelheti az alábbi alternatív nevek";
+$_LANG['domainsmoresuggestions'] = "Add nekem több javaslatok!";
+$_LANG['domainssuggestionswarnings'] = "Domain név javaslatok nem mindig áll rendelkezésre. Rendelkezésre állás ellenőrzése a valós idejű azon a ponton, hozzátéve, hogy a kosárba.";
+$_LANG['disclaimers'] = "A felelősséget kizáró nyilatkozatok";
+$_LANG['tldpricing'] = "TLD árak";
+$_LANG['alltldpricing'] = "Összes TLD árak";
 
-$_LANG['quotesdesc'] = "Quotes we have generated for you";
-$_LANG['quotesrejected'] = "Rejected";
+$_LANG['quotesdesc'] = "Idézetek hoztunk létre az Ön számára";
+$_LANG['quotesrejected'] = "Elutasítva";
 
-$_LANG['ticketsyourhistory'] = "Your ticket history";
+$_LANG['ticketsyourhistory'] = "A jegy történet";
 
-$_LANG['clientareaemaildesc'] = "Your email history with us";
+$_LANG['clientareaemaildesc'] = "Az Ön email története velünk";
 
-$_LANG['sslconfssl'] = "Configure SSL";
-$_LANG['sslnoconfigurationpossible'] = "Configuration has already been completed!  Please contact support if you are experiencing issues.";
+$_LANG['sslconfssl'] = "Konfigurálása SSL";
+$_LANG['sslnoconfigurationpossible'] = "Konfigurálása már megtörtént! Kérjük lépjen kapcsolatba ügyfélszolgálatunkkal, ha problémákat tapasztal.";
 
-$_LANG['adminloggedin'] = "You are currently logged in as an admin.";
-$_LANG['returntoadminarea'] = "Logout & return to Admin Area";
-$_LANG['adminmasqueradingasclient'] = "You are currently masquerading as a client.";
-$_LANG['logoutandreturntoadminarea'] = "Logout & return to Admin Area";
+$_LANG['adminloggedin'] = "Ön jelenleg bejelentkezve mint egy admin.";
+$_LANG['returntoadminarea'] = "Vissza az Admin Területre";
+$_LANG['adminmasqueradingasclient'] = "Ön jelenleg egy ügyfél álcázva.";
+$_LANG['logoutandreturntoadminarea'] = "Kijelentkezés & vissza az Admin területre";
 
-$_LANG['supportAndUpdatesExpired'] = "Support & Updates are expired.";
-$_LANG['supportAndUpdatesExpiredLicense'] = "Your Support & Updates period for this license has expired";
-$_LANG['supportAndUpdatesRenewalRequired'] = "Support & Updates access needs to be renewed before you can access this download.";
-$_LANG['supportAndUpdatesClickHereToRenew'] = "Click Here to Renew";
+$_LANG['supportAndUpdatesExpired'] = "Támogatás & A frissítések lejárt.";
+$_LANG['supportAndUpdatesExpiredLicense'] = "Az Ön Támogatás & Frissítés időtartam erre engedélye lejárt";
+$_LANG['supportAndUpdatesRenewalRequired'] = "Támogatás & Frissítés hozzáférést meg kell újítani, mielőtt hozzá férsz letöltés.";
+$_LANG['supportAndUpdatesClickHereToRenew'] = "Kattintson ide a Megújítása";
 
-$_LANG['pwresetemailneeded'] = "Forgotten your password? Enter your email address below to begin the reset process.";
+$_LANG['pwresetemailneeded'] = "Elfelejtetted a jelszavad? Adja meg e-mail címét, hogy elkezdődjön a visszaállítási folyamat.";
 
-$_LANG['quotestageexpired'] = "Expired";
+$_LANG['quotestageexpired'] = "Lejárt";
 
-$_LANG['ticketinfo'] = "Ticket Information";
-$_LANG['customfield'] = "Custom Fields";
+$_LANG['ticketinfo'] = "Jegy információ";
+$_LANG['customfield'] = "Egyedi mezők";
 
-$_LANG['domainsActive'] = "Active";
-$_LANG['domainsExpired'] = "Expired";
-$_LANG['domainsCancelled'] = "Cancelled";
-$_LANG['domainsFraud'] = "Fraud";
-$_LANG['domainsPending'] = "Pending";
-$_LANG['domainsPendingTransfer'] = "Pending Transfer";
-$_LANG['domainsExpiringInTheNext30Days'] = "Expiring within 30 Days";
-$_LANG['domainsExpiringInTheNext90Days'] = "Expiring within 90 Days";
-$_LANG['domainsExpiringInTheNext180Days'] = "Expiring within 180 Days";
-$_LANG['domainsExpiringInMoreThan180Days'] = "Expiring in 180+ Days";
+$_LANG['domainsActive'] = "Aktív";
+$_LANG['domainsExpired'] = "Lejárt";
+$_LANG['domainsCancelled'] = "Törölve";
+$_LANG['domainsFraud'] = "Csalás";
+$_LANG['domainsPending'] = "Függőben lévő";
+$_LANG['domainsPendingTransfer'] = "Függőben lévő Transzfer";
+$_LANG['domainsTransferredAway'] = "Átadott";
+$_LANG['domainsExpiringInTheNext30Days'] = "Lejáró a következő 30 napban";
+$_LANG['domainsExpiringInTheNext90Days'] = "Lejáró a következő 90 napban";
+$_LANG['domainsExpiringInTheNext180Days'] = "A következő 180 napon lejáró";
+$_LANG['domainsExpiringInMoreThan180Days'] = "Több mint 180 napon lejáró";
 
-$_LANG['kbtagcloud'] = "Tag Cloud";
+$_LANG['kbtagcloud'] = "Címkefelhő";
 
-$_LANG['cancellationrequestedexplanation'] = "There is an outstanding cancellation request for this product/service";
-$_LANG['cancellationrequested'] = "Cancellation Requested";
+$_LANG['cancellationrequestedexplanation'] = "Van egy kiemelkedő törlési kérelem a termék/szolgáltatás";
+$_LANG['cancellationrequested'] = "Lemondást kért";
 
-$_LANG['yourrecenttickets'] = "Your Recent Tickets";
+$_LANG['yourrecenttickets'] = "A legutóbbi jegyek";
 
-$_LANG['domains']['deTermsDescription1'] = "To register a new domain, transfer or change registrant information the registrant must explicitly accept the .DE terms and conditions.";
-$_LANG['domains']['deTermsDescription2'] = "(See full text of .de terms and conditions: http://www.denic.de/en/bedingungen.html.)";
-$_LANG['directDebitPageTitle'] = "Direct Debit Payment";
-$_LANG['directDebitHeader'] = "Direct Debit Payment";
-$_LANG['directDebitErrorNoBankName'] = "You must enter your banks name";
-$_LANG['directDebitErrorAccountType'] = "You must select your bank account type";
-$_LANG['directDebitErrorNoABA'] = "You must enter your banks ABA code";
-$_LANG['directDebitErrorAccNumber'] = "You must enter your bank account number";
-$_LANG['directDebitErrorConfirmAccNumber'] = "You must confirm your bank account number";
-$_LANG['directDebitErrorAccNumberMismatch'] = "Your bank account number & confirmation don't match";
-$_LANG['directDebitThanks'] = "Thank you for submitting your details. We will attempt to process your payment using the supplied details within the next few days, and contact you in case of any problems.";
-$_LANG['directDebitPleaseSubmit'] = "Please submit your bank account details below to pay by Direct Debit.";
-$_LANG['directDebitBankName'] = "Bank Name";
-$_LANG['directDebitAccountType'] = "Bank Account Type";
-$_LANG['directDebitABA'] = "Bank ABA Code";
-$_LANG['directDebitAccNumber'] = "Bank Account Number";
-$_LANG['directDebitConfirmAccNumber'] = "Confirm Account Number";
-$_LANG['directDebitSubmit'] = "Submit";
-$_LANG['directDebitChecking'] = "Checking";
-$_LANG['directDebitSavings'] = "Savings";
+$_LANG['domains']['deTermsDescription1'] = "Ahhoz, hogy regisztráljon egy új domain, transzfer vagy változtassa regisztráló információt a regisztráló kell kifejezetten elfogadja a .DE szerződési feltételek.";
+$_LANG['domains']['deTermsDescription2'] = "(Lásd a teljes szövegét .de általános szerződési feltételek: http://www.denic.de/en/bedingungen.html.)";
+$_LANG['directDebitPageTitle'] = "Közvetlen terheléssel történő fizetés";
+$_LANG['directDebitHeader'] = "Közvetlen terheléssel történő fizetés";
+$_LANG['directDebitErrorNoBankName'] = "Meg kell adnia a bankja nevét";
+$_LANG['directDebitErrorAccountType'] = "Meg kell adnia a bankszámla típusát";
+$_LANG['directDebitErrorNoABA'] = "Meg kell adnia a bankja ABA kódját";
+$_LANG['directDebitErrorAccNumber'] = "Meg kell adnia a bankszámla számát";
+$_LANG['directDebitErrorConfirmAccNumber'] = "Meg kell erősítenie a bankszámla számát";
+$_LANG['directDebitErrorAccNumberMismatch'] = "A bankszámla száma és megerősítése nem egyezik";
+$_LANG['directDebitThanks'] = "Köszönjük, hogy elküldte a részleteket. Mi megpróbálja feldolgozni a befizetést a mellékelt részleteket a következő néhány nap, és Önnel a kapcsolatot bármilyen probléma esetén.";
+$_LANG['directDebitPleaseSubmit'] = "Kérjük, küldje el bankszámlájának adatait az alábbiakban fizetni csoportos beszedési megbízással.";
+$_LANG['directDebitBankName'] = "Bank Neve";
+$_LANG['directDebitAccountType'] = "Bank Fiók típusa";
+$_LANG['directDebitABA'] = "Bank ABA Kód";
+$_LANG['directDebitAccNumber'] = "Bankszámlaszám";
+$_LANG['directDebitConfirmAccNumber'] = "Erősítse meg a Bankszámlaszámot";
+$_LANG['directDebitSubmit'] = "Elküld";
+$_LANG['directDebitChecking'] = "Ellenőrzése";
+$_LANG['directDebitSavings'] = "Mentése";
 
-$_LANG['outOfStockProductRemoved'] = "An out of stock product was automatically removed from the cart";
+$_LANG['outOfStockProductRemoved'] = "Egy elfogyott terméket automatikusan eltávolítják a kosárból";
 
-$_LANG['subaccountpermsquotes'] = "View & Accept Quotes";
+$_LANG['subaccountpermsquotes'] = "Megtekint és Fogadja el az idézetek";
 
-$_LANG['chooselanguage'] = "Choose language";
+$_LANG['chooselanguage'] = "Válasszon nyelvet";
 
 $_LANG['success'] = "Sikeres";
 $_LANG['error'] = "Hiba";
 $_LANG['print'] = "Nyomtatás";
 $_LANG['invoicelineitems'] = "Számla Tételek";
 
-$_LANG['quotelineitems'] = "Árajánlat Tételek";
+$_LANG['quotelineitems'] = "Idézet Tételek";
 
-$_LANG['quoteproposal'] = "Ajánlat";
-$_LANG['quoteacceptagreetos'] = "To accept the quote, please confirm your acceptance of our terms of service.";
-$_LANG['quoteacceptcontractwarning'] = "Please be aware that accepting a quote is considered entering into a contract and you will not be able to cancel once accepted.";
+$_LANG['quoteproposal'] = "Javaslat";
+$_LANG['quoteacceptagreetos'] = "Elfogadja az ajánlatot, kérjük erősítse meg, hogy elfogadja a szolgáltatási feltételeink.";
+$_LANG['quoteacceptcontractwarning'] = "Felhívjuk figyelmét, hogy elfogadása egy idézet tekinthető a szerződés megkötése, és akkor nem tudja visszavonni elfogadása után.";
 
 // Client alerts
-$_LANG['clientAlerts']['creditCardExpiring'] = "Your credit card :creditCardType-:creditCardLastFourDigits expires within :days days. Please update it at your earliest convenience.";
-$_LANG['clientAlerts']['domainsExpiringSoon'] = "You have :numberOfDomains domain(s) expiring within the next :days days.";
-$_LANG['clientAlerts']['invoicesUnpaid'] = "You have :numberOfInvoices unpaid invoice(s). Pay them early for peace of mind.";
-$_LANG['clientAlerts']['invoicesOverdue'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interuptions in service.";
-$_LANG['clientAlerts']['creditBalance'] = "You have a credit balance of :creditBalance.";
+$_LANG['clientAlerts']['creditCardExpiring'] = "Ön hitelkártyája :creditCardType-:creditCardLastFourDigits belül lejár :days nap. Kérjük, frissítse a lehető legkorábbi időpontban.";
+$_LANG['clientAlerts']['domainsExpiringSoon'] = "Neked van :numberOfDomains domain(s) belüli lejáratú következő :days nap.";
+$_LANG['clientAlerts']['invoicesUnpaid'] = "Neked van :numberOfInvoices kifizetetlen számla(s). Fizesse őket korán a nyugalom érdekében.";
+$_LANG['clientAlerts']['invoicesOverdue'] = "Neked van :numberOfInvoices esedékes számla(s) összesen esedékes egyenleg a :balanceDue. Fizesse őket most, hogy elkerülje a szolgáltatás szüneteltetése.";
+$_LANG['clientAlerts']['creditBalance'] = "Van egy egyenlege :creditBalance.";
 
 // Client homepage panels
 $_LANG['clientHomePanels']['unpaidInvoices'] = "Kifizetetlen számlák";
-$_LANG['clientHomePanels']['unpaidInvoicesMsg'] = "Önnek :numberOfInvoices kifizetetlen számlája van. A teljes összeg: :balanceDue. Kérjük rendezze a számlákat minél hamarabb.";
+$_LANG['clientHomePanels']['unpaidInvoicesMsg'] = "Neked van :numberOfInvoices kifizetetlen számla(s) összesen esedékes egyenleg a :balanceDue. Fizesse őket korán a nyugalom érdekében.";
 $_LANG['clientHomePanels']['overdueInvoices'] = "Lejárt számlák";
-$_LANG['clientHomePanels']['overdueInvoicesMsg'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interuptions in service.";
-$_LANG['clientHomePanels']['domainsExpiringSoon'] = "Domains Expiring Soon";
-$_LANG['clientHomePanels']['domainsExpiringSoonMsg'] = "You have :numberOfDomains domain(s) expiring within the next :days days. Renew them today for peace of mind.";
+$_LANG['clientHomePanels']['overdueInvoicesMsg'] = "Neked van :numberOfInvoices esedékes számla(s) összesen esedékes egyenleg a :balanceDue. Fizesse őket most, hogy elkerülje a szolgáltatás szüneteltetése.";
+$_LANG['clientHomePanels']['domainsExpiringSoon'] = "Hamarosan lejáró domainek";
+$_LANG['clientHomePanels']['domainsExpiringSoonMsg'] = "Neked van :numberOfDomains domain(s) belüli lejáratú a következő :days nap. Megújítás őket ma a nyugalom érdekében.";
 $_LANG['clientHomePanels']['activeProductsServices'] = "Aktív Termékek/Szolgáltatások";
-$_LANG['clientHomePanels']['activeProductsServicesNone'] = "Úgy látjuk, hogy jelenleg nincs aktív szolgáltatása. <a href=\"cart.php\">Rendelje meg ma a kívánt szolgáltatást</a>.";
-$_LANG['clientHomePanels']['recentNews'] = "Friss hírek";
-$_LANG['clientHomePanels']['affiliateProgram'] = "Partner Program";
-$_LANG['clientHomePanels']['recentSupportTickets'] = "Legutóbbi támogatási jegyek";
-$_LANG['clientHomePanels']['recentSupportTicketsNone'] = "Nem találtunk támogatási jegyet. Amennyiben segítségre van szüksége, kérjük <a href=\"submitticket.php\">nyisson egy új jegyet</a>.";
-$_LANG['clientHomePanels']['affiliateSummary'] = "Your current commission balance is :commissionBalance. You only need another :amountUntilWithdrawalLevel before you can withdraw your earnings.";
-$_LANG['clientHomePanels']['affiliateSummaryWithdrawalReady'] = "Your current commission balance is :commissionBalance. You may withdraw your earnings now.";
+$_LANG['clientHomePanels']['activeProductsServicesNone'] = "Úgy tűnik, nincs semmilyen termék/szolgáltatás velünk még. <a href=\"cart.php\">Megrendelését az induláshoz</a>.";
+$_LANG['clientHomePanels']['recentNews'] = "Legújabb hírek";
+$_LANG['clientHomePanels']['affiliateProgram'] = "Partnerprogram";
+$_LANG['clientHomePanels']['recentSupportTickets'] = "Legutóbbi Támogatás Jegyek";
+$_LANG['clientHomePanels']['recentSupportTicketsNone'] = "Nincsenek Legutóbbi Jegyek Talált. Ha segítségre van szükséged, kérjük, <a href=\"submitticket.php\">megnyit egy jegyet</a>.";
+$_LANG['clientHomePanels']['affiliateSummary'] = "A jelenlegi jutalék egyenlege :commissionBalance. Csak akkor kell egy másik :amountUntilWithdrawalLevel előtt lehet visszavonni a bevételeit.";
+$_LANG['clientHomePanels']['affiliateSummaryWithdrawalReady'] = "A aktuális jutalék egyenlege :commissionBalance. Akkor vissza a bevételeit most.";
 
-$_LANG['upgradeNotPossible'] = "Upgrading this product is not possible.  If you believe you've reached this page in error, please notify our support department.  Otherwise, go back and double check your selection.";
+$_LANG['upgradeNotPossible'] = "Frissítés ez a termék nem lehetséges. Ha úgy gondolja, hogy elérte ezt az oldalt egy hiba, kérjük értesítse ügyfélszolgálatunkkal. Ellenkező esetben menjen vissza, és ellenőrizze a választást.";
 
-$_LANG['hostingInfo'] = "Tárhely Tnformáció";
+$_LANG['hostingInfo'] = "Tárhely Információ";
 $_LANG['additionalInfo'] = "Egyéb Információ";
 $_LANG['resourceUsage'] = "Erőforráshasználat";
 $_LANG['primaryIP'] = "Elsődleges IP";
 $_LANG['assignedIPs'] = "Hozzárendelt IP címek";
 $_LANG['diskSpace'] = "Lemez terület";
 $_LANG['bandwidth'] = "Adatforgalom";
-$_LANG['registered'] = "Nyilvántartott";
-$_LANG['upgrade'] = "Upgrade";
+$_LANG['registered'] = "Regisztrált";
+$_LANG['upgrade'] = "Frissítés";
 
 $_LANG['downdoadsdesc'] = "Kézikönyvek, programok és egyéb fájlok";
 
-$_LANG['doToday'] = "Mit szeretne ma intézni?";
-$_LANG['changeDomainNS'] = "Change the nameservers your domain points to";
-$_LANG['updateWhoisContact'] = "Update the WHOIS contact information for your domain";
-$_LANG['changeRegLock'] = "Change the registrar lock status for your domain";
-$_LANG['renewYourDomain'] = "Renew Your Domain";
+$_LANG['doToday'] = "Mit szeretne csinálni ma?";
+$_LANG['changeDomainNS'] = "Változás a névszerverek a domain rámutat arra";
+$_LANG['updateWhoisContact'] = "Frissítse a WHOIS elérhetőségi adatait a domain";
+$_LANG['changeRegLock'] = "A domain regisztrátor zár állapotának módosítása";
+$_LANG['renewYourDomain'] = "Megújítani a Domaint";
 
-$_LANG['oops'] = "Oops";
-$_LANG['goback'] = "Go Back";
-$_LANG['returnhome'] = "Return Home";
-$_LANG['blankCustomField'] = "(no value)";
+$_LANG['oops'] = "Hoppá";
+$_LANG['goback'] = "Menj Vissza";
+$_LANG['returnhome'] = "Vissza Kezdőlapra";
+$_LANG['blankCustomField'] = "(nincs értéke)";
 
-$_LANG['viewAll'] = "Összes megtekintése";
-$_LANG['moreDetails'] = "További részletek";
+$_LANG['viewAll'] = "Összes Megtekintése";
+$_LANG['moreDetails'] = "További Részletek";
 
-$_LANG['clientHomeSearchKb'] = "Adja meg itt a kérdését és találja meg a választ a Tudásbázisunkban...";
+$_LANG['clientHomeSearchKb'] = "Írjon be egy kérdés itt keresni a tudásbázisban válaszokat...";
 
-$_LANG['whoisContactWarning'] = "It is important to keep your domain WHOIS contact information up-to-date at all times to avoid losing control of your domain.";
+$_LANG['whoisContactWarning'] = "Fontos, hogy tartani a domain WHOIS elérhetőségi adatait naprakészen minden időben elkerülése érdekében, hogy elveszíti az ellenőrzést a domain.";
 
-$_LANG['paymentstodate'] = "Payments to Date";
-$_LANG['balancedue'] = "Balance Due";
-$_LANG['submitpayment'] = "Submit Payment";
+$_LANG['paymentstodate'] = "Kifizetések dátuma";
+$_LANG['balancedue'] = "Esedékes egyenleg";
+$_LANG['submitpayment'] = "Nyújtson be Fizetés";
 
-$_LANG['domaincheckeravailable'] = "Available";
-$_LANG['domaincheckertransferable'] = "Available to Transfer";
-$_LANG['domaincheckertaken'] = "Taken";
-$_LANG['domaincheckeradding'] = "Adding";
-$_LANG['domaincheckeradded'] = "Added";
-$_LANG['domaincheckernomoresuggestions'] = "That's all the results we have for you! If you still haven't found what you're looking for, please try a different search term or keyword.";
-$_LANG['domaincheckerunabletooffertld'] = "Unfortunately we are unable to register this TLD at this time";
-$_LANG['domaincheckerbulkplaceholder'] = "Enter up to 20 domain names.\nEach name must be on a separate line.\n\nExamples:\nexample.com\nexample.net";
+$_LANG['domaincheckeravailable'] = "Elérhető";
+$_LANG['domaincheckertransferable'] = "Elérhető Transzfer";
+$_LANG['domaincheckertaken'] = "Foglalt";
+$_LANG['domaincheckeradding'] = "Hozzáadása";
+$_LANG['domaincheckeradded'] = "Hozzáadva";
+$_LANG['domaincheckernomoresuggestions'] = "Ez az összes eredmény van az Ön számára! Ha még mindig nem találja, amit keres, kérjük, próbáljon egy másik keresési kifejezés vagy kulcsszó.";
+$_LANG['domaincheckerunabletooffertld'] = "Sajnos nem áll módunkban regisztrálni a TLD ebben az időben";
+$_LANG['domaincheckerbulkplaceholder'] = "Adjon meg legfeljebb 20 domain neveket.\nEach nevet kell külön sorban.\n\nExamples:\nexample.com\nexample.net";
 
-$_LANG['domainchecker']['suggestiontakentitle'] = "Domain Unavailable";
-$_LANG['domainchecker']['suggestiontakenmsg'] = "Unfortunately the domain you selected is unavailable. This can sometimes occur if the domain has been registered recently. Please go back and choose another domain.";
-$_LANG['domainchecker']['suggestiontakenchooseanother'] = "Choose another domain";
+$_LANG['domainchecker']['suggestiontakentitle'] = "Domain Nem érhető el";
+$_LANG['domainchecker']['suggestiontakenmsg'] = "Sajnos a domain kiválasztott nem érhető el. Ennek oka, ha a domain regisztrációja megtörtént a közelmúltban. Menj vissza és válasszon másik domaint.";
+$_LANG['domainchecker']['suggestiontakenchooseanother'] = "Válasszon másik domaint";
 
-$_LANG['domainchecker']['alreadyincarttitle'] = "Already In Cart";
-$_LANG['domainchecker']['alreadyincartmsg'] = "This domain is already in your shopping cart. Proceed to checkout now to complete your purchase.";
-$_LANG['domainchecker']['alreadyincartcheckoutnow'] = "Fizetés Most";
+$_LANG['domainchecker']['alreadyincarttitle'] = "Már a kosárban";
+$_LANG['domainchecker']['alreadyincartmsg'] = "Ez a domain már a kosárban. Pénztárhoz most befejezni a vásárlást.";
+$_LANG['domainchecker']['alreadyincartcheckoutnow'] = "Fizetés most";
 
-$_LANG['genericerror']['title'] = "Oops, something went wrong!";
-$_LANG['genericerror']['msg'] = "Please try again and if the problem persists, please contact our support team.";
+$_LANG['genericerror']['title'] = "Hoppá! Valami rosszul sült el!";
+$_LANG['genericerror']['msg'] = "Kérjük, próbálja újra, és ha a probléma továbbra is fennáll, kérjük lépjen kapcsolatba ügyfélszolgálatunkkal.";
 
 # Licensing Addon
 
-$_LANG['licensingaddon']['mylicenses'] = "My Licenses";
-$_LANG['licensingaddon']['latestdownload'] = "Latest Download";
-$_LANG['licensingaddon']['downloadnow'] = "Download Now";
+$_LANG['licensingaddon']['mylicenses'] = "A licencek";
+$_LANG['licensingaddon']['latestdownload'] = "Legújabb Letöltés";
+$_LANG['licensingaddon']['downloadnow'] = "Töltse le most";
 $_LANG['licensingaddon']['licensekey'] = "Licenckulcs";
 $_LANG['licensingaddon']['validdomains'] = "Érvényes Domainek";
-$_LANG['licensingaddon']['validips'] = "Érvényes IPs";
+$_LANG['licensingaddon']['validips'] = "Érvényes IP-k";
 $_LANG['licensingaddon']['validdirectory'] = "Érvényes Könyvtár";
 $_LANG['licensingaddon']['status'] = "Licenc állapota";
 $_LANG['licensingaddon']['reissue'] = "Licenc Ismételt kiadása";
 $_LANG['licensingaddon']['reissuestatusmsg'] = "Az Érvényes Domain, IP és Könyvtár érzékeli és mentette a következő alkalommal a licenc használható.";
-$_LANG['licensingaddon']['manageLicense'] = "Manage License";
+$_LANG['licensingaddon']['manageLicense'] = "Licenc kezelése";
 
-$_LANG['affiliateWithdrawalSummary'] = "You will be able to request a withdrawal as soon as your balance reaches the minimum required amount of :amountForWithdrawal.";
+$_LANG['affiliateWithdrawalSummary'] = "Ön képes lesz arra, hogy kérjenek visszavonását, amint az egyenleg eléri a minimálisan szükséges mennyiségét :amountForWithdrawal.";
 
-$_LANG['projectManagement']['activeProjects'] = "Your Active Projects";
+$_LANG['projectManagement']['activeProjects'] = "Aktív Projektek";
 
 # cPanel Module
 
@@ -1884,30 +1877,30 @@ $_LANG['cPanel']['awstats'] = "Awstats";
 $_LANG['cPanel']['createEmailAccount'] = "Email Fiók Gyors Létrehozása";
 $_LANG['cPanel']['usernamePlaceholder'] = "Email fiók neve";
 $_LANG['cPanel']['passwordPlaceholder'] = "Jelszó";
-$_LANG['cPanel']['create'] = "Create";
+$_LANG['cPanel']['create'] = "Létrehoz";
 $_LANG['cPanel']['emailAccountCreateSuccess'] = "Email fiók sikeresen létrehozva!";
 $_LANG['cPanel']['emailAccountCreateFailed'] = "Email fiók létrehozása sikertelen: ";
 
-$_LANG['cPanel']['packageNotActive'] = "This hosting package is currently";
-$_LANG['cPanel']['statusPendingNotice'] = "You cannot begin using this hosting account until it is activated.";
-$_LANG['cPanel']['statusSuspendedNotice'] = "You cannot continue to use or manage this package until it is reactivated.";
+$_LANG['cPanel']['packageNotActive'] = "A tárhely csomag jelenleg";
+$_LANG['cPanel']['statusPendingNotice'] = "Nem lehet kezdeni ezzel a tárhely fiók, amíg be van kapcsolva.";
+$_LANG['cPanel']['statusSuspendedNotice'] = "Nem lehet tovább használni, illetve kezelni ezt a csomagot, amíg újra aktiválódik.";
 
-$_LANG['cPanel']['billingOverview'] = "Számlázás";
+$_LANG['cPanel']['billingOverview'] = "Számlázás áttekintése";
 
-$_LANG['liveHelp']['chatNow'] = "Chat Megnyitása";
+$_LANG['liveHelp']['chatNow'] = "Csevegés Megnyitása";
 
-$_LANG['quotes'] = "Árajánlatok";
+$_LANG['quotes'] = "Idézetek";
 
 $_LANG['productMustBeActiveForModuleCmds'] = "A szolgáltatás aktív állapotban kell hogy legyen";
-$_LANG['domainCannotBeManagedUnlessActive'] = "This domain is not currently active. Domains cannot be managed unless active.";
+$_LANG['domainCannotBeManagedUnlessActive'] = "Ez a domain jelenleg nem aktív. Domains nem lehet kezelni, kivéve, ha az aktív.";
 
-$_LANG['actionRequiresAtLeastOneDomainSelected'] = "Please select at least one domain to perform the selected action on.";
+$_LANG['actionRequiresAtLeastOneDomainSelected'] = "Kérjük, válasszon ki legalább egy domaint végrehajtani a kijelölt műveletet.";
 
 $_LANG['clientAreaProductDownloadsAvailable'] = "Az alábbi letöltések elérhetőek a szolgáltatásaihoz:";
 $_LANG['clientAreaProductAddonsAvailable'] = "Vannak elérhető kiegészítők az Ön szolgáltatásaihoz. <a href=\"cart.php?gid=addons\">Kattintson ide a &amp; megrendeléshez &raquo;</a>";
-$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "We strongly encourage you to enable Two-Factor Authentication for added security.";
-$_LANG['clientAreaSecurityNoSecurityQuestions'] = "Setting a security question and answer helps protect your account from unauthorized password resets and allows us to verify your identity when requesting account changes.";
-$_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "The security question helps protect your account from unauthorized password resets and allows us to verify your identity when requesting account changes.";
+$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "Nyomatékosan javasoljuk, hogy engedélyezze a kéttényezős hitelesítést a nagyobb biztonság érdekében.";
+$_LANG['clientAreaSecurityNoSecurityQuestions'] = "Beállítása egy biztonsági kérdés és válasz segít megvédeni a fiókot a jogosulatlan jelszókiadások és lehetővé teszi számunkra, igazolnia kell személyazonosságát kérésekor fiókmódosításokat.";
+$_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "A biztonsági kérdésre segít megvédeni a fiókot a jogosulatlan jelszókiadások és lehetővé teszi számunkra, igazolnia kell személyazonosságát kérésekor fiókmódosításokat.";
 
 $_LANG['billingAddress'] = "Számlázási Cím";
 
@@ -1923,8 +1916,8 @@ $_LANG['featuredProduct'] = "Legnépszerübb";
 $_LANG['shoppingCartProductPerMonth'] = "<span>:price</span>/:countmo";
 $_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countyr";
 
-$_LANG['orderForm']['findNewDomain'] = "Find your new domain name. Enter your name or keywords below to check availability.";
-$_LANG['orderForm']['transferExistingDomain'] = "Transfer your existing domain names to us and save.";
+$_LANG['orderForm']['findNewDomain'] = "Keresse meg az új domain nevet. Adja meg a nevét, illetve kulcsszavak követve ellenőrizze a rendelkezésre álló.";
+$_LANG['orderForm']['transferExistingDomain'] = "Transzfer a meglévő domain neveket nekünk, és mentse.";
 $_LANG['orderForm']['www'] = "www.";
 $_LANG['orderForm']['check'] = "Ellenőrzés";
 $_LANG['orderForm']['returnToClientArea'] = "Vissza az ügyfélkapuba";
@@ -1948,7 +1941,7 @@ $_LANG['orderForm']['city'] = "Város";
 $_LANG['orderForm']['state'] = "Állam/Megye";
 $_LANG['orderForm']['country'] = "Ország";
 $_LANG['orderForm']['postcode'] = "Irányítószám";
-$_LANG['orderForm']['domainAlternativeContact'] = "You may specify alternative registered contact details for the domain registration(s) in your order when placing an order on behalf of another person or entity. If you do not require this, you can skip this section.";
+$_LANG['orderForm']['domainAlternativeContact'] = "Megadhatod, hogy alternatív regisztrált kapcsolati a domain regisztrálás(ok) a rendelést, amikor megrendelést egy másik személy vagy szervezet javára. Ha nem követeli meg, ezt a részt kihagyhatod.";
 $_LANG['orderForm']['accountSecurity'] = "Fiók Biztonság";
 $_LANG['orderForm']['mediumStrength'] = "Közepes";
 $_LANG['orderForm']['paymentDetails'] = "Fizetési adatok";
@@ -1956,133 +1949,199 @@ $_LANG['orderForm']['preferredPaymentMethod'] = "Kérjük válassza ki a fizeté
 $_LANG['orderForm']['cardNumber'] = "Bankkártyaszám";
 $_LANG['orderForm']['cvv'] = "CVV biztonsági kód";
 $_LANG['orderForm']['additionalNotes'] = "Egyéb megjegyzések";
-$_LANG['orderForm']['continueToClientArea'] = "Folytatás az ügyfélkapuhoz";
-$_LANG['orderForm']['reviewDomainAndAddons'] = "Please review your domain name selections and any addons that are available for them.";
+$_LANG['orderForm']['continueToClientArea'] = "Tovább az Ügyfél területre";
+$_LANG['orderForm']['reviewDomainAndAddons'] = "Kérjük, ellenőrizze a domain név választás és az esetleges Kiegészítések, hogy rendelkezésre álljon.";
 $_LANG['orderForm']['addToCart'] = "Hozzáadás a kosárhoz";
 $_LANG['orderForm']['addedToCartRemove'] = "Hozzáadva a kosárhoz (Eltávolítás)";
 $_LANG['orderForm']['configureDesiredOptions'] = "Állítsa be a kívánt szolgáltatásokat és lépjen a pénztárhoz.";
 $_LANG['orderForm']['haveQuestionsContact'] = "Kérdései vannak? Lépjen kapcsolatba az Értékesítési osztályunkkal.";
-$_LANG['orderForm']['haveQuestionsClickHere'] = "Click here";
+$_LANG['orderForm']['haveQuestionsClickHere'] = "Kattintson ide";
 $_LANG['orderForm']['use'] = "Felhasználás";
 $_LANG['orderForm']['check'] = "Ellenőrzés";
-$_LANG['orderForm']['transfer'] = "Transfer";
-$_LANG['orderForm']['domainAddedToCart'] = "This domain has been added to your cart.";
-$_LANG['orderForm']['registerLongerAndSave'] = "Register for longer and save!";
-$_LANG['orderForm']['tryRegisteringInstead'] = "Try registering this domain instead.";
-$_LANG['orderForm']['domainAvailabilityCached'] = "Domain availability results are cached which may lead to recently registered domains being shown as available.";
-$_LANG['orderForm']['submitTicket'] = "Submit a Ticket";
-$_LANG['orderForm']['promotionAccepted'] = "Kupon elfogadva! A rendelés összegét frissítettük.";
-$_LANG['orderForm']['productOptions'] = "Termék/Szolgáltatás";
-$_LANG['orderForm']['qty'] = "Mny";
-$_LANG['orderForm']['priceCycle'] = "Ár/Fizetési ciklus";
-$_LANG['orderForm']['edit'] = "Szerkesztés";
+$_LANG['orderForm']['transfer'] = "Transzfer";
+$_LANG['orderForm']['domainAddedToCart'] = "Ezt a domaint hozzáadva a kosárhoz.";
+$_LANG['orderForm']['registerLongerAndSave'] = "Regisztrálj hosszabb és mentse!";
+$_LANG['orderForm']['tryRegisteringInstead'] = "Próbáld meg regisztráció a domain helyett.";
+$_LANG['orderForm']['domainAvailabilityCached'] = "Domain elérhetőség eredmények elrejt nemrégiben bejegyzett domain is látható, ahogy elérhető vezethet.";
+$_LANG['orderForm']['submitTicket'] = "Hibajegy küldése";
+$_LANG['orderForm']['promotionAccepted'] = "Promóciós kód Elfogadott! Ön megrendelése teljes frissítésre került.";
+$_LANG['orderForm']['productOptions'] = "Product/Beállítások";
+$_LANG['orderForm']['qty'] = "Mennyiség";
+$_LANG['orderForm']['priceCycle'] = "Ár/Ciklus";
+$_LANG['orderForm']['edit'] = "Szerkesztése";
 $_LANG['orderForm']['update'] = "Frissítés";
-$_LANG['orderForm']['remove'] = "Eltávolítás";
-$_LANG['orderForm']['applyPromoCode'] = "Promóciós Kupon Felhasználása";
-$_LANG['orderForm']['estimateTaxes'] = "Estimate Taxes";
-$_LANG['orderForm']['removePromotionCode'] = "Remove Promotion Code";
-$_LANG['orderForm']['updateTotals'] = "Összeg frissítése";
+$_LANG['orderForm']['remove'] = "Eltávolítása";
+$_LANG['orderForm']['applyPromoCode'] = "Alkalmazza Promóciós kód";
+$_LANG['orderForm']['estimateTaxes'] = "Becsült adók";
+$_LANG['orderForm']['removePromotionCode'] = "Távolítsa el a promóciós kód";
+$_LANG['orderForm']['updateTotals'] = "Végösszeg frissítése";
 $_LANG['orderForm']['continueShopping'] = "Vásárlás folytatása";
-$_LANG['orderForm']['removeItem'] = "Tétel eltávolítása";
+$_LANG['orderForm']['removeItem'] = "Elem eltávolítása";
 $_LANG['orderForm']['yes'] = "Igen";
-$_LANG['orderForm']['cancel'] = "Mégse";
-$_LANG['orderForm']['close'] = "Lezárás";
-$_LANG['orderForm']['totals'] = "Összeg";
-$_LANG['orderForm']['includedWithPlans'] = "Minden csomag tartalmazza";
-$_LANG['orderForm']['whatIsIncluded'] = "Mit tartalmaz?";
-$_LANG['orderForm']['errorNoProductGroup'] = "Could not load any product groups.";
-$_LANG['orderForm']['errorNoProducts'] = "Product group does not contain any visible products";
+$_LANG['orderForm']['cancel'] = "Mégsem";
+$_LANG['orderForm']['close'] = "Bezár";
+$_LANG['orderForm']['totals'] = "A végösszeg";
+$_LANG['orderForm']['includedWithPlans'] = "Minden terv tartalmazza";
+$_LANG['orderForm']['whatIsIncluded'] = "Mit foglal magában?";
+$_LANG['orderForm']['errorNoProductGroup'] = "Nem sikerült betölteni minden termékcsoportokat.";
+$_LANG['orderForm']['errorNoProducts'] = "Termék csoport nem tartalmaz látható termékeket";
 
-$_LANG['cloudSlider']['feature01Title'] = "Maximum Server Uptime";
-$_LANG['cloudSlider']['feature01Description'] = "Server uptime is critical for all businesses - consider it the heart beat of hosting your business. File and databases servers, email and web servers are an indispensable part of most business processes, and downtimes have direct negative effects on productivity, sales, employee and customer satisfaction. That's why ensuring the maximum server uptime is so important to us - we want to make sure your business processes are running healthy so your customers are happy.";
-$_LANG['cloudSlider']['feature01DescriptionTwo'] = "By trusting us with your business needs, we promise you a 99.9% uptime on any services we provide, outside of any standard maintenance we may provide.";
-$_LANG['cloudSlider']['feature02Title'] = "World Wide Data Delivery";
-$_LANG['cloudSlider']['feature02Description'] = "Our services are powered by hundreds of servers and data centers located all over the world, so you can rest easy knowing that customers can access your website from anywhere. In addition, we provide monitoring tools to provide you with expert analytics - website traffic is an important step in improving your site's efficiency and popularity, as well as keeping track of where your visitors are coming from, what time of day they're visiting you, and how long they're staying. Our dedication to a global marketplace extends to domain registrations, as we offer the most popular TLD's for registration.";
-$_LANG['cloudSlider']['feature02DescriptionTwo'] = "Our dedication to customer support reaches across the globe as well. We are here to help you with your hosting in any way possible, and you can reach us via phone, email, or live chat.";
-$_LANG['cloudSlider']['feature03Title'] = "Top Tier Security";
-$_LANG['cloudSlider']['feature03Description'] = "Rest easy knowing that we provide 24/7 security monitoring and DDoS protection. You take protecting your customer's data seriously, and so do we. Our security team and safeguards are on the job all day, every day to provide the level of security needed in today's digital age.";
-$_LANG['cloudSlider']['feature03DescriptionTwo'] = "A wide range of security tools are at your disposal, including SSL certificates, firewall configuration, security monitoring services, VPN access, and more.";
-$_LANG['cloudSlider']['selectProductLevel'] = "Select the Perfect Level for You!";
+$_LANG['cloudSlider']['feature01Title'] = "Maximális szerver rendelkezésre állás";
+$_LANG['cloudSlider']['feature01Description'] = "Szerver rendelkezésre állás kritikus valamennyi vállalkozás számára - úgy vélik, hogy a szívverést hosting te dolgod. Fájl és adatbázisok szerverek, e-mail és web szerverek nélkülözhetetlen része a legtöbb üzleti folyamatok, és a leállások közvetlen negatív hatással van a termelékenységre, az értékesítés, az alkalmazottak és az ügyfelek elégedettségét. Ezért biztosítva a maximális szerver uptime annyira fontos számunkra - azt akarjuk, hogy győződjön meg arról, az üzleti folyamatok futnak egészséges, így a vásárlók szívesen.";
+$_LANG['cloudSlider']['feature01DescriptionTwo'] = "Azzal bíztak bennünk az Ön üzleti igényeinek, ígérjük, hogy egy 99,9% -os bármilyen szolgáltatást nyújtunk, kívül bármilyen szabványos karbantartási mi eljuttatunk.";
+$_LANG['cloudSlider']['feature02Title'] = "Világ széles adatszolgáltatás";
+$_LANG['cloudSlider']['feature02Description'] = "Szolgáltatásainkat powered by száz szerverek és adatközpontok található a világ minden tájáról, így nyugodt lehet abban, hogy az ügyfelek hozzáférhetnek a honlapon bárhonnan. Ezen kívül biztosítunk ellenőrző eszközöket, hogy az Ön szakértő elemző - honlapon a forgalom fontos lépés javítása webhelye hatékonyságát és népszerűsége, valamint a nyomon követése, ahol a látogatók jönnek, milyen napszakban ők látogat Önnek , és mennyi ideig maradunk. Cégünk elkötelezettségét a globális piacon kiterjed domain regisztráció, mint kínálunk a legnépszerűbb TLD a bejegyzési.";
+$_LANG['cloudSlider']['feature02DescriptionTwo'] = "Cégünk elkötelezettségét ügyfélszolgálati eléri az egész világon is. Azért vagyunk itt, hogy segítsen a tárhelyszolgáltató minden lehetséges módon, és akkor ér el minket telefonon, e-mailben, vagy élő chat.";
+$_LANG['cloudSlider']['feature03Title'] = "Felső szint biztonság";
+$_LANG['cloudSlider']['feature03Description'] = "Nyugalmát tudva azt, hogy a 24/7 biztonsági felügyeleti és DDoS védelem. Veszel védi az ügyfél adatait komolyan, és mi is. A biztonsági csapat és biztosítékok a munka minden nap, minden nap, hogy a szükséges védelmi szint a mai digitális korban.";
+$_LANG['cloudSlider']['feature03DescriptionTwo'] = "A széles körű biztonsági eszközök is a rendelkezésére áll, beleértve az SSL tanúsítványok, tűzfal konfigurációt, biztonsági megfigyelési szolgáltatások, VPN hozzáférést, és több.";
+$_LANG['cloudSlider']['selectProductLevel'] = "Válassza ki a tökéletes szintet az Ön számára!";
 
-$_LANG['domainChecker.additionalPricingOptions'] = "Additional Pricing Options For :domain";
+$_LANG['domainChecker.additionalPricingOptions'] = "Kiegészítő árak lehetőségek a :domain";
 
-$_LANG['orderpaymenttermfree'] = "Free";
+$_LANG['orderpaymenttermfree'] = "Ingyenes";
 
-$_LANG['cPanel']['usageStatsBwOverLimit'] = "You have exceeded your bandwidth limit.";
-$_LANG['cPanel']['usageStatsDiskOverLimit'] = "You have exceeded your disk space limit.";
-$_LANG['insufficientstockmessage'] = "We are currently low on stock on certain items so the cart quantities have been adjusted accordingly. For further information, please contact us.";
+$_LANG['cPanel']['usageStatsBwOverLimit'] = "Túllépte a sávszélesség korlátot.";
+$_LANG['cPanel']['usageStatsDiskOverLimit'] = "Túllépte a lemezterület határt.";
+$_LANG['insufficientstockmessage'] = "Vagyunk jelenleg alacsony, a készlet, az egyes tételek, így a kosár mennyiségek ennek megfelelően kiigazították. További információért kérjük lépjen kapcsolatba velünk.";
 
-$_LANG['only'] = "Only";
-$_LANG['startingat'] = "Starting at";
+$_LANG['only'] = "Csak";
+$_LANG['startingat'] = "Kezdve nál nél";
 
 $_LANG['yourdomainplaceholder'] = "example";
 $_LANG['yourtldplaceholder'] = "com";
 
-$_LANG['subaccountpermsproductsso'] = "Perform Single Sign-On";
+$_LANG['subaccountpermsproductsso'] = "Egyszeri Bejelentkezés végrehajtása";
 
-$_LANG['sso']['title'] = "Single Sign-On";
-$_LANG['sso']['summary'] = "Third party applications leverage the Single Sign-On functionality to provide direct access to your billing account without you having to re-authenticate.";
-$_LANG['sso']['disablenotice'] = "You may wish to disable this functionality if you provide access to any of your third party applications to users who you do not wish to be able to access your billing account.";
-$_LANG['sso']['enabled'] = "Single Sign-On is currently permitted for your account.";
-$_LANG['sso']['disabled'] = "Single Sign-On is currently disabled for your account.";
-$_LANG['sso']['redirectafterlogin'] = "You will be redirected after login";
+$_LANG['sso']['title'] = "Egyszeri Bejelentkezés";
+$_LANG['sso']['summary'] = "Harmadik féltől származó alkalmazások kihasználhatják a Egyszeri Bejelentkezés funkcionalitás, hogy közvetlen hozzáférést biztosít a számlázási fiók nem érzed, hogy újbóli azonosítására.";
+$_LANG['sso']['disablenotice'] = "Érdemes kikapcsolni ezt a funkciót, ha hozzáférést biztosítanak az Ön harmadik féltől származó alkalmazásokat a felhasználók, akik nem kívánja, hogy képes hozzáférni a számlázási fiók.";
+$_LANG['sso']['enabled'] = "Egyszeri Bejelentkezés jelenleg a számlára engedélyezett.";
+$_LANG['sso']['disabled'] = "Egyszeri Bejelentkezés jelenleg letiltott fiókját.";
+$_LANG['sso']['redirectafterlogin'] = "Ön át lesz irányítva bejelentkezés után";
 
-$_LANG['oauth']['badTwoFactorAuthModule'] = "Bad Two-Factor Auth Module. Please contact support.";
-$_LANG['oauth']['permAccessNameAndEmail'] = "Access your name and email address";
+$_LANG['oauth']['badTwoFactorAuthModule'] = "Rossz két-tényező hitelesítés modul. Kérjük lépjen kapcsolatba ügyfélszolgálatunkkal.";
+$_LANG['oauth']['permAccessNameAndEmail'] = "Elérheti a nevét és email címét";
 
-$_LANG['errorButTryAgain'] = "An error occurred.  Please try again.";
-$_LANG['emailSent'] = "Email Sent";
-$_LANG['verificationKeyExpired'] = "This email verification key has expired. Please login to request a new one.";
-$_LANG['emailAddressVerified'] = "Thank you for confirming your email address.";
-$_LANG['emailKeyExpired'] = "This email verification key has expired. Please request a new one.";
-$_LANG['verifyEmailAddress'] = "Please check your email and follow the link to verify your email address.";
-$_LANG['resendEmail'] = "Resend Verification Email";
+$_LANG['errorButTryAgain'] = "Hiba lépett fel. Legyen szíves megpróbál újra.";
+$_LANG['emailSent'] = "Email elküldve";
+$_LANG['verificationKeyExpired'] = "Ez az e-mail ellenőrzési kulcs lejárt. Kérjük, jelentkezzen be, hogy kérjen egy újat.";
+$_LANG['emailAddressVerified'] = "Köszönjük, hogy megerősítette az e-mail címét.";
+$_LANG['emailKeyExpired'] = "Ez az e-mail ellenőrzési kulcs lejárt. Kérjen egy újat.";
+$_LANG['verifyEmailAddress'] = "Kérjük, ellenőrizze az e-mail, és kövesse a linket e-mail címét.";
+$_LANG['resendEmail'] = "Igazoló e-mail újraküldése";
 
 // Markdown Editor Help
-$_LANG['markdown']['title'] = "Markdown Guide";
-$_LANG['markdown']['emphasis'] = "Emphasis";
-$_LANG['markdown']['bold'] = "bold";
-$_LANG['markdown']['italics'] = "italics";
-$_LANG['markdown']['strikeThrough'] = "strikethrough";
-$_LANG['markdown']['headers'] = "Headers";
-$_LANG['markdown']['bigHeader'] = "Big header";
-$_LANG['markdown']['mediumHeader'] = "Medium header";
-$_LANG['markdown']['smallHeader'] = "Small header";
-$_LANG['markdown']['tinyHeader'] = "Tiny header";
-$_LANG['markdown']['lists'] = "Lists";
-$_LANG['markdown']['genericListItem'] = "Generic list item";
-$_LANG['markdown']['numberedListItem'] = "Numbered list item";
-$_LANG['markdown']['links'] = "Links";
-$_LANG['markdown']['textToDisplay'] = "Text to display";
+$_LANG['markdown']['title'] = "Árleszállítás útmutató";
+$_LANG['markdown']['emphasis'] = "Hangsúly";
+$_LANG['markdown']['bold'] = "félkövér";
+$_LANG['markdown']['italics'] = "dőlt betűk";
+$_LANG['markdown']['strikeThrough'] = "áthúzás";
+$_LANG['markdown']['headers'] = "Fejlécek";
+$_LANG['markdown']['bigHeader'] = "Nagy fejléc";
+$_LANG['markdown']['mediumHeader'] = "Közepes fejléc";
+$_LANG['markdown']['smallHeader'] = "Kis fejléc";
+$_LANG['markdown']['tinyHeader'] = "Apró fejléc";
+$_LANG['markdown']['lists'] = "Listák";
+$_LANG['markdown']['genericListItem'] = "Általános lista elem";
+$_LANG['markdown']['numberedListItem'] = "Számozott lista elem";
+$_LANG['markdown']['links'] = "Linkek";
+$_LANG['markdown']['textToDisplay'] = "Megjelenítendő szöveg";
 $_LANG['markdown']['exampleLink'] = "http://www.example.com";
-$_LANG['markdown']['quotes'] = "Quotes";
-$_LANG['markdown']['thisIsAQuote'] = "This is a quote.";
-$_LANG['markdown']['quoteMultipleLines'] = "It can span multiple lines!";
-$_LANG['markdown']['tables'] = "Tables";
-$_LANG['markdown']['columnOne'] = "Column 1";
-$_LANG['markdown']['columnTwo'] = "Column 2";
-$_LANG['markdown']['columnThree'] = "Column 3";
-$_LANG['markdown']['withoutAligning'] = "Or without aligning the columns...";
+$_LANG['markdown']['quotes'] = "Idézetek";
+$_LANG['markdown']['thisIsAQuote'] = "Ez egy idézet.";
+$_LANG['markdown']['quoteMultipleLines'] = "Ez lehet többsoros!";
+$_LANG['markdown']['tables'] = "Táblák";
+$_LANG['markdown']['columnOne'] = "1 Oszlop";
+$_LANG['markdown']['columnTwo'] = "2 Oszlop";
+$_LANG['markdown']['columnThree'] = "3 Oszlop";
+$_LANG['markdown']['withoutAligning'] = "Vagy anélkül összehangolja az oszlopok...";
 $_LANG['markdown']['john'] = "John";
 $_LANG['markdown']['doe'] = "Doe";
-$_LANG['markdown']['male'] = "Male";
+$_LANG['markdown']['male'] = "Férfi";
 $_LANG['markdown']['mary'] = "Mary";
 $_LANG['markdown']['smith'] = "Smith";
-$_LANG['markdown']['female'] = "Female";
-$_LANG['markdown']['displayingCode'] = "Displaying code";
-$_LANG['markdown']['spanningMultipleLines'] = "Or spanning multiple lines...";
-$_LANG['markdown']['saved'] = "saved";
-$_LANG['markdown']['saving'] = "autosaving";
+$_LANG['markdown']['female'] = "Nő";
+$_LANG['markdown']['displayingCode'] = "Kód megjelenítése";
+$_LANG['markdown']['spanningMultipleLines'] = "Vagy, amely több sorban...";
+$_LANG['markdown']['saved'] = "mentve";
+$_LANG['markdown']['saving'] = "automatikus mentés";
 
-$_LANG['oauth']['authoriseAppToAccess'] = "Authorise :appName<br />to access your account?";
-$_LANG['oauth']['willBeAbleTo'] = "This application will be able to";
-$_LANG['oauth']['authorise'] = "Authorise";
-$_LANG['oauth']['currentlyLoggedInAs'] = "You are currently logged in as :firstName :lastName";
-$_LANG['oauth']['notYou'] = "Not You?";
-$_LANG['oauth']['returnToApp'] = "Return to :appName";
-$_LANG['oauth']['copyrightFooter'] = "Copyright &copy; :dateYear :companyName. All Rights Reserved.";
-$_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to your account";
-$_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
-$_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
-$_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['oauth']['authoriseAppToAccess'] = "Engedélyezés :appName<br />hozzáférjen a fiókjához?";
+$_LANG['oauth']['willBeAbleTo'] = "Ez az alkalmazás képes lesz";
+$_LANG['oauth']['authorise'] = "Engedélyezés";
+$_LANG['oauth']['currentlyLoggedInAs'] = "Ön jelenleg bejelentkezve mint :firstName :lastName";
+$_LANG['oauth']['notYou'] = "Nem te?";
+$_LANG['oauth']['returnToApp'] = "Vissza a :appName";
+$_LANG['oauth']['copyrightFooter'] = "Szerzői jog &copy; :dateYear :companyName. Minden jog fenntartva.";
+$_LANG['oauth']['loginToGrantApp'] = "Bejelentkezés megadása :appName<br />hozzáférést az ön fiókjához";
+$_LANG['oauth']['redirectDescriptionOne'] = "Átirányítása akkor vissza az alkalmazáshoz. Ez eltarthat néhány pillanatig.";
+$_LANG['oauth']['redirectDescriptionTwo'] = "Ha a böngészője nem irányítja át, kérem";
+$_LANG['oauth']['redirectDescriptionThree'] = "Kattintson ide a folytatáshoz";
+$_LANG['downloadLoginRequiredTagline'] = "Kérjük, jelentkezzen be, hogy hozzáférjen a kért fájl letöltéshez";
+
+$_LANG['orderForm']['year'] = "Év";
+$_LANG['orderForm']['years'] = "Évek";
+$_LANG['orderForm']['domainOrKeyword'] = "Adjon meg egy domént vagy kulcsszót";
+$_LANG['orderForm']['searching'] = "Keres";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> nem érhető el";
+$_LANG['orderForm']['add'] = "Hozzáad";
+$_LANG['orderForm']['suggestedDomains'] = "Javasolt Domainek";
+$_LANG['orderForm']['generatingSuggestions'] = "Generálása javaslatok neked";
+$_LANG['orderForm']['addHosting'] = "Hozzáad Web Tárhely";
+$_LANG['orderForm']['chooseFromRange'] = "Válasszon a számos web hosting csomagokból";
+$_LANG['orderForm']['packagesForBudget'] = "Azt csomagok tervezték, hogy illeszkedjen minden költségvetést";
+$_LANG['orderForm']['exploreNow'] = "Fedezze fel csomagokat most";
+$_LANG['orderForm']['transferToUs'] = "Transzfer domainjét nekünk";
+$_LANG['orderForm']['transferExtend'] = "Transzfer most hogy meghosszabbítja a domaint 1 évre!";
+$_LANG['orderForm']['transferDomain'] = "Domain Transzfer";
+$_LANG['orderForm']['extendExclusions'] = "Nem tartalmazza az egyes TLD-k és a nemrégiben felújított domainok";
+$_LANG['orderForm']['singleTransfer'] = "Egyetlen domain transzfer";
+$_LANG['orderForm']['enterDomain'] = "Kérjük, írja be a domaint";
+$_LANG['orderForm']['authCode'] = "Engedélyezési Kód";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp Kód / Eng Kód";
+$_LANG['orderForm']['authCodeTooltip'] = "Indítsa el a Transzfert akkor kell szerezni az engedélyt kódot a jelenlegi regisztrátor. Ezeket gyakran nevezik akár az EPP-kódot vagy a megerősítő kód. Úgy jár, mint egy jelszót, és egyedülálló a domain nevet.";
+$_LANG['orderForm']['help'] = "Segítség";
+$_LANG['orderForm']['required'] = "Szükséges";
+
+$_LANG['orderForm']['checkingAvailability'] = "Elérhetőség ellenőrzése";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "Transzfer jogosultság ellenőrzése";
+$_LANG['orderForm']['verifyingDomain'] = "Ellenőrzése a domain kiválasztása";
+$_LANG['orderForm']['transferEligible'] = "A domain jogosult transzfer";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Kérjük, gondoskodjon arról, hogy kinyitotta a domain az Ön jelenlegi regisztrátor előtt folytonosság.";
+$_LANG['orderForm']['transferNotEligible'] = "Nem támogatható a Transzfer";
+$_LANG['orderForm']['transferNotRegistered'] = "A megadott domain nem jelenik meg regisztrálni kell.";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "Ha a tartomány nemrég került bejegyzésre, szükség lehet megpróbál újra később.";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "Másik lehetőség, hogy végre egy keresést regisztrálni a domain.";
+$_LANG['orderForm']['domainInvalid'] = "Érvénytelen domainnév megadott";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "Kérjük, ellenőrizze a bejegyzést, majd próbálkozzon újra.";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "Továbbra is ezt a domain regisztrációt";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "Transzfer a számunkra, és meghosszabbítja 1 év* a";
+
+$_LANG['change'] = "Változás";
+
+$_LANG['filemanagement']['nofileuploaded'] = "Nincs feltöltött fájl.";
+$_LANG['filemanagement']['invalidname'] = "Érvényes fájlneveket tartalmaznak csak alfa-numerikus, pont, kötőjel és aláhúzás karakter.";
+$_LANG['filemanagement']['couldNotSaveFile'] = "Nem lehet menteni a feltöltött fájlt.";
+$_LANG['filemanagement']['checkPermissions'] = "Kérjük, Ellenőrizze jogosultságokat.";
+$_LANG['filemanagement']['checkAvailableDiskSpace'] = "Kérjük, ellenőrizze a rendelkezésre álló lemezterületet.";
+$_LANG['filemanagement']['fileAlreadyExists'] = "A fájl már létezik.";
+$_LANG['filemanagement']['noUniqueName'] = "Nem sikerült megtalálni egy egyedi fájlnevet.";
+
+$_LANG['cartSimpleCaptcha'] = "Kérjük, írja be az alább látható kódot";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "A legutóbbi 100 rekordokat mutatja";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Domainek kell kezdődnie, betű vagy szám";
+$_LANG['orderForm']['domainLengthRequirements'] = " és között <span class=\"min-length\"></span> és <span class=\"max-length\"></span> karakter hosszúságú";
+
+$_LANG['clientareatransferredaway'] = "Átadott";
+$_LANG['clientareacompleted'] = "Befejezett";
+$_LANG['domainContactUs'] = "Lépjen kapcsolatba velünk";
+
+$_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
+$_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
+
+$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
+$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
+$_LANG['domainCheckerSalesGroup']['new'] = "New";
 ////////// End of hungarian language file.  Do not place any translation strings below this line!

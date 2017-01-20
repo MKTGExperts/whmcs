@@ -7,23 +7,12 @@
 
     <title>WHMCS - {$pagetitle}</title>
 
-    <link href="{$BASE_PATH_CSS}/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="{$BASE_PATH_CSS}/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="templates/{$template}/style.css" rel="stylesheet" type="text/css" />
-    <link href="{$BASE_PATH_CSS}/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-    <link href="{$BASE_PATH_CSS}/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
-    <link href="{$BASE_PATH_CSS}/lightbox.css" rel="stylesheet" type="text/css">
-    <link href="{$BASE_PATH_CSS}/jquery.growl.css" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript" src="{$BASE_PATH_JS}/jquery.min.js"></script>
-    <script type="text/javascript" src="{$BASE_PATH_JS}/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{$BASE_PATH_JS}/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="{$BASE_PATH_JS}/textext.min.js"></script>
-    <script type="text/javascript" src="{$BASE_PATH_JS}/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="{$BASE_PATH_JS}/jquery.growl.js"></script>
-
-    <script type="text/javascript">
-        var datepickerformat = "{$datepickerformat}";
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="templates/{$template}/css/all.min.css?v={$versionHash}" rel="stylesheet" />
+    <script type="text/javascript" src="templates/{$template}/js/scripts.min.js?v={$versionHash}"></script>
+    <script>
+        var datepickerformat = "{$datepickerformat}",
+            csrfToken="{$csrfToken}";
         {if $jquerycode}
             $(document).ready(function(){ldelim}
                 {$jquerycode}
@@ -33,9 +22,6 @@
             {$jscode}
         {/if}
     </script>
-
-    <script type="text/javascript" src="templates/{$template}/head.js"></script>
-    <script type="text/javascript" src="{$BASE_PATH_JS}/AdminAdvSearch.js"></script>
 
     {$headoutput}
 
@@ -53,7 +39,7 @@
             <a id="logout" href="logout.php">{$_ADMINLANG.global.logout}</a>
             {$topBarNotification}
         </div>
-        <div class="pull-right date">
+        <div class="pull-right date hidden-xs">
             {$smarty.now|date_format:"%A, %d %B %Y, %H:%M"}
         </div>
     </div>
@@ -80,6 +66,10 @@
     </div>
 
     {include file="$template/menu.tpl"}
+
+    <div class="global-admin-warning{if !$globalAdminWarningMsg} hidden{/if}">
+        {$globalAdminWarningMsg}
+    </div>
 
     <div id="sidebaropen"{if !$minsidebar} style="display:none;"{/if}>
         <a href="#" onclick="sidebarOpen();return false">

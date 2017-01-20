@@ -22,6 +22,10 @@ if ($aff = $whmcs->get_req_var('aff')) {
     Cookie::set('AffiliateID',$aff,'3m');
 }
 
+run_hook("AffiliateClickthru", array(
+    'affiliateId' => $aff,
+));
+
 // if product id passed in, redirect to order form
 if ($pid = $whmcs->get_req_var('pid')) redir("a=add&pid=".(int)$pid,"cart.php");
 

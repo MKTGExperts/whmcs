@@ -3,21 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset={$charset}" />
 <title>WHMCS - {$pagetitle}</title>
-<link href="{$BASE_PATH_CSS}/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="{$BASE_PATH_CSS}/font-awesome.min.css" rel="stylesheet" type="text/css" />
-<link href="templates/v4/style.css" rel="stylesheet" type="text/css" />
-<link href="{$BASE_PATH_CSS}/jquery-ui.min.css" rel="stylesheet" type="text/css" />
-<link href="{$BASE_PATH_CSS}/bootstrap-switch.min.css" rel="stylesheet" type="text/css">
-<link href="{$BASE_PATH_CSS}/lightbox.css" rel="stylesheet" type="text/css">
-<link href="{$BASE_PATH_CSS}/jquery.growl.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="{$BASE_PATH_JS}/jquery.min.js"></script>
-<script type="text/javascript" src="{$BASE_PATH_JS}/bootstrap.min.js"></script>
-<script type="text/javascript" src="{$BASE_PATH_JS}/jquery-ui.min.js"></script>
-<script type="text/javascript" src="{$BASE_PATH_JS}/textext.min.js"></script>
-<script type="text/javascript" src="{$BASE_PATH_JS}/bootstrap-switch.min.js"></script>
-<script type="text/javascript" src="{$BASE_PATH_JS}/jquery.growl.js"></script>
+<link href="templates/{$template}/css/all.min.css?v={$versionHash}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="templates/{$template}/js/scripts.min.js?v={$versionHash}"></script>
 <script type="text/javascript">
-var datepickerformat = "{$datepickerformat}";
+var datepickerformat = "{$datepickerformat}",
+    csrfToken = "{$csrfToken}";
 {if $jquerycode}$(document).ready(function(){ldelim}
     {$jquerycode}
 {rdelim});
@@ -25,8 +15,6 @@ var datepickerformat = "{$datepickerformat}";
 {if $jscode}{$jscode}
 {/if}
 </script>
-<script type="text/javascript" src="templates/{$template}/head.js"></script>
-<script type="text/javascript" src="{$BASE_PATH_JS}/AdminAdvSearch.js"></script>
 {$headoutput}
 </head>
 <body>
@@ -66,6 +54,9 @@ var datepickerformat = "{$datepickerformat}";
         </ul>
       </div>
     </div>
+  </div>
+  <div class="global-admin-warning{if !$globalAdminWarningMsg} hidden{/if}">
+    {$globalAdminWarningMsg}
   </div>
   <div id="content_container">
 

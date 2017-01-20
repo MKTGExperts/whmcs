@@ -72,17 +72,17 @@ $_LANG['bannedbanreason'] = "Yasaklama Nedeni";
 $_LANG['bannedhasbeenbanned'] = "yasaklandı";
 $_LANG['bannedtitle'] = "Yasaklı IP";
 $_LANG['bannedyourip'] = "Yasaklı IP";
-$_LANG['cartaddons'] = "Ekler";
+$_LANG['cartaddons'] = "Eklentiler";
 $_LANG['cartbrowse'] = "Ürünler &amp; Servisler";
-$_LANG['cartconfigdomainextras'] = "Alan adı ekstralarını ayarla";
-$_LANG['cartconfigoptionsdesc'] = "Bu ürün/hizmette değiştirebilceğiniz bazı özellikler/ekler bulunmaktadır.";
+$_LANG['cartconfigdomainextras'] = "Alan adı eklentilerini ayarla";
+$_LANG['cartconfigoptionsdesc'] = "Bu ürün/hizmette değiştirebilceğiniz özellik veya eklenti bulunmaktadır.";
 $_LANG['cartconfigserver'] = "Sunucunuzu Özelliklerini Ayarlayın";
 $_LANG['cartcustomfieldsdesc'] = "Bu ürün siparişinde ayrıca bilgi ekleyebilirsiniz.";
 $_LANG['cartdomainsconfig'] = "Alan Adı Konfigürasyonu";
 $_LANG['cartdomainsconfigdesc'] = "Sepetinizdeki alan adlarının özelliklerini değiştirebilir, hizmet ekleyebilir, gerekli bilgileri girip alan adınız için isim sunucularını belirtebilirsiniz.";
 $_LANG['cartdomainshashosting'] = "Barındırma Hizmeti Var";
-$_LANG['cartdomainsnohosting'] = "Hala Hosting Hesabınız Yok Mu?! Eklemek için hemen tıklayın.";
-$_LANG['carteditproductconfig'] = "Konfigurasyonu Değiştir.";
+$_LANG['cartdomainsnohosting'] = "Hosting Hesabınız yok mu? Tıklayın Ekleyin.";
+$_LANG['carteditproductconfig'] = "Konfigürasyonu Değiştir.";
 $_LANG['cartempty'] = "Sepetiniz Boş";
 $_LANG['cartemptyconfirm'] = "Sepetinizi tamamen boşaltmak istediğinizden emin misiniz?";
 $_LANG['cartexistingclientlogin'] = "Mevcut Kullanıcılar için Giriş";
@@ -110,7 +110,7 @@ $_LANG['choosedomains'] = "Alan Adınızı Seçiniz";
 $_LANG['clickheretologin'] = "Giriş için tıklayınız";
 $_LANG['clientareaaccountaddons'] = "Hesap Eklentileri";
 $_LANG['clientareaactive'] = "Aktif";
-$_LANG['clientareaaddfundsdisabled'] = "We do not allow depositing funds in advance with us at the current time.";
+$_LANG['clientareaaddfundsdisabled'] = "Şu an bakiye ekleyerek önceden depozit oluşturmanıza izin verilmemektedir.";
 $_LANG['clientareaaddfundsnotallowed'] = "Ödeme eklemek için aktif satın almış olduğunuz bir hizmet veya ürün olmalıdır. Bu durumda ödeme ekleyemezsiniz!";
 $_LANG['clientareaaddon'] = "Eklenti";
 $_LANG['clientareaaddonorderconfirmation'] = "Teşekkürler. Aşağıda listelenen eklenti için siparişiniz alınmıştır. Lütfen ödeme şeklini seçiniz.";
@@ -118,8 +118,8 @@ $_LANG['clientareaaddonpricing'] = "Tutar";
 $_LANG['clientareaaddonsfor'] = "için Eklenti";
 $_LANG['clientareaaddress1'] = "Adres";
 $_LANG['clientareaaddress2'] = "Adres (Devamı)";
-$_LANG['clientareabwlimit'] = "Bant Genişliği Sınırı";
-$_LANG['clientareabwusage'] = "Bant Genişliği Kullanımı";
+$_LANG['clientareabwlimit'] = "Aylık Trafik Sınırı";
+$_LANG['clientareabwusage'] = "Aylık Trafik Kullanımı";
 $_LANG['clientareacancel'] = "İptal";
 $_LANG['clientareacancelconfirmation'] = "Teşekkür ederiz. İptal talebiniz alınmıştır. Eğer yanlışlıkla yaptıysanyz, lütfen acilen destek için bildirim açınız, aksi takdirde hesabınız kapatılacaktır.";
 $_LANG['clientareacancelinvalid'] = "HATA! İptal etmeye çalıştığınız hesap iptal edilmiş veya bulunamıyor.";
@@ -137,7 +137,7 @@ $_LANG['clientareachoosecontact'] = "Sorumlu Seç";
 $_LANG['clientareacity'] = "Şehir";
 $_LANG['clientareacompanyname'] = "Firma Adı";
 $_LANG['clientareaconfirmpassword'] = "Şifre (Tekrar)";
-$_LANG['clientareacontactsemails'] = "Email Özellikleri";
+$_LANG['clientareacontactsemails'] = "E-Posta Özellikleri";
 $_LANG['clientareacontactsemailsdomain'] = "Alan Adı E-postaları - Uzatma Bildirimleri, Kayıt Bilgileri v.b.";
 $_LANG['clientareacontactsemailsgeneral'] = "Genel E-postaları - Genel Duyurular &amp; Şifre Hatırlatmaları";
 $_LANG['clientareacontactsemailsinvoice'] = "Fatura E-postaları - Faturalar &amp; Muhasebe Hatırlatmaları";
@@ -153,7 +153,7 @@ $_LANG['clientareadisklimit'] = "Disk Alanı Limiti";
 $_LANG['clientareadiskusage'] = "Disk Alanı Kullanımı";
 $_LANG['clientareadomainexpirydate'] = "Alan Adı Süresi Bitiş Tarihi";
 $_LANG['clientareadomainnone'] = "Tarafımızdan kayıtlı bir Alan Adı mevcut değildir";
-$_LANG['clientareaemail'] = "Email Adresi";
+$_LANG['clientareaemail'] = "E-Posta Adresi";
 $_LANG['clientareaemails'] = "E-Postalarım";
 $_LANG['clientareaemailsdate'] = "Gönderildiği Tarih";
 $_LANG['clientareaemailsintrotext'] = "Aşağıda size göndermiş olduğumuz tüm mesajların geçmişini görmektesiniz. Bu sayede emaillerinizi kaybetmeniz durumunda bile hesabınızla ilgili bilgileri yine burada bulabileceksiniz.";
@@ -164,8 +164,8 @@ $_LANG['clientareaerrorbannedemail'] = "Girdiğiniz e-posta adresinin sağlayıc
 $_LANG['clientareaerrorcity'] = "Şehir adını girmediniz";
 $_LANG['clientareaerrorcity2'] = "Şehir adı sadece harf ve boşluk içerebilir";
 $_LANG['clientareaerrorcountry'] = "Lütfen listeden ülkenizi seçiniz";
-$_LANG['clientareaerroremail'] = "Email adresinizi girmediniz";
-$_LANG['clientareaerroremailinvalid'] = "Girdiğiniz email adresi geçersizdir";
+$_LANG['clientareaerroremail'] = "E-Posta adresinizi girmediniz";
+$_LANG['clientareaerroremailinvalid'] = "Girdiğiniz e-posta adresi geçersizdir";
 $_LANG['clientareaerrorfirstname'] = "Adınızı girmediniz";
 $_LANG['clientareaerrorfirstname2'] = "Adınız sadece harf içerebilir";
 $_LANG['clientareaerrorisrequired'] = "gereklidir";
@@ -181,7 +181,7 @@ $_LANG['clientareaerrorpostcode2'] = "Posta kodunuz sadece harf, rakam ve boşlu
 $_LANG['clientareaerrors'] = "Aşağıdaki hatalar oluştu:";
 $_LANG['clientareaerrorstate'] = "Bölgeyi girmediniz";
 $_LANG['clientareaexpired'] = "Süresi Doldu";
-$_LANG['clientareafirstname'] = "Adı";
+$_LANG['clientareafirstname'] = "Adınız";
 $_LANG['clientareafraud'] = "Sahtekarlık/Dolandırıcılık";
 $_LANG['clientareafullname'] = "Müşteri İsmi";
 $_LANG['clientareaheader'] = "Müşteri paneline hoşgeldiniz. Müşteri panelinizi kullanarak sizinle ilgili olarak kayıtlı bulunan bilgileri görüntüleyebilir ve güncelleyebilir, hosting paketleriniz ve Alan Adınıza ait detayları inceleyebilir, destek için bizlere bildirim gönderebilir ve ek ürün / hizmet siparişi verebilirsiniz.";
@@ -193,7 +193,7 @@ $_LANG['clientareahostingdomain'] = "Alan Adı";
 $_LANG['clientareahostingnextduedate'] = "Sonraki Son Ödeme Tarihi";
 $_LANG['clientareahostingpackage'] = "Paket";
 $_LANG['clientareahostingregdate'] = "Kayıt Tarihi";
-$_LANG['clientarealastname'] = "Soyadı";
+$_LANG['clientarealastname'] = "Soyadınız";
 $_LANG['clientarealastupdated'] = "Son Güncelleme";
 $_LANG['clientarealeaveblank'] = "Şifrenizi değiştirmek istemiyorsanız bu alanı boş bırakınız";
 $_LANG['clientareamodifydomaincontactinfo'] = "Alan Adı iletişim bilgilerini değiştir";
@@ -268,7 +268,7 @@ $_LANG['creditcardcardnumber'] = "Kart numarası";
 $_LANG['creditcardcardstart'] = "Başlangıç Tarihi";
 $_LANG['creditcardcardtype'] = "Kart tipi";
 $_LANG['creditcardccvinvalid'] = "Girmiş olduğunuz kart kodu geçersizdir";
-$_LANG['creditcardconfirmation'] = "Teşekkürler. Yeni kart bilgileriniz kabul edilmiştir ve hesabınızın ilk ödemesi gerçekleştirilmiştir. İlgili email mesajı adresinize gönderilmiştir.";
+$_LANG['creditcardconfirmation'] = "Teşekkürler. Yeni kart bilgileriniz kabul edilmiştir ve hesabınızın ilk ödemesi gerçekleştirilmiştir. İlgili e-posta mesajı adresinize gönderilmiştir.";
 $_LANG['creditcardcvvnumber'] = "CVV/CVC2 Numarası";
 $_LANG['creditcardcvvwhere'] = "Nasıl bulurum?";
 $_LANG['creditcarddeclined'] = "Girmiş olduğunuz kart bilgileri reddedilmiştir. Lütfen başka bir kart deneyiniz veya destek birimimizle irtibata geçiniz.";
@@ -282,9 +282,9 @@ $_LANG['creditcardsecuritynotice'] = "Buraya girdiğiniz her türlü bilgi güve
 $_LANG['creditcarduseexisting'] = "Kayıtlı Kartı Kullan";
 $_LANG['customfieldvalidationerror'] = "değer geçersiz";
 $_LANG['days'] = "Gün";
-$_LANG['hours'] = "Hours";
-$_LANG['minutes'] = "Minutes";
-$_LANG['seconds'] = "Seconds";
+$_LANG['hours'] = "Saat";
+$_LANG['minutes'] = "Dakika";
+$_LANG['seconds'] = "Saniye";
 $_LANG['defaultbillingcontact'] = "Varsayılan Ödeme Sorumlusu";
 $_LANG['domainalternatives'] = "Şu alternatifleri deneyebilirsiniz:";
 $_LANG['domainavailable'] = "Kayıt Edilebilir! Hemen Satın Al";
@@ -295,7 +295,6 @@ $_LANG['domainbulksearch'] = "Toplu Alan Adı Sorgulama";
 $_LANG['domainbulksearchintro'] = "Gerçek zamanlı toplu arama bir defada 20 adede kadar alan adını bir defada aramanızı sağlar. Alan adlarını alttaki alana her satıra bir tane gelecek şekilde yazın. Alan adlarının başlarına www. ya da http:// yazmayın.";
 $_LANG['domainbulktransferdescription'] = "Var olan alan adlarınızı bize transfer edebilirsiniz. Başlamak için alan adlarını aşağıya her satıra birer tane olacak şekilde yazın. Yazarken www. ya da http:// kısımlarını dahil etmeyin.";
 $_LANG['domainbulktransfersearch'] = "Toplu Alan Adı Transferi";
-$_LANG['domaincheckerdescription'] = "Almak istediğiniz alan adlarının müsait olup olmadığını kontrol edin.";
 $_LANG['domaincontactinfo'] = "İletişim Bilgileri";
 $_LANG['domaincurrentrenewaldate'] = "Geçerli Yenileme Tarihi";
 $_LANG['domaindnsaddress'] = "Adres";
@@ -314,7 +313,7 @@ $_LANG['domainerror'] = "Bir hata oluştu:";
 $_LANG['domainerrornodomain'] = "Lütfen geçerli bir alan adı ismi giriniz";
 $_LANG['domainerrortoolong'] = "Girdiğiniz alan adı çok uzun. Bir alan adı ismi en fazla 67 karakter olabilir.";
 $_LANG['domaingeteppcode'] = "EPP Kodu (Transfer Kodu) Al";
-$_LANG['domaingeteppcodeemailconfirmation'] = "EPP Kodu istemi başarılı! Kod, alan adınızın kayıtlı olduğu (registrant) email adresine gönderildi.";
+$_LANG['domaingeteppcodeemailconfirmation'] = "EPP Kodu istemi başarılı! Kod, alan adınızın kayıtlı olduğu (registrant) e-posta adresine gönderildi.";
 $_LANG['domaingeteppcodeexplanation'] = "EPP Kodu, bir alan adını sadece sahibinin transfer edebilmesi için geliştirilmiş güvenlik amaçlı bir koddur. Bir alan adını bir registrardan diğerine taşımak için bu kod gereklidir. Bu kodu alan adının şu an kayıtlı olduğu registrardan öğrenebilirsiniz.";
 $_LANG['domaingeteppcodefailure'] = "EPP Kodu istemede hata:";
 $_LANG['domaingeteppcodeis'] = "Alan adınızın EPP Kodu:";
@@ -329,8 +328,8 @@ $_LANG['domainnameserver1'] = "İsim Sunucusu / Nameserver 1";
 $_LANG['domainnameserver2'] = "İsim Sunucusu / Nameserver 2";
 $_LANG['domainnameserver3'] = "İsim Sunucusu / Nameserver 3";
 $_LANG['domainnameserver4'] = "İsim Sunucusu / Nameserver 4";
-$_LANG['domainnameserver5'] = "Nameserver 5";
-$_LANG['domainnameservers'] = "İsim Sunucuları";
+$_LANG['domainnameserver5'] = "İsim Sunucusu / Nameserver 5";
+$_LANG['domainnameservers'] = "İsim Sunucuları / NS Adresleri";
 $_LANG['domainordernow'] = "Sipariş Ver!";
 $_LANG['domainorderrenew'] = "Yenileme Siparişi Ver";
 $_LANG['domainprice'] = "Ücret";
@@ -375,11 +374,11 @@ $_LANG['domaintitle'] = "Alan Adı Kontrol Merkezi";
 $_LANG['domaintld'] = "Uzantı";
 $_LANG['domaintransfer'] = "Alan Adı Kaydı";
 $_LANG['domainunavailable'] = "Musait Değil";
-$_LANG['domainunavailable1'] = "Uzgünüz!";
+$_LANG['domainunavailable1'] = "Üzgünüz!";
 $_LANG['domainunavailable2'] = "daha önceden alınmış!";
-$_LANG['domainreserved'] = "Reserved";
-$_LANG['domainreserved1'] = "Domain";
-$_LANG['domainreserved2'] = "is available, but reserved.";
+$_LANG['domainreserved'] = "Rezerve Edildi";
+$_LANG['domainreserved1'] = "Alan Adı";
+$_LANG['domainreserved2'] = "tescil işlemi için uygun, ancak ileri tarihli alım için ön sipariş verilmiş.";
 $_LANG['domainviewwhois'] = "WHOIS raporunu görüntüle";
 $_LANG['downloaddescription'] = "Açıklama";
 $_LANG['downloadloginrequired'] = "Erişim Reddedildi - Bu dosyayı indirmek için oturum açmalısınız";
@@ -453,13 +452,14 @@ $_LANG['invoicestransgateway'] = "Ödeme Yolu";
 $_LANG['invoicestransid'] = "İşlem No";
 $_LANG['invoicestransnonefound'] = "İlişkili İşlem Bulunamadı";
 $_LANG['invoicesunpaid'] = "Ödenmedi";
-$_LANG['invoicesdraft'] = "Draft";
+$_LANG['invoicesdraft'] = "Taslak";
 $_LANG['invoicesview'] = "Faturayı Görüntüle";
 $_LANG['jobtitle'] = "Ünvan";
 $_LANG['kbsuggestions'] = "Bilgi Merkezi Önerileri";
 $_LANG['kbsuggestionsexplanation'] = "Bilgi merkezindeki şu yazılar sorunuza cevap veriyor olabilir. Lütfen göndermezden önce bu önerileri inceleyin.";
 $_LANG['knowledgebasearticles'] = "Dökümanlar";
 $_LANG['knowledgebasecategories'] = "Kategoriler";
+$_LANG['nokbcategories'] = "No categories exist";
 $_LANG['knowledgebasedescription'] = "Sıkça sorulan sorular ve diğer konularda bilgiler.";
 $_LANG['knowledgebasefavorites'] = "Sık kullanılanlara ekle";
 $_LANG['knowledgebasehelpful'] = "Bu cevap yeterince yardımcı oldu mu?";
@@ -479,7 +479,7 @@ $_LANG['knowledgebaseviews'] = "Görüntülenme";
 $_LANG['knowledgebasevote'] = "Oyla";
 $_LANG['knowledgebasevotes'] = "Oy";
 $_LANG['knowledgebaseyes'] = "Evet";
-$_LANG['knowledgebaseArticleRatingThanks'] = "Thanks for rating the article for us";
+$_LANG['knowledgebaseArticleRatingThanks'] = "Bizim için bu makaleye oy verdiğiniz için teşekkür ederiz";
 $_LANG['language'] = "Dil";
 $_LANG['latefee'] = "Gecikme Ücreti";
 $_LANG['latefeeadded'] = "Eklendi";
@@ -511,7 +511,7 @@ $_LANG['morechoices'] = "Daha Fazla Seçenek";
 $_LANG['networkissuesaffecting'] = "Etkilenen";
 $_LANG['networkissuesaffectingyourservers'] = "Lütfen Dikkat: Sahip olduğunuz sunucularını etkileyen duyurular altın rengi arka plan rengiyle belirtilmiştir.";
 $_LANG['networkissuesdate'] = "Tarih";
-$_LANG['networkissuesdescription'] = "Hâlihazırda devam eden ve planlanan bakım duyurularını takip edin.";
+$_LANG['networkissuesdescription'] = "Halihazırda devam eden ve planlanan bakım ve kesinti duyurularını takip edin.";
 $_LANG['networkissueslastupdated'] = "Son Güncelleme";
 $_LANG['networkissuesnonefound'] = "Şu an için bakım duyurusu yok";
 $_LANG['networkissuespriority'] = "Öncelik";
@@ -583,7 +583,7 @@ $_LANG['ordererrornameserver1'] = "İsim sunucusu 1'i girmelisiniz";
 $_LANG['ordererrornameserver2'] = "İsim sunucusu 2'yi girmelisiniz";
 $_LANG['ordererrornodomain'] = "Herhangi bir alan adı girmediniz";
 $_LANG['ordererrorpassword'] = "Şifrenizi girmediniz";
-$_LANG['ordererrorserverhostnameinuse'] = "The hostname you entered is already in use. Please choose another.";
+$_LANG['ordererrorserverhostnameinuse'] = "Girmiş olduğunuz hostname kullanılmaktadır. Lütfen farklı bir hostname giriniz.";
 $_LANG['ordererrorservernohostname'] = "Sunucunuz için bir sunucu ismi girmelisiniz";
 $_LANG['ordererrorservernonameservers'] = "Her iki isim sunucusu için bir ön ek girmelisiniz";
 $_LANG['ordererrorservernorootpw'] = "İstediğiniz root şifresini girmelisiniz";
@@ -625,21 +625,21 @@ $_LANG['orderpaymenttermsemiannually'] = "6 Aylık";
 $_LANG['orderprice'] = "Tutar";
 $_LANG['orderproduct'] = "Ürün / Hizmet";
 $_LANG['orderprogress'] = "Durum";
-$_LANG['orderpromoexpired'] = "Den oppgitte rabattkoden er utløpt";
-$_LANG['orderpromoinvalid'] = "Den oppgitte rabattkoden gjelder ikke for dette produktet";
-$_LANG['orderpromomaxusesreached'] = "The promotion code entered has already been used";
+$_LANG['orderpromoexpired'] = "Girilen promosyon kodunun süresi dolmuştur";
+$_LANG['orderpromoinvalid'] = "Girilen promosyon kodu sepetinizdeki hiç bir hizmet için geçerli değildir";
+$_LANG['orderpromomaxusesreached'] = "Girilen promosyon kodu zaten kullanılmış";
 $_LANG['orderpromotioncode'] = "İndirim kodu";
 $_LANG['orderpromovalidatebutton'] = "Kodu onayla &gt;&gt;";
-$_LANG['orderPromoCodePlaceholder'] = "Enter promo code if you have one";
-$_LANG['orderprorata'] = "Pro Rata";
+$_LANG['orderPromoCodePlaceholder'] = "Promosyon kodunuz varsa lütfen giriniz";
+$_LANG['orderprorata'] = "Dönemsel Faturalama (Pro Rata)";
 $_LANG['orderreceived'] = "Siparişiniz için TEŞEKKÜR EDERİZ. Birazdan onay emailiniz gönderilecektir.";
-$_LANG['orderregisterdomain'] = "Yeni bir alan adı satın al";
+$_LANG['orderregisterdomain'] = "Alan Adı Tescil Et";
 $_LANG['orderregperiod'] = "Kayıt Süresi";
 $_LANG['ordersecure'] = "Bu sipariş formu sizi sahtekarlıktan korumak amacı ile kayıt altına alınmaktadır. Şuan Kullanıdığınız ip adresiniz : ";
 $_LANG['ordersecure2'] = "Kayıt Altındasınız.";
 $_LANG['orderserverhostname'] = "Sunucu ismi";
 $_LANG['orderservernameservers'] = "İsim sunucuları";
-$_LANG['orderservernameserversdescription'] = "Buraya gireceğiniz önekler sunucu için varsayılan isim sucunularını belirleyecektir. Örneğin eg. ns1.example.com ve ns2.example.com";
+$_LANG['orderservernameserversdescription'] = "Buraya gireceğiniz önekler sunucu için varsayılan isim sucunularını belirleyecektir. Örn: ns1.example.com ve ns2.example.com";
 $_LANG['orderservernameserversprefix1'] = "Ön-ek 1";
 $_LANG['orderservernameserversprefix2'] = "Ön-ek 2";
 $_LANG['orderserverrootpassword'] = "Root şifresi";
@@ -651,8 +651,8 @@ $_LANG['ordersummary'] = "Sipariş Özeti";
 $_LANG['ordertaxcalculations'] = "Vergi Hesapları";
 $_LANG['ordertaxstaterequired'] = "Vergi hesaplaması yapılacak ülkeyi girmelisiniz.";
 $_LANG['ordertitle'] = "Sipariş";
-$_LANG['ordertos'] = "ve anladım";
-$_LANG['ordertosagreement'] = "Kullanım Sözleşmesini okudum";
+$_LANG['ordertos'] = "Kullanım Koşulları";
+$_LANG['ordertosagreement'] = "Kullanım Koşulları ve Sözleşmesini okudum ve anladım.";
 $_LANG['ordertotalduetoday'] = "Bugün Ödenmesi Gereken";
 $_LANG['ordertotalrecurring'] = "Yinelenenlerin Toplamı";
 $_LANG['ordertransferdomain'] = "Mevcut bir alan adını transfer et";
@@ -675,7 +675,7 @@ $_LANG['proformainvoicenumber'] = "Proforma Fatura No";
 $_LANG['promoexistingclient'] = "Bu kodu kullanabilmeniz için etkin bir ürününüzün ya da hizmetinizin olması gerekiyor";
 $_LANG['promoonceperclient'] = "Bu kodu her müşteri sadece bir kez kullanabilir";
 $_LANG['pwstrengthfail'] = "Girdiğiniz şifre yeterince karmaşık değil, lütfen daha karmaşık bir şifre giriniz";
-$_LANG['pwdoesnotmatch'] = "The passwords entered do not match";
+$_LANG['pwdoesnotmatch'] = "Girdiğiniz şifreler uyuşmamakta";
 $_LANG['quicknav'] = "Hızlı Erişim";
 $_LANG['recordsfound'] = "kayıt bulundu";
 $_LANG['recurring'] = "Yinelenen";
@@ -715,11 +715,11 @@ $_LANG['serverstatusuptime'] = "Ne Kadar Zamandır Açık?";
 $_LANG['serverusername'] = "Kullanıcı Adı";
 $_LANG['show'] = "Göster";
 $_LANG['ssladmininfo'] = "Yönetici İletişim Bilgisi";
-$_LANG['ssladmininfodetails'] = "Bu iletişim bilgisi sertifikada görüntülenmeyecektir. Sadece bu siparişinizle ilgili size ulaşmak için kullanılır. SSL sertifikası ve gelecekteki yenileme hatırlatıcıları aşağıda belirtilen email adresinde gönderilecektir.";
+$_LANG['ssladmininfodetails'] = "Bu iletişim bilgisi sertifikada görüntülenmeyecektir. Sadece bu siparişinizle ilgili size ulaşmak için kullanılır. SSL sertifikası ve gelecekteki yenileme hatırlatıcıları aşağıda belirtilen e-posta adresinde gönderilecektir.";
 $_LANG['sslcertapproveremail'] = "Sertifikayı Onaylayan E-posta Adresi";
-$_LANG['sslcertapproveremaildetails'] = "Bu sertifika için onaylama email isteğinin nereye gönderileceğini alttaki seçeneklerden seçiniz.";
+$_LANG['sslcertapproveremaildetails'] = "Bu sertifika için onaylama e-posta isteğinin nereye gönderileceğini alttaki seçeneklerden seçiniz.";
 $_LANG['sslcertinfo'] = "SSL Sertifika Bilgisi";
-$_LANG['pleasechooseone'] = "Please choose one...";
+$_LANG['pleasechooseone'] = "Lütfen birini seçin...";
 $_LANG['sslcerttype'] = "Sertifika Tipi";
 $_LANG['sslconfigcomplete'] = "Konfigurasyon Tamam";
 $_LANG['sslconfigcompletedetails'] = "SSL sertifika konfigürasyonu tamamlandı ve doğrulama için Sertifika Otoritesine (Certificate Authority - CA) gönderildi. Kısa bir süre içinde onlardan onaylama emaili almalısınız.";
@@ -787,7 +787,7 @@ $_LANG['supportticketsticketurgencyhigh'] = "Yüksek";
 $_LANG['supportticketsticketurgencylow'] = "Düşük";
 $_LANG['supportticketsticketurgencymedium'] = "Orta";
 $_LANG['supportticketsuploadfailed'] = "Dosya ekiniz yüklenemedi";
-$_LANG['supportticketsuploadtoolarge'] = "Uploaded file was too large. Please try uploading a smaller file.";
+$_LANG['supportticketsuploadtoolarge'] = "Yüklemek istediğiniz dosya boyutu çok yüksek. Lütfen daha küçük bir boyutta dosya yükleyin.";
 $_LANG['supportticketsviewticket'] = "Bildirimi görüntüle";
 $_LANG['supportticketclosedmsg'] = "Bu destek talebi kapalı. Destek talebine tekrar cevap vererek açabilirsiniz";
 $_LANG['telesignincorrectpin'] = "Hatalı Pin!";
@@ -838,16 +838,16 @@ $_LANG['yourdetails'] = "Sizin ayrıntılarınız";
 
 # Version 4.1
 
-$_LANG['clientareafiles'] = "Attached Files";
-$_LANG['clientareafilesdate'] = "Date Added";
-$_LANG['clientareafilesfilename'] = "Filename";
+$_LANG['clientareafiles'] = "Eklenen Dosyalar";
+$_LANG['clientareafilesdate'] = "Tarihinde Eklendi";
+$_LANG['clientareafilesfilename'] = "Dosya Adı";
 
 $_LANG['pwreset'] = "Şifremi Unuttum";
 $_LANG['pwresetdesc'] = "Şifrenizi unuttuysanız bu sayfadan şifrenizi yenileyebilirsiniz. Sisteme kayıt olduğunuz e-posta adresini girdiğinizde (ve eğer güvenlik sorusu oluşturduysanız bu soruyu cevapladığınızda) şifrenizi nasıl yenileyebileceğinize dair yönergeleri içeren bir e-posta göndereceğiz.";
 $_LANG['pwresetemailrequired'] = "E-posta adresinizi girmediniz";
 $_LANG['pwresetemailnotfound'] = "Böyle bir müşteri hesabı bulunmamaktadır";
-$_LANG['pwresetsecurityquestionrequired'] = "As you have a security question setup on your account, you must enter the answer to this question below.";
-$_LANG['pwresetsecurityquestionincorrect'] = "The security question answer you entered does not match the answer set in your account";
+$_LANG['pwresetsecurityquestionrequired'] = "Hesabınızda güvenlik sorusu tanımlaması yapılmış, aşağıdaki sorunun cevabını girmelisiniz.";
+$_LANG['pwresetsecurityquestionincorrect'] = "Girdiğiniz güvenlik sorusunun cevabı hesabınızda kayıtlı olan güvenli soru cevabı ile eşleşmemektedir.";
 $_LANG['pwresetsubmit'] = "Gönder";
 $_LANG['pwresetvalidationsent'] = "Onay E-Posta'sı Gönderildi";
 $_LANG['pwresetvalidationcheckemail'] = "Şifre yenileme süreci başlatıldı ve e-posta adresinize bundan sonraki aşamalarda ne yapmanız gerektiğine dair yönergeler içeren bir e-posta gönderildi. Lütfen e-posta adresinizi kontrol ediniz. Yönergeleri içeren e-postaya ulaşamadıysanız lütfen junk mail(gereksiz e-posta) klasörünü de kontrol etmeyi unutmayınız. E-posta adresimizi güvenli gönderenler listesine eklemenizi önemle rica ederiz.";
@@ -903,7 +903,7 @@ $_LANG['subaccountSsoDenied'] = "You do not have permission to login using Singl
 $_LANG['knowledgebasealsoread'] = "Also Read";
 
 $_LANG['orderpaymenttermtriennially'] = "3 Yıllık";
-$_LANG['orderpaymentterm36month'] = "36 Month Price";
+$_LANG['orderpaymentterm36month'] = "36 Aylık Fiyat";
 
 $_LANG['domainrenewals'] = "Alan Adı Yenileme";
 $_LANG['domaindaysuntilexpiry'] = "Bitmesine Kalan Gün";
@@ -971,7 +971,7 @@ $_LANG['domainreleasetag'] = "New Registrar Tag";
 
 $_LANG['orderformtitle'] = "Sipariş Formu";
 
-$_LANG['signup'] = "Signup";
+$_LANG['signup'] = "Kayıt Ol";
 $_LANG['loading'] = "Yükleniyor...";
 
 $_LANG['ordersummarybegin'] = "Alışveriş Sepetiniz Boş<br/>Lütfen bir ürün seçiniz...";
@@ -998,7 +998,7 @@ $_LANG['cartdomainavailableoptions'] = "Congratulations, this domain is availabl
 $_LANG['cartdomainavailableregister'] = "Please register this domain for";
 $_LANG['cartdomainavailablemanual'] = "I will register it myself seperately";
 
-$_LANG['cartdomainunavailableoptions'] = "Sorry, this domain is already taken. If you are the owner, please choose an option below...";
+$_LANG['cartdomainunavailableoptions'] = "Üzgünüz, this domain is already taken. If you are the owner, please choose an option below...";
 $_LANG['cartdomainunavailabletransfer'] = "Please transfer my domain for";
 $_LANG['cartdomainunavailablemanual'] = "I already own this domain and will update the nameservers";
 
@@ -1013,12 +1013,12 @@ $_LANG['domainemailforwardinglaunch'] = "Launch Mail Forwarding Manager";
 
 # Version 4.5
 
-$_LANG['domaindnspriority'] = "Priority";
+$_LANG['domaindnspriority'] = "Öncelik (Priority)";
 $_LANG['domaindnsmxonly'] = "Priority Record for MX Only";
 
 $_LANG['orderpromoprestart'] = "This promotion has not yet started. Please try again later.";
 
-$_LANG['ticketmerge'] = "MERGED";
+$_LANG['ticketmerge'] = "BİRLEŞTİRİLDİ";
 
 $_LANG['quote'] = "Teklif";
 $_LANG['quotestitle'] = "Size Özel Teklifler";
@@ -1039,7 +1039,7 @@ $_LANG['quotedesc'] = "Açıklama";
 $_LANG['quoteunitprice'] = "Birim Fiyat";
 $_LANG['quotediscount'] = "İndirim %";
 $_LANG['quotelinetotal'] = "Toplam";
-$_LANG['quotestagedraft'] = "Draft";
+$_LANG['quotestagedraft'] = "Taslak";
 $_LANG['quotestagedelivered'] = "Delivered";
 $_LANG['quotestageonhold'] = "Beklemede";
 $_LANG['quotestageaccepted'] = "Kabul Edilen";
@@ -1079,7 +1079,7 @@ $_LANG['cartchoosecycle'] = "Ödeme Döngünüzü Seçiniz";
 $_LANG['cartavailableaddons'] = "Kullanabileceğiniz Eklentiler";
 $_LANG['cartsetupfees'] = "Kurulum Ücretleri";
 $_LANG['cartchooseanotherproduct'] = "Choose Another Product";
-$_LANG['cartaddandcheckout'] = "Add to Cart & Checkout";
+$_LANG['cartaddandcheckout'] = "Sepete Ekle & Öde";
 $_LANG['cartchooseanothercategory'] = "Başka Kategori Seç";
 $_LANG['carttryanotherdomain'] = "Başka alan adı sorgula";
 $_LANG['cartmakedomainselection'] = "Lütfen hosting hizmetinizde kullanmak istediğiniz alan adını aşağıdaki kutucuklardan seçin.";
@@ -1104,17 +1104,17 @@ $_LANG['cancelrequestdomain'] = "Cancel Domain Renewal?";
 $_LANG['cancelrequestdomaindesc'] = "You also have an active domain registration for the domain associated with this product<br />This domain is due to renew on %s at a cost of %s for %s Year/s<br /><br />If you would like to cancel the domain as well, and let it expire at the end of the current registration, then simply tick the box below.";
 $_LANG['cancelrequestdomainconfirm'] = "I confirm I do not want to renew this domain again";
 
-$_LANG['startingfrom'] = "Starting from";
+$_LANG['startingfrom'] = "Sadece..";
 
 $_LANG['orderpromopriceoverride'] = "Price Override";
-$_LANG['orderpromofreesetup'] = "Free Setup";
+$_LANG['orderpromofreesetup'] = "Ücretsiz Kutulum";
 
-$_LANG['thereisaproblem'] = "Oops, there's a problem...";
-$_LANG['problemgoback'] = "Go back & try again";
+$_LANG['thereisaproblem'] = "Üzgünüz, bir sorun var...";
+$_LANG['problemgoback'] = "Geri dön & tekrar dene";
 
-$_LANG['quantity'] = "Quantity";
+$_LANG['quantity'] = "Adet";
 $_LANG['cartqtyenterquantity'] = "Want more than 1 of this item? Enter Quantity Here:";
-$_LANG['cartqtyupdate'] = "Update";
+$_LANG['cartqtyupdate'] = "Güncelle";
 $_LANG['invoiceqtyeach'] = "/ea";
 
 $_LANG['nschoicedefault'] = "Varsayılan NameServer Adreslerini Kullan";
@@ -1241,14 +1241,13 @@ $_LANG['clientareahomeloginbtn'] = "Müşteri Girişi";
 $_LANG['clientareaproductsintro'] = "Hesabınıza kayıtlı tüm hizmetleri buradan yönetebilirsiniz.";
 $_LANG['clientareaproductdetailsintro'] = "Bu bölümden kullanmış veya kullanmakta olduğunuz ürün/hizmet hakkında bilgi alabilir ve yönetebilirsiniz.";
 $_LANG['clientareadomainsintro'] = "Hesabınıza kayıtlı tüm alan adlarını buradan yönetebilirsiniz.";
-$_LANG['invoicesintro'] = "Below you can review your entire invoice history with us.";
+$_LANG['invoicesintro'] = "Tüm fatura geçmişinizi gözden geçirebilirsiniz.";
 $_LANG['quotesintro'] = "Size özel fiyat tekliflerimiz...";
 $_LANG['emailstagline'] = "Bizim tarafımızdan size gönderilen e-posta'ların listesi...";
 $_LANG['supportticketsintro'] = "Bir sorunuz varsa hemen destek talebi oluşturun...";
 $_LANG['addfundsintro'] = "Hesabınıza bakiye ekleyin";
 $_LANG['registerintro'] = "Yeni müşteri hesabınızı hemen aktif edin . . .";
-$_LANG['masspayintro'] = "Pay all the invoices listed below in a single easy transaction by choosing a payment method";
-$_LANG['domaincheckerintro'] = "Alan adınızı hemen tescil edip web hosting ile birleştirin...";
+$_LANG['masspayintro'] = "Bir ödeme yöntemi seçerek bütün faturalarınızın toplamını hızlıca ödeyebilirsiniz.";
 $_LANG['networkstatusintro'] = "Sunucu Durumları ve Ağ Durumu hakkında Sistemsel Çalışma Duyuruları";
 
 $_LANG['creditcardyourinfo'] = "Bilgileriniz";
@@ -1278,7 +1277,7 @@ $_LANG['withselected'] = "Seçilenlerin";
 $_LANG['managedomain'] = "Alan Adı Yönetimi";
 $_LANG['changenameservers'] = "Nameserverları Değiştir";
 $_LANG['clientareadomainmanagedns'] = "DNS Yönetimi";
-$_LANG['clientareadomainmanageemailfwds'] = "Email Yönlendirmelerini Yönet";
+$_LANG['clientareadomainmanageemailfwds'] = "E-Posta Yönlendirmelerini Yönet";
 $_LANG['moduleactionsuccess'] = "İşlem Başarıyla Tamamlandı!";
 $_LANG['moduleactionfailed'] = "İşlem Başarısız";
 
@@ -1286,8 +1285,8 @@ $_LANG['domaininfoexp'] = "Sağ tarafta alan adı detaylarınızı görebilirsin
 $_LANG['domainrenewexp'] = "Alan adınızın bitme tarihine yakın size e-posta gönderilir. Bu e-postayı onaylarsanız alan adınızın faturası otomatik olarak oluşturulacaktır.";
 $_LANG['domainnsexp'] = "İsim sunucusu (nameserver) değişikliğini bu alandan yapabilirsiniz. DNS adreslerinin oturması 24 saate kadar sürebilir.";
 $_LANG['domainlockingexp'] = "İzniniz olmadan alan adının transfer edilmesini istemiyorsanız registrar kilidini aktif edin.";
-$_LANG['domaincurrentlyunlocked'] = "Alan Adının Zaten Kilidi Yok!";
-$_LANG['domaincurrentlyunlockedexp'] = "You should enable the registrar lock unless you are transferring the domain.";
+$_LANG['domaincurrentlyunlocked'] = "Alan adınızın transfer kilidi yok!";
+$_LANG['domaincurrentlyunlockedexp'] = "Eğer alan adınızı transfer etmeyecekseniz güvenlik için lütfen Registrar Kilidini aktif ediniz.";
 $_LANG['searchmultipletlds'] = "Daha Fazla Uzantı";
 
 $_LANG['networkstatustitle'] = "Sunucu/Ağ Durumu";
@@ -1304,14 +1303,8 @@ $_LANG['creditcardexpirydateinvalid'] = "Son kullanma tarihi AA/YY olarak girilm
 $_LANG['domaincheckerchoosedomain'] = "Alan Adınızı Seçin...";
 $_LANG['domaincheckerchecknewdomain'] = "Alan Adı Kontrolü";
 $_LANG['domaincheckerdomainexample'] = " örn. example.com";
-$_LANG['domaincheckerinvalidtld'] = "geçersiz uzantı. Tekrar deneyin.";
-$_LANG['domaincheckerinvalidtld2'] = "TLD is invalid.";
-$_LANG['domaincheckerinvaliddomain'] = "Requested domain name is invalid.";
-$_LANG['domaincheckernopricing'] = "Pricing not available for this TLD.";
 $_LANG['domaincheckerhostingonly'] = "Sadece Hosting Alacağım";
-$_LANG['domaincheckeravailtransfer'] = "Transfer Edilebilir";
 $_LANG['domaincheckerenterdomain'] = "Kaydetmek istediğiniz alan adının müsait olup olmadığını aşağıdaki form aracılığıyla sorgulayabilirsiniz...";
-$_LANG['domaincheckerbulkinvaliddomain'] = "Lütfen geçerli bir alan adı giriniz";
 
 $_LANG['kbquestionsearchere'] = "Bir sorunuz mu var? Hemen arayın.";
 $_LANG['contactus'] = "İletişim";
@@ -1438,7 +1431,7 @@ $_LANG['feedbackworst'] = "Worst";
 $_LANG['feedbackbest'] = "Best";
 $_LANG['feedbackimprove'] = "How may we make your experience better in the future?";
 $_LANG['pleaserate2'] = "handled this support request";
-$_LANG['feedbacksupplyrating'] = "Please supply at least a rating for :staffname (comments are optional)";
+$_LANG['feedbacksupplyrating'] = ":staffname için bir puan verin (yorum zorunlu değildir)";
 
 $_LANG['returnclient'] = "Müşteri Paneline Geri Dön";
 
@@ -1449,26 +1442,26 @@ $_LANG['twofadisable'] = "İki Faktörlü Doğrulamayı Devre Dışı Bırak";
 $_LANG['twofaenableclickhere'] = "Aktif Et";
 $_LANG['twofadisableclickhere'] = "Devre Dışı Bırak";
 $_LANG['twofaenforced'] = "The system administrator has enforced that you must enable Two-Factor Authentication before you can continue. This page will guide you through the process of setting it up.";
-$_LANG['twofasetup'] = "Two-Factor Authentication Setup Process";
-$_LANG['twofasetupgetstarted'] = "Get Started";
-$_LANG['twofaactivationintro'] = "Two-Factor Authentication adds an extra layer of protection to logins. Once enabled &amp; configured, each time you sign in you will be asked to enter both your username & password as well as a second factor such as a security code.";
+$_LANG['twofasetup'] = "İki Faktörlü Doğrulama Kurulum İşlemleri";
+$_LANG['twofasetupgetstarted'] = "Hemen Başla";
+$_LANG['twofaactivationintro'] = "İki Faktörlü Doğrulama sistemimize giriş yaparken güvenliğiniz için ekstra alan oluşturur. Önce oluşturulan &amp; konfigüre edilen hesabınız her girişinizde kullanıcı adı ve şifrenizden sonra size belirtilen güvenlik tedbiri ile giriş izninizi kontrolünüz doğrultusunda gerçekleştirmek için sizden onay alacaktır.";
 $_LANG['twofaactivationmultichoice'] = "To continue, please choose your desired Two-Factor Authentication method from below.";
 $_LANG['twofadisableintro'] = "To disable Two-Factor Authentication please confirm your password in the field below.";
 $_LANG['twofaactivationerror'] = "An error occurred while attempting to activate Two-Factor Authentication for your account. Please try again.";
 $_LANG['twofamoduleerror'] = "An error occurred loading the module. Please try again.";
 $_LANG['twofaactivationcomplete'] = "İki-Faktörlü Doğrulama Kurulumu Başarılı!";
-$_LANG['twofadisableconfirmation'] = "Two-Factor Authentication has now been disabled for your account.";
+$_LANG['twofadisableconfirmation'] = "İki-Faktörlü Doğrulama an itibariyle hesabınız için deaktif edilmiştir.";
 $_LANG['twofabackupcodeis'] = "Yedek Kodunuz";
 $_LANG['twofanewbackupcodeis'] = "Yeni Yedek Kodunuz";
-$_LANG['twofabackupcodelogin'] = "Enter Your Backup Code Above to Login";
-$_LANG['twofabackupcodeexpl'] = "Write this down on paper and keep it safe.<br />It will be needed if you ever lose your 2nd factor device or it is unavailable to you.";
+$_LANG['twofabackupcodelogin'] = "Giriş Yapmak için Yedek Kodunuzu Girin";
+$_LANG['twofabackupcodeexpl'] = "Lütfen bu kodu bir kağıda yazıp güvenli bir alanda saklayınız.<br />Eğer sisteme erişim kodunuzu kaybederseniz yedek kodunuz ile giriş yapabilirsiniz. Ancak her iki kodu birden kaybederseniz hesabınız deaktif konuma gelecektir.";
 $_LANG['twofaconfirmpw'] = "Şifrenizi Girin";
-$_LANG['twofa2ndfactorreq'] = "Your second factor is required to complete login.";
-$_LANG['twofa2ndfactorincorrect'] = "The second factor you supplied was incorrect. Please try again.";
-$_LANG['twofabackupcodereset'] = "Login via Backup Code Successful. Backup Codes are valid once only. It will now be reset.";
-$_LANG['twofacantaccess2ndfactor'] = "Can't Access Your 2nd Factor Device?";
-$_LANG['twofaloginusingbackupcode'] = "Login using Backup Code";
-$_LANG['twofageneralerror'] = "An error occurred loading the module. Please try again.";
+$_LANG['twofa2ndfactorreq'] = "Müşteri panelinize erişmeniz için ikinci faktörlü doğrulama kodunuzu girmeniz gereklidir.";
+$_LANG['twofa2ndfactorincorrect'] = "İki-Faktörlü doğrulama kodunuz hatalıdır. Lütfen tekrar deneyin.";
+$_LANG['twofabackupcodereset'] = "Yedek Kodu ile Giriş Başarılı. Yedekleme Kodunuz sadece tek seferlik geçerlidir. Yönlendiğinizde yeniden tarafınıza Yedek Kodu oluşturulacaktır.";
+$_LANG['twofacantaccess2ndfactor'] = "İki Faktörlü Doğrulama Kodunuza Erişemiyor musunuz?";
+$_LANG['twofaloginusingbackupcode'] = "Yedek Kodunu kullanarak Giriş yap";
+$_LANG['twofageneralerror'] = "Modül yüklenirken bir hata oluştu. Lütfen tekrar deneyin.";
 
 $_LANG['continue'] = "Devam Et";
 $_LANG['disable'] = "Devre Dışı Bırak";
@@ -1547,24 +1540,24 @@ $_LANG['ssofatalerror'] = "A fatal error occurred. Please contact support.";
 # Version 6.0
 
 $_LANG['announcementschoosemonth'] = "Choose Month";
-$_LANG['announcementsbymonth'] = "By Month";
-$_LANG['announcementsolder'] = "Older Announcements";
+$_LANG['announcementsbymonth'] = "Aylara Göre";
+$_LANG['announcementsolder'] = "Eski Duyurular";
 $_LANG['createnewcontact'] = "Yeni Sorumlu...";
 $_LANG['due'] = "Due";
 $_LANG['affiliatessignups'] = "Number of Signups";
 $_LANG['affiliatesconversionrate'] = "Conversion Rate";
 $_LANG['affiliatesclicks'] = "Tıklamalar";
 $_LANG['contacts'] = "Sorumlular";
-$_LANG['backtoservicedetails'] = "Back to Service Details";
-$_LANG['invoicesintro'] = "Below you can review your entire invoice history with us.";
+$_LANG['backtoservicedetails'] = "Hizmet Detaylarına Geri Dön";
+$_LANG['invoicesintro'] = "Tüm fatura geçmişinizi gözden geçirebilirsiniz.";
 
-$_LANG['sidebars']['viewAccount']['yourAccount'] = "Your Account";
+$_LANG['sidebars']['viewAccount']['yourAccount'] = "Hesabınız";
 $_LANG['sidebars']['viewAccount']['myDetails'] = "My Details";
 $_LANG['sidebars']['viewAccount']['billingInformation'] = "Billing Information";
 $_LANG['sidebars']['viewAccount']['contacts/subAccounts'] = "Contacts/Sub-Accounts";
 $_LANG['sidebars']['viewAccount']['changePassword'] = "Change Password";
 $_LANG['sidebars']['viewAccount']['securitySettings'] = "Security Settings";
-$_LANG['sidebars']['viewAccount']['emailHistory'] = "Email History";
+$_LANG['sidebars']['viewAccount']['emailHistory'] = "E-Posta History";
 
 $_LANG['aboutsecurityquestions'] = "Why security questions?";
 $_LANG['registersecurityquestionblurb'] = "Setting a security question will provide extra security, as all changes to your account require providing the additional information from your question.";
@@ -1581,44 +1574,44 @@ $_LANG['billingdetails'] = "Billing Details";
 $_LANG['homechooseproductservice'] = "Choose a product/service to manage:";
 
 $_LANG['invoicesdue'] = "Son Ödeme Tarihi Geçmiş Faturalar";
-$_LANG['invoicesduemsg'] = "You have %s invoice(s) currently unpaid with a total balance of %s";
+$_LANG['invoicesduemsg'] = "%s adet ödenmemiş faturanız var. Borçlu olduğunuz tutar: %s";
 $_LANG['noinvoicesduemsg'] = "You have no unpaid invoices at this time.";
 
 $_LANG['expiringsoon'] = "Expiring Soon";
 
-$_LANG['notice'] = "Notice";
-$_LANG['networkstatussubtitle'] = "News & Information";
+$_LANG['notice'] = "Uyarı";
+$_LANG['networkstatussubtitle'] = "Haberler & Bilgiler";
 
-$_LANG['myaccount'] = "My Account";
+$_LANG['myaccount'] = "Hesabım";
 
-$_LANG['manageproduct'] = "Manage Product";
-$_LANG['overview'] = "Overview";
+$_LANG['manageproduct'] = "Ürün Yönetimi";
+$_LANG['overview'] = "Genel Bakış";
 $_LANG['servername'] = "Sunucu";
-$_LANG['visitwebsite'] = "Visit Website";
-$_LANG['whoisinfo'] = "WHOIS Info";
+$_LANG['visitwebsite'] = "Siteyi Görüntüle";
+$_LANG['whoisinfo'] = "WHOIS Bilgisi";
 
-$_LANG['tableshowing'] = "Showing _START_ to _END_ of _TOTAL_ entries";
-$_LANG['tableempty'] = "Showing 0 to 0 of 0 entries";
-$_LANG['tablefiltered'] = "(filtered from _MAX_ total entries)";
+$_LANG['tableshowing'] = "_START_ sayfa içerisinde, toplam _TOTAL_ veri içerisinden _END_ adet görüntülenmektedir";
+$_LANG['tableempty'] = "Gösterilecek veri yok";
+$_LANG['tablefiltered'] = "(_MAX_ girdi içerisinden filtrelendi)";
 $_LANG['tablelength'] = "_MENU_ kayıt göster";
 $_LANG['tableloading'] = "Yükleniyor...";
 $_LANG['tableprocessing'] = "İşleniyor...";
-$_LANG['tablepagesfirst'] = "First";
-$_LANG['tablepageslast'] = "Last";
+$_LANG['tablepagesfirst'] = "İlk";
+$_LANG['tablepageslast'] = "Son";
 $_LANG['tablepagesnext'] = "İleri";
 $_LANG['tablepagesprevious'] = "Önceki";
-$_LANG['tableviewall'] = "All";
-$_LANG['tableentersearchterm'] = "Enter search term...";
+$_LANG['tableviewall'] = "Hepsi";
+$_LANG['tableentersearchterm'] = "Arama...";
 
 $_LANG['actions'] = "İşlemler";
 
-$_LANG['upgradedowngradeshort'] = "Up/Downgrade";
+$_LANG['upgradedowngradeshort'] = "Yükseltme/Düşürme";
 
-$_LANG['masspayintro'] = "Pay all the invoices listed below in a single easy transaction by choosing a payment method";
-$_LANG['masspaymentselectgateway'] = "Select Mass Payment Gateway";
+$_LANG['masspayintro'] = "Bir ödeme yöntemi seçerek bütün faturalarınızın toplamını hızlıca ödeyebilirsiniz.";
+$_LANG['masspaymentselectgateway'] = "Toplu Ödeme Yönteminizi Seçiniz";
 
-$_LANG['ticketfeedbackrequest'] = "Feedback Request";
-$_LANG['ticketfeedbackforticket'] = "for Ticket #";
+$_LANG['ticketfeedbackrequest'] = "Geri Bildirim İsteği";
+$_LANG['ticketfeedbackforticket'] = "Destek NO #";
 
 $_LANG['notifications'] = "Bildirimler";
 $_LANG['notificationsnone'] = "Şu an hiç bildiriminiz yok.";
@@ -1629,7 +1622,7 @@ $_LANG['kbviewingarticlestagged'] = "Viewing articles tagged";
 
 $_LANG['domainprivatenameservers'] = "Özel Nameserver'lar";
 
-$_LANG['transferinadomain'] = "Transfer in a Domain";
+$_LANG['transferinadomain'] = "Alan Adı Transferi";
 
 $_LANG['nodomainextensions'] = "There are no Domain Extensions currently configured for purchase";
 
@@ -1641,45 +1634,44 @@ $_LANG['orderhosting'] = "Hosting Satın Al";
 $_LANG['makepayment'] = "Ödeme Yap";
 $_LANG['getsupport'] = "Destek Al";
 
-$_LANG['news'] = "Haberler";
-$_LANG['allthelatest'] = "All the latest from";
+$_LANG['news'] = "Duyurular";
+$_LANG['allthelatest'] = "Tüm duyurularımız : ";
 $_LANG['readmore'] = "Devamını Oku";
-$_LANG['noannouncements'] = "No announcements to display";
+$_LANG['noannouncements'] = "Görüntülenecek duyuru yok";
 
-$_LANG['kbsearchexplain'] = "Have a question? Start your search here.";
-$_LANG['readyforquestions'] = "We're ready and waiting for your questions";
+$_LANG['kbsearchexplain'] = "Sorunuz mu var? Hemen aramaya başlayın.";
+$_LANG['readyforquestions'] = "Sorularınıza cevap vermek için hazırız !";
 
 $_LANG['restrictedpage'] = "Bu sayfaya sadece müşteriler erişebilir";
 $_LANG['enteremail'] = "E-Posta Adresini Gir";
 
 $_LANG['passwordtips'] = "<strong>İyi bir parola için ipuçları</strong><br />Hem küçük hemde büyük harfleri kullanın<br />En az bir adet sembol olsun (# $ ! % &amp; vb...)<br />Sözlük kelimelerini kullanmayın";
 
-$_LANG['regdate'] = "Reg Date";
-$_LANG['nextdue'] = "Next Due";
+$_LANG['regdate'] = "Kayıt Tarihi";
+$_LANG['nextdue'] = "Sonraki Ödeme Tarihi";
 
-$_LANG['domaincheckertagline'] = "Find the perfect domain name for you...";
 $_LANG['findyourdomain'] = "Yeni alan adınızı arayın";
-$_LANG['searchtermrequired'] = "You must enter a domain name or keyword to look for";
+$_LANG['searchtermrequired'] = "Arama yapabilmek için alan adı veya anahtar kelime girmek zorundasınız";
 $_LANG['unabletolookup'] = "Sorry, unable to lookup the term as provided";
-$_LANG['invalidchars'] = "Please remove spaces or special punctuation characters";
-$_LANG['bulkoptions'] = "Bulk Options";
+$_LANG['invalidchars'] = "Lütfen boşluk veya özel noktalama işaretlerini siliniz";
+$_LANG['bulkoptions'] = "Çoklu Sorgulama";
 $_LANG['checkingdomain'] = "Checking if the domain you requested is available...";
-$_LANG['domainsgotocheckout'] = "Go to checkout";
-$_LANG['domainssearchresults'] = "Search Results";
-$_LANG['domainssuggestions'] = "Suggestions";
-$_LANG['domainsothersuggestions'] = "You might also be interested in the following alternative names";
-$_LANG['domainsmoresuggestions'] = "Give me more suggestions!";
-$_LANG['domainssuggestionswarnings'] = "Domain name suggestions may not always be available. Availability is checked in real-time at the point of adding to the cart.";
-$_LANG['disclaimers'] = "Disclaimers";
-$_LANG['tldpricing'] = "TLD Pricing";
-$_LANG['alltldpricing'] = "All TLD Pricing";
+$_LANG['domainsgotocheckout'] = "Sepete git";
+$_LANG['domainssearchresults'] = "Sorgulama Sonuçları";
+$_LANG['domainssuggestions'] = "Öneriler";
+$_LANG['domainsothersuggestions'] = "Aşağıdaki alternatif uzantılarda ilginizi çekebilir";
+$_LANG['domainsmoresuggestions'] = "Daha fazla öneri göster!";
+$_LANG['domainssuggestionswarnings'] = "Alan adı önerileri her zaman geçerli olmayabilir. Kullanılabilirlik sepete ekleme noktasında gerçek zamanlı olarak kontrol edilir.";
+$_LANG['disclaimers'] = "Sorumluluk Reddi (Feragatname)";
+$_LANG['tldpricing'] = "Uzantı Fiyatları";
+$_LANG['alltldpricing'] = "Tüm Uzantı Fiyatları";
 
 $_LANG['quotesdesc'] = "Quotes we have generated for you";
 $_LANG['quotesrejected'] = "Rejected";
 
 $_LANG['ticketsyourhistory'] = "Destek talebi geçmişiniz";
 
-$_LANG['clientareaemaildesc'] = "Your email history with us";
+$_LANG['clientareaemaildesc'] = "Size gönderilen e-postalar";
 
 $_LANG['sslconfssl'] = "Configure SSL";
 $_LANG['sslnoconfigurationpossible'] = "Configuration has already been completed!  Please contact support if you are experiencing issues.";
@@ -1694,7 +1686,7 @@ $_LANG['supportAndUpdatesExpiredLicense'] = "Your Support & Updates period for t
 $_LANG['supportAndUpdatesRenewalRequired'] = "Support & Updates access needs to be renewed before you can access this download.";
 $_LANG['supportAndUpdatesClickHereToRenew'] = "Click Here to Renew";
 
-$_LANG['pwresetemailneeded'] = "Forgotten your password? Enter your email address below to begin the reset process.";
+$_LANG['pwresetemailneeded'] = "Şifrenizi mi unuttunuz? Hemen e-posta adresinizi girin ve şifre sıfırlama işlemlerine başlayın.";
 
 $_LANG['quotestageexpired'] = "Süresi Doldu";
 
@@ -1707,6 +1699,7 @@ $_LANG['domainsCancelled'] = "İptal Edildi";
 $_LANG['domainsFraud'] = "Dolandırıcılık";
 $_LANG['domainsPending'] = "Beklemede";
 $_LANG['domainsPendingTransfer'] = "Transfer Beklemede";
+$_LANG['domainsTransferredAway'] = "Transferred Away";
 $_LANG['domainsExpiringInTheNext30Days'] = "Önümüzdeki 30 gün içinde süresi dolan";
 $_LANG['domainsExpiringInTheNext90Days'] = "Önümüzdeki 90 gün içinde süresi dolan";
 $_LANG['domainsExpiringInTheNext180Days'] = "Önümüzdeki 180 gün içinde süresi dolan";
@@ -1761,16 +1754,16 @@ $_LANG['quoteacceptcontractwarning'] = "Please be aware that accepting a quote i
 $_LANG['clientAlerts']['creditCardExpiring'] = "Your credit card :creditCardType-:creditCardLastFourDigits expires within :days days. Please update it at your earliest convenience.";
 $_LANG['clientAlerts']['domainsExpiringSoon'] = "You have :numberOfDomains domain(s) expiring within the next :days days.";
 $_LANG['clientAlerts']['invoicesUnpaid'] = "You have :numberOfInvoices unpaid invoice(s). Pay them early for peace of mind.";
-$_LANG['clientAlerts']['invoicesOverdue'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interuptions in service.";
+$_LANG['clientAlerts']['invoicesOverdue'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interruptions in service.";
 $_LANG['clientAlerts']['creditBalance'] = "You have a credit balance of :creditBalance.";
 
 // Client homepage panels
 $_LANG['clientHomePanels']['unpaidInvoices'] = "Ödenmemiş Faturalar";
-$_LANG['clientHomePanels']['unpaidInvoicesMsg'] = "You have :numberOfInvoices unpaid invoice(s) with a total balance due of :balanceDue. Pay them early for peace of mind.";
-$_LANG['clientHomePanels']['overdueInvoices'] = "Overdue Invoices";
-$_LANG['clientHomePanels']['overdueInvoicesMsg'] = "You have :numberOfInvoices overdue invoice(s) with a total balance due of :balanceDue. Pay them now to avoid any interuptions in service.";
-$_LANG['clientHomePanels']['domainsExpiringSoon'] = "Domains Expiring Soon";
-$_LANG['clientHomePanels']['domainsExpiringSoonMsg'] = "You have :numberOfDomains domain(s) expiring within the next :days days. Renew them today for peace of mind.";
+$_LANG['clientHomePanels']['unpaidInvoicesMsg'] = ":numberOfInvoices adet ödenmemiş faturanız var. Faturalarınızın toplam tutarı: :balanceDue.";
+$_LANG['clientHomePanels']['overdueInvoices'] = "Ödeme Bekleyen Faturalar";
+$_LANG['clientHomePanels']['overdueInvoicesMsg'] = "Son ödeme tarihi geçmiş :numberOfInvoices adet faturanızın toplam :balanceDue ödemesi vardır. Hizmetinizin kesintiye uğramaması için ödeme yapmanız gereklidir.";
+$_LANG['clientHomePanels']['domainsExpiringSoon'] = "Alan Adı Süreniz Dolmak Üzere";
+$_LANG['clientHomePanels']['domainsExpiringSoonMsg'] = "Hesabınızdaki :numberOfDomains alan adının süresi önümüzdeki :days gün içerisinde dolacaktır. Yenilemediğiniz taktirde 30 günlük iptal periyoduna girecektir.";
 $_LANG['clientHomePanels']['activeProductsServices'] = "Aktif Ürün/Hizmetler";
 $_LANG['clientHomePanels']['activeProductsServicesNone'] = "Bizde mevcut herhangi bir ürün veya hizmetiniz yok görünüyor. <a href=\"cart.php\">Hemen sipariş vermeye başlayın</a>.";
 $_LANG['clientHomePanels']['recentNews'] = "Son Haberler";
@@ -1794,10 +1787,10 @@ $_LANG['upgrade'] = "Upgrade";
 
 $_LANG['downdoadsdesc'] = "Manuals, programs, and other files";
 
-$_LANG['doToday'] = "What would you like to do today?";
-$_LANG['changeDomainNS'] = "Change the nameservers your domain points to";
-$_LANG['updateWhoisContact'] = "Update the WHOIS contact information for your domain";
-$_LANG['changeRegLock'] = "Change the registrar lock status for your domain";
+$_LANG['doToday'] = "Size nasıl yardımcı olabilirim?";
+$_LANG['changeDomainNS'] = "NameServer güncellemesi yapmak istiyorum";
+$_LANG['updateWhoisContact'] = "WHOIS bilgilerini güncellemek istiyorum";
+$_LANG['changeRegLock'] = "Transfer Kilidi statüsünü değiştirmek istiyorum";
 $_LANG['renewYourDomain'] = "Alan Adınızı Yenileyin";
 
 $_LANG['oops'] = "Oops";
@@ -1818,12 +1811,12 @@ $_LANG['submitpayment'] = "Submit Payment";
 
 $_LANG['domaincheckeravailable'] = "Müsait";
 $_LANG['domaincheckertransferable'] = "Transfer'e Müsait";
-$_LANG['domaincheckertaken'] = "Taken";
+$_LANG['domaincheckertaken'] = "Satın Alınmış";
 $_LANG['domaincheckeradding'] = "Ekleniyor";
 $_LANG['domaincheckeradded'] = "Eklendi";
-$_LANG['domaincheckernomoresuggestions'] = "That's all the results we have for you! If you still haven't found what you're looking for, please try a different search term or keyword.";
+$_LANG['domaincheckernomoresuggestions'] = "Sizin için gösterebileceğimiz bütün uzantılar bunlar! Eğer hala aradığınız alan adını bulamadıysanız farklı bir alan adı veya anahtar kelime deneyin.";
 $_LANG['domaincheckerunabletooffertld'] = "Unfortunately we are unable to register this TLD at this time";
-$_LANG['domaincheckerbulkplaceholder'] = "Enter up to 20 domain names.\nEach name must be on a separate line.\n\nExamples:\nexample.com\nexample.net";
+$_LANG['domaincheckerbulkplaceholder'] = "En fazla 20 alan adı aranabilir.\nHer satıra bir alan adı gelecek şekilde yazın.\n\nÖrnek:\nexample.com\nexample.net";
 
 $_LANG['domainchecker']['suggestiontakentitle'] = "Alan Adı Müsait Değil";
 $_LANG['domainchecker']['suggestiontakenmsg'] = "Unfortunately the domain you selected is unavailable. This can sometimes occur if the domain has been registered recently. Please go back and choose another domain.";
@@ -1848,7 +1841,7 @@ $_LANG['licensingaddon']['validdirectory'] = "Geçerli Dizin";
 $_LANG['licensingaddon']['status'] = "Lisans Durumu";
 $_LANG['licensingaddon']['reissue'] = "Lisansı Yenile (Reissue)";
 $_LANG['licensingaddon']['reissuestatusmsg'] = "Geçerli Alan Adı, IP ve Dizin belirlendi & kaydedildi.";
-$_LANG['licensingaddon']['manageLicense'] = "Manage License";
+$_LANG['licensingaddon']['manageLicense'] = "Lisansı Yönet";
 
 $_LANG['affiliateWithdrawalSummary'] = "You will be able to request a withdrawal as soon as your balance reaches the minimum required amount of :amountForWithdrawal.";
 
@@ -1856,9 +1849,9 @@ $_LANG['projectManagement']['activeProjects'] = "Aktif Projeleriniz";
 
 # cPanel Module
 
-$_LANG['cPanel']['packageDomain'] = "Package/Domain";
-$_LANG['cPanel']['addonsExtras'] = "Addons & Extras";
-$_LANG['cPanel']['purchaseActivate'] = "Purchase & Activate";
+$_LANG['cPanel']['packageDomain'] = "Paket / Alan Adı";
+$_LANG['cPanel']['addonsExtras'] = "Paket Eklentileri";
+$_LANG['cPanel']['purchaseActivate'] = "Satın Al & Aktif Et";
 
 $_LANG['cPanel']['usageStats'] = "Kullanım İstastikleri";
 $_LANG['cPanel']['diskUsage'] = "Disk Kullanımı";
@@ -1873,15 +1866,15 @@ $_LANG['cPanel']['emailAccounts'] = "E-Posta Hesapları";
 $_LANG['cPanel']['forwarders'] = "Yönlendiriciler";
 $_LANG['cPanel']['autoresponders'] = "Otomatik Cevaplayıcılar";
 $_LANG['cPanel']['fileManager'] = "Dosya Yöneticisi";
-$_LANG['cPanel']['backup'] = "Yedek";
+$_LANG['cPanel']['backup'] = "Yedekleme";
 $_LANG['cPanel']['subdomains'] = "Subdomain";
 $_LANG['cPanel']['addonDomains'] = "Addon Domains";
-$_LANG['cPanel']['cronJobs'] = "Cron Job";
+$_LANG['cPanel']['cronJobs'] = "Zamanlanmış Görevler";
 $_LANG['cPanel']['mysqlDatabases'] = "MySQL Veritabanları";
 $_LANG['cPanel']['phpMyAdmin'] = "phpMyAdmin";
 $_LANG['cPanel']['awstats'] = "Awstats";
 
-$_LANG['cPanel']['createEmailAccount'] = "Hızlı E-Posta Oluşturucusu";
+$_LANG['cPanel']['createEmailAccount'] = "Hızlı E-Posta Oluştur";
 $_LANG['cPanel']['usernamePlaceholder'] = "Adınız";
 $_LANG['cPanel']['passwordPlaceholder'] = "Şifre";
 $_LANG['cPanel']['create'] = "Oluştur";
@@ -1892,108 +1885,108 @@ $_LANG['cPanel']['packageNotActive'] = "Hosting paketi şu anda";
 $_LANG['cPanel']['statusPendingNotice'] = "You cannot begin using this hosting account until it is activated.";
 $_LANG['cPanel']['statusSuspendedNotice'] = "You cannot continue to use or manage this package until it is reactivated.";
 
-$_LANG['cPanel']['billingOverview'] = "Billing Overview";
+$_LANG['cPanel']['billingOverview'] = "Faturalandırma ve Ödeme Detayları";
 
 $_LANG['liveHelp']['chatNow'] = "Sohbet Et";
 
-$_LANG['quotes'] = "Quotes";
+$_LANG['quotes'] = "Teklifler";
 
 $_LANG['productMustBeActiveForModuleCmds'] = "Product must be active to perform this action";
 $_LANG['domainCannotBeManagedUnlessActive'] = "This domain is not currently active. Domains cannot be managed unless active.";
 
 $_LANG['actionRequiresAtLeastOneDomainSelected'] = "Please select at least one domain to perform the selected action on.";
 
-$_LANG['clientAreaProductDownloadsAvailable'] = "The following download items are available for your product/service";
-$_LANG['clientAreaProductAddonsAvailable'] = "Addons are available for your product/service. <a href=\"cart.php?gid=addons\">Click here to view &amp; order &raquo;</a>";
-$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "We strongly encourage you to enable Two-Factor Authentication for added security.";
+$_LANG['clientAreaProductDownloadsAvailable'] = "Kullanmakta olduğunuz bu hizmete ait paylaşılan dosyalar aşağıda yer almaktadır.";
+$_LANG['clientAreaProductAddonsAvailable'] = "Hizmetiniz için eklentiler mevcuttur. <a href=\"cart.php?gid=addons\">Bilgi Almak &amp; Sipariş Vermek için hemen tıkla &raquo;</a>";
+$_LANG['clientAreaSecurityTwoFactorAuthRecommendation'] = "Hesabınızın daha güvenli olması için İki Faktörlü Doğrulama sistemimizi kullanmanızı ısrarla öneriyoruz.";
 $_LANG['clientAreaSecurityNoSecurityQuestions'] = "Setting a security question and answer helps protect your account from unauthorized password resets and allows us to verify your identity when requesting account changes.";
 $_LANG['clientAreaSecuritySecurityQuestionOtherError'] = "The security question helps protect your account from unauthorized password resets and allows us to verify your identity when requesting account changes.";
 
-$_LANG['billingAddress'] = "Billing Address";
+$_LANG['billingAddress'] = "Fatura Adresi";
 
 $_LANG['noPasswordResetWhenLoggedIn'] = "You cannot request a password reset when logged in. Please logout to begin.";
 
-$_LANG['unableToLoadShoppingCart'] = "Unable to load your shopping cart. Please contact support.";
+$_LANG['unableToLoadShoppingCart'] = "Sepetiniz yüklenemiyor. Lütfen bizimle iletişime geçin.";
 
-$_LANG['showMenu'] = "Show Menu";
-$_LANG['hideMenu'] = "Hide Menu";
+$_LANG['showMenu'] = "Menüyü Göster";
+$_LANG['hideMenu'] = "Menüyü Gizle";
 
 $_LANG['from'] = "From";
-$_LANG['featuredProduct'] = "Most Popular";
+$_LANG['featuredProduct'] = "En Popüler";
 $_LANG['shoppingCartProductPerMonth'] = "<span>:price</span>/:countmo";
 $_LANG['shoppingCartProductPerYear'] = "<span>:price</span>/:countyr";
 
-$_LANG['orderForm']['findNewDomain'] = "Find your new domain name. Enter your name or keywords below to check availability.";
-$_LANG['orderForm']['transferExistingDomain'] = "Transfer your existing domain names to us and save.";
+$_LANG['orderForm']['findNewDomain'] = "Yeni alan adınızı arayın. Alan adınızı girin ve tescil durumunu kontrol edin.";
+$_LANG['orderForm']['transferExistingDomain'] = "Başka firmada kayıtlı olan alan adınızı bize taşıyın.";
 $_LANG['orderForm']['www'] = "www.";
-$_LANG['orderForm']['check'] = "Check";
-$_LANG['orderForm']['returnToClientArea'] = "Return to Client Area";
-$_LANG['orderForm']['checkout'] = "Checkout";
-$_LANG['orderForm']['alreadyRegistered'] = "Already Registered?";
-$_LANG['orderForm']['createAccount'] = "Create a New Account";
-$_LANG['orderForm']['enterPersonalDetails'] = "Please enter your personal details and billing information to checkout.";
-$_LANG['orderForm']['correctErrors'] = "Please correct the following errors before continuing";
-$_LANG['orderForm']['existingCustomerLogin'] = "Existing Customer Login";
-$_LANG['orderForm']['emailAddress'] = "Email Address";
-$_LANG['orderForm']['personalInformation'] = "Personal Information";
-$_LANG['orderForm']['firstName'] = "First Name";
-$_LANG['orderForm']['lastName'] = "Last Name";
-$_LANG['orderForm']['phoneNumber'] = "Phone Number";
-$_LANG['orderForm']['billingAddress'] = "Billing Address";
-$_LANG['orderForm']['companyName'] = "Company Name";
-$_LANG['orderForm']['optional'] = "Optional";
-$_LANG['orderForm']['streetAddress'] = "Street Address";
-$_LANG['orderForm']['streetAddress2'] = "Street Address 2";
-$_LANG['orderForm']['city'] = "City";
-$_LANG['orderForm']['state'] = "State";
-$_LANG['orderForm']['country'] = "Country";
-$_LANG['orderForm']['postcode'] = "Postcode";
+$_LANG['orderForm']['check'] = "Kontrol Et";
+$_LANG['orderForm']['returnToClientArea'] = "Müşteri Paneline Geri Dön";
+$_LANG['orderForm']['checkout'] = "Ödeme";
+$_LANG['orderForm']['alreadyRegistered'] = "Zaten Hesabım Var?";
+$_LANG['orderForm']['createAccount'] = "Yeni Hesap Oluştur";
+$_LANG['orderForm']['enterPersonalDetails'] = "Lütfen kişisel bilgilerinizi girerek kayıt olunuz ardından faturanızı ödeyebilirsiniz.";
+$_LANG['orderForm']['correctErrors'] = "Devam etmeden önce lütfen aşağıdaki hataları giderin";
+$_LANG['orderForm']['existingCustomerLogin'] = "Kayıtlı Müşteri Girişi";
+$_LANG['orderForm']['emailAddress'] = "E-Posta Adresi";
+$_LANG['orderForm']['personalInformation'] = "Kişisel Bilgiler";
+$_LANG['orderForm']['firstName'] = "İsim";
+$_LANG['orderForm']['lastName'] = "Soyisim";
+$_LANG['orderForm']['phoneNumber'] = "Telefon Numarası";
+$_LANG['orderForm']['billingAddress'] = "Fatura Adresi";
+$_LANG['orderForm']['companyName'] = "Firma Adı";
+$_LANG['orderForm']['optional'] = "Opsiyonel";
+$_LANG['orderForm']['streetAddress'] = "Adres";
+$_LANG['orderForm']['streetAddress2'] = "Adres 2";
+$_LANG['orderForm']['city'] = "Şehir";
+$_LANG['orderForm']['state'] = "İlçe";
+$_LANG['orderForm']['country'] = "Ülke";
+$_LANG['orderForm']['postcode'] = "Posta Kodu";
 $_LANG['orderForm']['domainAlternativeContact'] = "You may specify alternative registered contact details for the domain registration(s) in your order when placing an order on behalf of another person or entity. If you do not require this, you can skip this section.";
-$_LANG['orderForm']['accountSecurity'] = "Account Security";
-$_LANG['orderForm']['mediumStrength'] = "Medium Strength";
-$_LANG['orderForm']['paymentDetails'] = "Payment Details";
-$_LANG['orderForm']['preferredPaymentMethod'] = "Please choose your preferred method of payment.";
-$_LANG['orderForm']['cardNumber'] = "Card Number";
-$_LANG['orderForm']['cvv'] = "CVV Security Number";
-$_LANG['orderForm']['additionalNotes'] = "Additional Notes";
-$_LANG['orderForm']['continueToClientArea'] = "Continue To Client Area";
-$_LANG['orderForm']['reviewDomainAndAddons'] = "Please review your domain name selections and any addons that are available for them.";
-$_LANG['orderForm']['addToCart'] = "Add to Cart";
-$_LANG['orderForm']['addedToCartRemove'] = "Added to Cart (Remove)";
-$_LANG['orderForm']['configureDesiredOptions'] = "Configure your desired options and continue to checkout.";
-$_LANG['orderForm']['haveQuestionsContact'] = "Have questions? Contact our sales team for assistance.";
-$_LANG['orderForm']['haveQuestionsClickHere'] = "Click here";
-$_LANG['orderForm']['use'] = "Use";
-$_LANG['orderForm']['check'] = "Check";
+$_LANG['orderForm']['accountSecurity'] = "Hesap Güvenliği";
+$_LANG['orderForm']['mediumStrength'] = "Orta Güçte";
+$_LANG['orderForm']['paymentDetails'] = "Ödeme Detayları";
+$_LANG['orderForm']['preferredPaymentMethod'] = "Tercih ettiğiniz ödeme yöntemini seçin.";
+$_LANG['orderForm']['cardNumber'] = "Kredi Kartı Numarası";
+$_LANG['orderForm']['cvv'] = "CVV Güvenlik Kodu";
+$_LANG['orderForm']['additionalNotes'] = "Ek Notlar";
+$_LANG['orderForm']['continueToClientArea'] = "Müşteri Paneline Git";
+$_LANG['orderForm']['reviewDomainAndAddons'] = "Alan adınız için mevcut eklentileri gözden geçirin.";
+$_LANG['orderForm']['addToCart'] = "Sepete Ekle";
+$_LANG['orderForm']['addedToCartRemove'] = "Sepete Eklendi (Sil)";
+$_LANG['orderForm']['configureDesiredOptions'] = "Lütfen hizmetinizin ayarlanabilen seçeneklerini yapılandırın ve sepetinize devam edin.";
+$_LANG['orderForm']['haveQuestionsContact'] = "Sorularınız mı var? Hemen satış temsilcimizle görüşün.";
+$_LANG['orderForm']['haveQuestionsClickHere'] = "Tıklayın";
+$_LANG['orderForm']['use'] = "Kullan";
+$_LANG['orderForm']['check'] = "Kontrol Et";
 $_LANG['orderForm']['transfer'] = "Transfer";
-$_LANG['orderForm']['domainAddedToCart'] = "This domain has been added to your cart.";
-$_LANG['orderForm']['registerLongerAndSave'] = "Register for longer and save!";
+$_LANG['orderForm']['domainAddedToCart'] = "Alan adı sepetinize eklendi.";
+$_LANG['orderForm']['registerLongerAndSave'] = "Daha uzun süre kayıt edin daha çok kazanın!";
 $_LANG['orderForm']['tryRegisteringInstead'] = "Try registering this domain instead.";
 $_LANG['orderForm']['domainAvailabilityCached'] = "Domain availability results are cached which may lead to recently registered domains being shown as available.";
 $_LANG['orderForm']['submitTicket'] = "Submit a Ticket";
 $_LANG['orderForm']['promotionAccepted'] = "Promotion Code Accepted! Your order total has been updated.";
-$_LANG['orderForm']['productOptions'] = "Product/Options";
-$_LANG['orderForm']['qty'] = "Qty";
-$_LANG['orderForm']['priceCycle'] = "Price/Cycle";
-$_LANG['orderForm']['edit'] = "Edit";
-$_LANG['orderForm']['update'] = "Update";
-$_LANG['orderForm']['remove'] = "Remove";
-$_LANG['orderForm']['applyPromoCode'] = "Apply Promo Code";
+$_LANG['orderForm']['productOptions'] = "Ürün/Ayarlar";
+$_LANG['orderForm']['qty'] = "Adet";
+$_LANG['orderForm']['priceCycle'] = "Fiyat/Periyod";
+$_LANG['orderForm']['edit'] = "Düzenle";
+$_LANG['orderForm']['update'] = "Güncelle";
+$_LANG['orderForm']['remove'] = "Sil";
+$_LANG['orderForm']['applyPromoCode'] = "Promosyon Kodum Var";
 $_LANG['orderForm']['estimateTaxes'] = "Estimate Taxes";
-$_LANG['orderForm']['removePromotionCode'] = "Remove Promotion Code";
-$_LANG['orderForm']['updateTotals'] = "Update Totals";
-$_LANG['orderForm']['continueShopping'] = "Continue Shopping";
-$_LANG['orderForm']['removeItem'] = "Remove Item";
-$_LANG['orderForm']['yes'] = "Yes";
-$_LANG['orderForm']['cancel'] = "Cancel";
-$_LANG['orderForm']['close'] = "Close";
-$_LANG['orderForm']['totals'] = "Totals";
+$_LANG['orderForm']['removePromotionCode'] = "Promosyon Kodunu Sil";
+$_LANG['orderForm']['updateTotals'] = "Fiyatı Güncelle";
+$_LANG['orderForm']['continueShopping'] = "Alışverişe Devam Et";
+$_LANG['orderForm']['removeItem'] = "Öğeyi Sil";
+$_LANG['orderForm']['yes'] = "Evet";
+$_LANG['orderForm']['cancel'] = "İptal";
+$_LANG['orderForm']['close'] = "Kapat";
+$_LANG['orderForm']['totals'] = "Toplam";
 $_LANG['orderForm']['includedWithPlans'] = "Included With Every Plan";
 $_LANG['orderForm']['whatIsIncluded'] = "What is Included?";
 $_LANG['orderForm']['errorNoProductGroup'] = "Could not load any product groups.";
 $_LANG['orderForm']['errorNoProducts'] = "Product group does not contain any visible products";
 
-$_LANG['cloudSlider']['feature01Title'] = "Maximum Server Uptime";
+$_LANG['cloudSlider']['feature01Title'] = "Maksimum Server Uptime";
 $_LANG['cloudSlider']['feature01Description'] = "Server uptime is critical for all businesses - consider it the heart beat of hosting your business. File and databases servers, email and web servers are an indispensable part of most business processes, and downtimes have direct negative effects on productivity, sales, employee and customer satisfaction. That's why ensuring the maximum server uptime is so important to us - we want to make sure your business processes are running healthy so your customers are happy.";
 $_LANG['cloudSlider']['feature01DescriptionTwo'] = "By trusting us with your business needs, we promise you a 99.9% uptime on any services we provide, outside of any standard maintenance we may provide.";
 $_LANG['cloudSlider']['feature02Title'] = "World Wide Data Delivery";
@@ -2006,16 +1999,16 @@ $_LANG['cloudSlider']['selectProductLevel'] = "Select the Perfect Level for You!
 
 $_LANG['domainChecker.additionalPricingOptions'] = "Additional Pricing Options For :domain";
 
-$_LANG['orderpaymenttermfree'] = "Free";
+$_LANG['orderpaymenttermfree'] = "Ücretsiz";
 
-$_LANG['cPanel']['usageStatsBwOverLimit'] = "You have exceeded your bandwidth limit.";
-$_LANG['cPanel']['usageStatsDiskOverLimit'] = "You have exceeded your disk space limit.";
+$_LANG['cPanel']['usageStatsBwOverLimit'] = "Trafik limitinizi aştınız.";
+$_LANG['cPanel']['usageStatsDiskOverLimit'] = "Disk limitinizi aştınız.";
 $_LANG['insufficientstockmessage'] = "We are currently low on stock on certain items so the cart quantities have been adjusted accordingly. For further information, please contact us.";
 
-$_LANG['only'] = "Only";
-$_LANG['startingat'] = "Starting at";
+$_LANG['only'] = "Sadece";
+$_LANG['startingat'] = "Başlayan fiyatlarla";
 
-$_LANG['yourdomainplaceholder'] = "example";
+$_LANG['yourdomainplaceholder'] = "ornek";
 $_LANG['yourtldplaceholder'] = "com";
 
 $_LANG['subaccountpermsproductsso'] = "Perform Single Sign-On";
@@ -2030,16 +2023,16 @@ $_LANG['sso']['redirectafterlogin'] = "You will be redirected after login";
 $_LANG['oauth']['badTwoFactorAuthModule'] = "Bad Two-Factor Auth Module. Please contact support.";
 $_LANG['oauth']['permAccessNameAndEmail'] = "Access your name and email address";
 
-$_LANG['errorButTryAgain'] = "An error occurred.  Please try again.";
-$_LANG['emailSent'] = "Email Sent";
-$_LANG['verificationKeyExpired'] = "This email verification key has expired. Please login to request a new one.";
-$_LANG['emailAddressVerified'] = "Thank you for confirming your email address.";
-$_LANG['emailKeyExpired'] = "This email verification key has expired. Please request a new one.";
-$_LANG['verifyEmailAddress'] = "Please check your email and follow the link to verify your email address.";
-$_LANG['resendEmail'] = "Resend Verification Email";
+$_LANG['errorButTryAgain'] = "Bir hata oluştu. Lütfen tekrar deneyin.";
+$_LANG['emailSent'] = "E-Posta Gönderildi";
+$_LANG['verificationKeyExpired'] = "E-Posta doğrulama kodunun süresi doldu. Lütfen giriş yaparak tekrar talep ediniz.";
+$_LANG['emailAddressVerified'] = "E-Posta adresinizi doğruladığınız için teşekkür ederiz.";
+$_LANG['emailKeyExpired'] = "E-Posta doğrulama kodunun süresi doldu. Lütfen tekrar talep ediniz.";
+$_LANG['verifyEmailAddress'] = "E-postanızı kontrol edin ve e-posta adresinizi doğrulamak için bağlantıyı tıklayınız.";
+$_LANG['resendEmail'] = "Doğrulama E-Postasını Tekrar Gönder";
 
 // Markdown Editor Help
-$_LANG['markdown']['title'] = "Markdown Guide";
+$_LANG['markdown']['title'] = "Markdown Rehberi";
 $_LANG['markdown']['emphasis'] = "Emphasis";
 $_LANG['markdown']['bold'] = "bold";
 $_LANG['markdown']['italics'] = "italics";
@@ -2058,21 +2051,21 @@ $_LANG['markdown']['exampleLink'] = "http://www.example.com";
 $_LANG['markdown']['quotes'] = "Quotes";
 $_LANG['markdown']['thisIsAQuote'] = "This is a quote.";
 $_LANG['markdown']['quoteMultipleLines'] = "It can span multiple lines!";
-$_LANG['markdown']['tables'] = "Tables";
+$_LANG['markdown']['tables'] = "Tablolar";
 $_LANG['markdown']['columnOne'] = "Column 1";
 $_LANG['markdown']['columnTwo'] = "Column 2";
 $_LANG['markdown']['columnThree'] = "Column 3";
 $_LANG['markdown']['withoutAligning'] = "Or without aligning the columns...";
-$_LANG['markdown']['john'] = "John";
-$_LANG['markdown']['doe'] = "Doe";
-$_LANG['markdown']['male'] = "Male";
-$_LANG['markdown']['mary'] = "Mary";
-$_LANG['markdown']['smith'] = "Smith";
-$_LANG['markdown']['female'] = "Female";
+$_LANG['markdown']['john'] = "Ali";
+$_LANG['markdown']['doe'] = "Yıldız";
+$_LANG['markdown']['male'] = "Erkek";
+$_LANG['markdown']['mary'] = "Ayşe";
+$_LANG['markdown']['smith'] = "Topdemir";
+$_LANG['markdown']['female'] = "Kadın";
 $_LANG['markdown']['displayingCode'] = "Displaying code";
 $_LANG['markdown']['spanningMultipleLines'] = "Or spanning multiple lines...";
-$_LANG['markdown']['saved'] = "saved";
-$_LANG['markdown']['saving'] = "autosaving";
+$_LANG['markdown']['saved'] = "kaydedildi";
+$_LANG['markdown']['saving'] = "otomatik kaydediliyor";
 
 $_LANG['oauth']['authoriseAppToAccess'] = "Authorise :appName<br />to access your account?";
 $_LANG['oauth']['willBeAbleTo'] = "This application will be able to";
@@ -2085,4 +2078,70 @@ $_LANG['oauth']['loginToGrantApp'] = "Login to grant :appName<br />access to you
 $_LANG['oauth']['redirectDescriptionOne'] = "Redirecting you back to the application. This may take a few moments.";
 $_LANG['oauth']['redirectDescriptionTwo'] = "If your browser doesn't redirect you, please";
 $_LANG['oauth']['redirectDescriptionThree'] = "click here to continue";
+$_LANG['downloadLoginRequiredTagline'] = "Please login to access the requested file download";
+
+$_LANG['orderForm']['year'] = "Year";
+$_LANG['orderForm']['years'] = "Years";
+$_LANG['orderForm']['domainOrKeyword'] = "Enter a domain or keyword";
+$_LANG['orderForm']['searching'] = "Searching";
+$_LANG['orderForm']['domainIsUnavailable'] = "<strong>:domain</strong> is unavailable";
+$_LANG['orderForm']['add'] = "Add";
+$_LANG['orderForm']['suggestedDomains'] = "Suggested Domains";
+$_LANG['orderForm']['generatingSuggestions'] = "Generating suggestions for you";
+$_LANG['orderForm']['addHosting'] = "Add Web Hosting";
+$_LANG['orderForm']['chooseFromRange'] = "Choose from a range of web hosting packages";
+$_LANG['orderForm']['packagesForBudget'] = "We have packages designed to fit every budget";
+$_LANG['orderForm']['exploreNow'] = "Explore packages now";
+$_LANG['orderForm']['transferToUs'] = "Transfer your domain to us";
+$_LANG['orderForm']['transferExtend'] = "Transfer now to extend your domain by 1 year!";
+$_LANG['orderForm']['transferDomain'] = "Transfer a domain";
+$_LANG['orderForm']['extendExclusions'] = "Excludes certain TLDs and recently renewed domains";
+$_LANG['orderForm']['singleTransfer'] = "Single domain transfer";
+$_LANG['orderForm']['enterDomain'] = "Please enter your domain";
+$_LANG['orderForm']['authCode'] = "Authorization Code";
+$_LANG['orderForm']['authCodePlaceholder'] = "Epp Code / Auth Code";
+$_LANG['orderForm']['authCodeTooltip'] = "To initiate a transfer you will need to obtain the authorization code from your current registrar. These can often be referred to as either the epp code or auth code. They act as a password and are unique to the domain name.";
+$_LANG['orderForm']['help'] = "Help";
+$_LANG['orderForm']['required'] = "Required";
+
+$_LANG['orderForm']['checkingAvailability'] = "Checking availability";
+$_LANG['orderForm']['verifyingTransferEligibility'] = "Verifying transfer eligibility";
+$_LANG['orderForm']['verifyingDomain'] = "Verifying your domain selection";
+$_LANG['orderForm']['transferEligible'] = "Your domain is eligible for transfer";
+$_LANG['orderForm']['transferUnlockBeforeContinuing'] = "Please ensure you have unlocked your domain at your current registrar before continuing.";
+$_LANG['orderForm']['transferNotEligible'] = "Not Eligible for Transfer";
+$_LANG['orderForm']['transferNotRegistered'] = "The domain you entered does not appear to be registered.";
+$_LANG['orderForm']['trasnferRecentlyRegistered'] = "If the domain was registered recently, you may need to try again later.";
+$_LANG['orderForm']['transferAlternativelyRegister'] = "Alternatively, you can perform a search to register this domain.";
+$_LANG['orderForm']['domainInvalid'] = "Invalid domain name provided";
+$_LANG['orderForm']['domainInvalidCheckEntry'] = "Please check your entry and try again.";
+$_LANG['orderForm']['domainPriceRegisterLabel'] = "Continue to register this domain for";
+$_LANG['orderForm']['domainPriceTransferLabel'] = "Transfer to us and extend by 1 year* for";
+
+$_LANG['change'] = "Change";
+
+$_LANG['filemanagement']['nofileuploaded'] = "No file uploaded.";
+$_LANG['filemanagement']['invalidname'] = "Valid filenames contain only alpha-numeric, dot, hyphen and underscore characters.";
+$_LANG['filemanagement']['couldNotSaveFile'] = "Could not save uploaded file.";
+$_LANG['filemanagement']['checkPermissions'] = "Please check permissions.";
+$_LANG['filemanagement']['checkAvailableDiskSpace'] = "Please check available disk space.";
+$_LANG['filemanagement']['fileAlreadyExists'] = "File already exists.";
+$_LANG['filemanagement']['noUniqueName'] = "Unable to find a unique filename.";
+
+$_LANG['cartSimpleCaptcha'] = "Please enter the code shown below";
+
+$_LANG['clientHomePanels']['showingRecent100'] = "Showing the most recent 100 records";
+$_LANG['orderForm']['domainLetterOrNumber'] = "Domains must begin with a letter or a number";
+$_LANG['orderForm']['domainLengthRequirements'] = " and be between <span class=\"min-length\"></span> and <span class=\"max-length\"></span> characters in length";
+
+$_LANG['clientareatransferredaway'] = "Transferred Away";
+$_LANG['clientareacompleted'] = "Completed";
+$_LANG['domainContactUs'] = "Contact Us";
+
+$_LANG['orderForm']['shortPerYear'] = "/:yearsyr";
+$_LANG['orderForm']['shortPerYears'] = "/:yearsyrs";
+
+$_LANG['domainCheckerSalesGroup']['sale'] = "Sale";
+$_LANG['domainCheckerSalesGroup']['hot'] = "Hot";
+$_LANG['domainCheckerSalesGroup']['new'] = "New";
 ////////// End of turkish language file.  Do not place any translation strings below this line!

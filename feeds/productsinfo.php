@@ -63,11 +63,11 @@ if ($get=="name") {
     if ($cartTemplate == "ajax") {
         $cartTemplate = "ajaxcart";
     }
-    $systemUrl = $whmcs->isSSLAvailable() ? $whmcs->getSystemSSLURL() : $whmcs->getSystemURL();
+    $systemUrl = App::getSystemUrl();
     if (!$cartTemplate) {
         $cartTemplate = Setting::getValue('OrderFormTemplate ');
     }
-    widgetOutput("{$systemURL}cart.php?a=add&pid={$pid}&carttpl={$cartTemplate}");
+    widgetOutput("{$systemUrl}cart.php?a=add&pid={$pid}&carttpl={$cartTemplate}");
 } elseif ($get=="price") {
     // Verify user input for currency exists, is numeric, and as is a valid id
     $billingCycle = $whmcs->get_req_var('billingcycle');

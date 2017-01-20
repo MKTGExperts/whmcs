@@ -38,13 +38,13 @@
                     <div class="form-group cc-details control-group">
                         <label for="idCardName" class="col-sm-4 control-label">{$LANG.clientareafullname}</label>
                         <div class="col-sm-7 controls">
-                            <input type="text" name="EWAY_CARDNAME" id="idCardName" class="form-control" {if isset($cardName)}value="{$cardName}" {/if}/>
+                            <input type="text" name="EWAY_CARDNAME" id="idCardName" class="form-control" {if isset($cardName)}value="{$cardName}" {/if} data-toggle="manual" data-placement="top" title="{lang key='orderForm.required'}"/>
                         </div>
                     </div>
                     <div class="form-group cc-details control-group">
                         <label for="inputCardNumber" class="col-sm-4 control-label">{$LANG.creditcardcardnumber}</label>
                         <div class="col-sm-7 controls">
-                            <input type="text" name="EWAY_CARDNUMBER" id="inputCardNumber" class="form-control" {if isset($ccNumber)}value="{$ccNumber}" {/if}/>
+                            <input type="text" name="EWAY_CARDNUMBER" id="inputCardNumber" class="form-control" {if isset($ccNumber)}value="{$ccNumber}" {/if}data-toggle="manual" data-placement="top" title="{lang key='creditcardnumberinvalid'}" />
                         </div>
                     </div>
                     <div class="form-group cc-details control-group text-left">
@@ -65,7 +65,7 @@
                     <div class="form-group control-group text-left">
                         <label for="inputCardCvv" class="col-sm-4 control-label">{$LANG.creditcardcvvnumber}</label>
                         <div class="col-sm-7 controls">
-                            <input type="number" name="EWAY_CARDCVN" id="inputCardCvv" class="form-control input-inline input-inline-100 input-mini" />
+                            <input type="number" name="EWAY_CARDCVN" id="inputCardCvv" class="form-control input-inline input-inline-100 input-mini" data-toggle="manual" data-placement="top" title="{lang key='creditcardccvinvalid'}" />
                         </div>
                     </div>
                     <div class="form-group textcenter text-center">
@@ -143,4 +143,58 @@
             </div>
         </form>
     </div>
+    <script src="{$BASE_PATH_JS}/jquery.payment.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var ccValidation = {if (isset($ccNumber))}false{else}true{/if},
+                cardNumber = jQuery('#inputCardNumber'),
+                cardInitialValue = cardNumber.val(),
+                allowSubmit = false;
+
+            cardNumber.change(function(){
+                ccValidation = jQuery(this).val() != cardInitialValue;
+            });
+
+            jQuery('#payment_form').submit(function(e) {
+                if (allowSubmit) {
+                    return true;
+                }
+                e.preventDefault();
+                var cardName = jQuery('#idCardName'),
+                    cardCvv = jQuery('#inputCardCvv'),
+                    cardValid = jQuery.payment.validateCardNumber(cardNumber.val()),
+                    cvvValid = jQuery.payment.validateCardCVC(
+                        cardCvv.val(),
+                        jQuery.payment.cardType(cardNumber.val())
+                    ),
+                    submitButton = jQuery('#btnSubmit'),
+                    returnVal = true;
+
+                if (!cardName.val()) {
+                    cardName.tooltip('show');
+                    returnVal = false;
+                }
+
+                if (ccValidation && !cardValid) {
+                    cardNumber.tooltip('show');
+                    returnVal = false;
+                }
+
+                if (!cvvValid) {
+                    cardCvv.tooltip('show');
+                    returnVal = false;
+                }
+
+                if (!returnVal) {
+                    submitButton.val('{if $invoiceid}{lang key='submitpayment'}{else}{lang key='update'}{/if}');
+                    return false;
+                }
+                cardName.tooltip('hide');
+                cardNumber.tooltip('hide');
+                cardCvv.tooltip('hide');
+                allowSubmit = true;
+                jQuery(this).trigger('submit');
+            });
+        });
+    </script>
 {/if}

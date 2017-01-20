@@ -23,7 +23,7 @@ class Manager
     /**
      * Filter class to find various types of arguments
      *
-     * @var League\CLImate\Argument\Filter $filter
+     * @var \League\CLImate\Argument\Filter $filter
      */
     protected $filter;
 
@@ -224,5 +224,15 @@ class Manager
         $this->parser->setFilter($this->filter, $this->all());
 
         $this->parser->parse($argv);
+    }
+
+    /**
+     * Get the trailing arguments
+     *
+     * @return string|null
+     */
+    public function trailing()
+    {
+        return $this->parser->trailing();
     }
 }

@@ -99,27 +99,6 @@ $(document).ready(function(){
         $("#frmAddTicketReply").trigger('submit', { 'skipValidation': true });
     });
 
-    var currentTags = '';
-    if ($('#ticketTags').length) {
-    $('#ticketTags').textext({
-        plugins : 'tags prompt focus autocomplete ajax',
-        prompt : 'Add one...',
-        tagsItems: ticketTags,
-        ajax : {
-            url : 'supporttickets.php?action=gettags',
-            data: 'token='+csrfToken,
-            dataType : 'json',
-            cacheResults : true
-        }
-    }).bind('setFormData', function(e, data, isEmpty) {
-            var newTags = $(e.target).textext()[0].hiddenInput().val();
-            if (newTags!=currentTags) {
-                $.post("supporttickets.php", { action: "savetags", id: ticketid, tags: newTags, token: csrfToken });
-                currentTags = newTags;
-            }
-        });
-    }
-
     $(window).unload( function () {
         $.post("supporttickets.php", { action: "endreply", id: ticketid, token: csrfToken });
     });
@@ -156,6 +135,12 @@ $(document).ready(function(){
     });
     $("#ticketstatus").change(function () {
         $.post("supporttickets.php", { action: "changestatus", id: ticketid, status: this.options[this.selectedIndex].text, token: csrfToken });
+    });
+    $("#predefq").keypress(function(e){
+        // Stop form submit
+        if(e.which === 13){
+            return false;
+        }
     });
     $("#predefq").keyup(function () {
         var intellisearchlength = $("#predefq").val().length;
@@ -258,26 +243,37 @@ function updateTicket(val) {
     $.post("supporttickets.php", { action: "viewticket", id: ticketid, updateticket: val, value: $("#"+val).val(), token: csrfToken });
 }
 function editTicket(id) {
-    $(".editbtns"+id).toggle();
-    $("#content"+id+" div.message").hide();
-    $("#content"+id+" div.message").after('<textarea rows="15" style="width:99%" id="ticketedit'+id+'">'+langloading+'</textarea>');
-    $.post("supporttickets.php", { action: "getmsg", ref: id, token: csrfToken },
-        function(data){
+    $(".editbtns"+id+" input[type=button]").prop('disabled', true);
+    $(".editbtns"+id+" img.saveSpinner").show();
+    $.post("supporttickets.php", { action: "getmsg", ref: id, token: csrfToken })
+        .done(function(data){
+            $(".editbtns"+id).toggle();
+            $("#content"+id+" div.message").hide();
+            $("#content"+id+" div.message").after('<textarea rows="15" style="width:99%" id="ticketedit'+id+'">'+langloading+'</textarea>');
             $("#ticketedit"+id).val(data);
+        })
+        .always(function(){
+            $(".editbtns"+id+" img.saveSpinner").hide();
+            $(".editbtns"+id+" input[type=button]").removeProp('disabled');
         });
 }
 function editTicketCancel(id) {
     $("#ticketedit"+id).hide();
     $("#content"+id+" div.message").show();
+    $(".editbtns"+id+" input[type=button]").prop('disabled', false);
     $(".editbtns"+id).toggle();
 }
 function editTicketSave(id) {
-    $("#ticketedit"+id).hide();
-    $("#content"+id+" div.message").show();
-    $(".editbtns"+id).toggle();
-    $.post("supporttickets.php", { action: "updatereply", ref: id, text: $("#ticketedit"+id).val(), token: csrfToken },
-        function(data){
+    $(".editbtns"+id+" input[type=button]").prop('disabled', true);
+    $("#ticketedit"+id).prop('disabled', true);
+    $(".editbtns"+id+" img.saveSpinner").show();
+    $.post("supporttickets.php", { action: "updatereply", ref: id, text: $("#ticketedit"+id).val(), token: csrfToken })
+        .done(function(data){
             $("#content"+id+" div.message").html(data);
+        })
+        .always(function(){
+            $(".editbtns"+id+" img.saveSpinner").hide();
+            editTicketCancel(id);
         });
 }
 function quoteTicket(id,ids) {

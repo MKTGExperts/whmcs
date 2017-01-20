@@ -223,11 +223,15 @@
 </td></tr>
 <tr><td colspan="3">
 
-<p align="right"><input type="button" value="{$_ADMINLANG.clientsummary.statusfilter}: {if $statusfilterenabled}{$_ADMINLANG.global.on}{else}{$_ADMINLANG.global.off}{/if}" class="btn btn-xs btn-small{if $statusfilterenabled} btn-success{/if}" onclick="toggleStatusFilter()" /></p>
+<p align="right">
+    <button id="btnStatusEnabled" type="button" value="filter" class="btn btn-xs btn-small" onclick="toggleStatusFilter()">
+        {$_ADMINLANG.clientsummary.statusfilter}: <span class="on">{lang key='global.on'}</span><span class="off">{lang key='global.off'}</span>
+    </button>
+</p>
 <div id="statusfilter">
     <form>
         <div class="checkall">
-            <label class="checkbox-inline"><input type="checkbox" id="statusfiltercheckall" onclick="checkAllStatusFilter()"{if !$statusfilterenabled} checked{/if} /> {$_ADMINLANG.global.checkall}</label>
+            <label class="checkbox-inline"><input type="checkbox" id="statusfiltercheckall" onclick="checkAllStatusFilter()" checked="checked" /> {$_ADMINLANG.global.checkall}</label>
         </div>
         <table class="datatable" width="100%" border="0" cellspacing="1" cellpadding="3">
             <tr>
@@ -235,7 +239,7 @@
             </tr>
 {foreach from=$itemstatuses key=itemstatus item=statuslang}
             <tr>
-                <td><label style="display:block;"><input type="checkbox" name="statusfilter[]" value="{$itemstatus}" onclick="uncheckCheckAllStatusFilter()"{if !in_array($itemstatus, $disabledstatuses)} checked{/if} /> {$statuslang}</label></td>
+                <td><label style="display:block;"><input type="checkbox" name="statusfilter[]" value="{$itemstatus}" onclick="uncheckCheckAllStatusFilter()" checked="checked" /> {$statuslang}</label></td>
             </tr>
 {/foreach}
             <tr>
@@ -243,36 +247,22 @@
             </tr>
         </table>
         <div class="applybtn">
-            <input type="button" value="{$_ADMINLANG.global.apply}" class="btn btn-xs btn-small btn-primary" onclick="applyStatusFilter()" />
+            <input type="button" value="{$_ADMINLANG.global.apply}" class="btn btn-xs btn-small btn-primary" onclick="applyStatusFilter();toggleStatusFilter();return false;" />
         </div>
     </form>
 </div>
 
 <form method="post" action="{$smarty.server.PHP_SELF}?userid={$clientsdetails.userid}&action=massaction">
 
-{literal}<script language="javascript">
-$(document).ready(function(){
-    $("#prodsall").click(function () {
-        $(".checkprods").attr("checked",this.checked);
-    });
-    $("#addonsall").click(function () {
-        $(".checkaddons").attr("checked",this.checked);
-    });
-    $("#domainsall").click(function () {
-        $(".checkdomains").attr("checked",this.checked);
-    });
-});
-</script>{/literal}
-
 <table width="100%" class="form">
 <tr><td colspan="2" class="fieldarea" style="text-align:center;"><strong>{$_ADMINLANG.services.title}</strong></td></tr>
 <tr><td align="center">
 
 <div class="tablebg">
-<table class="datatable" width="100%" border="0" cellspacing="1" cellpadding="3">
+<table class="datatable filterable" width="100%" border="0" cellspacing="1" cellpadding="3">
 <tr><th width="20"><input type="checkbox" id="prodsall" /></th><th>{$_ADMINLANG.fields.id}</th><th>{$_ADMINLANG.fields.product}</th><th>{$_ADMINLANG.fields.amount}</th><th>{$_ADMINLANG.fields.billingcycle}</th><th>{$_ADMINLANG.fields.signupdate}</th><th>{$_ADMINLANG.fields.nextduedate}</th><th>{$_ADMINLANG.fields.status}</th><th width="20"></th></tr>
 {foreach key=num from=$productsummary item=product}
-<tr><td><input type="checkbox" name="selproducts[]" value="{$product.id}" class="checkprods" /></td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$product.id}">{$product.idshort}</a></td><td style="padding-left:5px;padding-right:5px">{$product.dpackage} - <a href="http://{$product.domain}" target="_blank">{$product.domain}</a></td><td>{$product.amount}</td><td>{$product.dbillingcycle}</td><td>{$product.regdate}</td><td>{$product.nextduedate}</td><td>{$product.domainstatus}</td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$product.id}"><img src="images/edit.gif" width="16" height="16" border="0" alt="Edit"></a></td></tr>
+<tr><td><input type="checkbox" name="selproducts[]" value="{$product.id}" class="checkprods" /></td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$product.id}">{$product.idshort}</a></td><td style="padding-left:5px;padding-right:5px">{$product.dpackage} - <a href="http://{$product.domain}" target="_blank">{$product.domain}</a></td><td>{$product.amount}</td><td>{$product.dbillingcycle}</td><td>{$product.regdate}</td><td>{$product.nextduedate}</td><td class="status" data-filter-value="{$product.domainoriginalstatus}">{$product.domainstatus}</td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$product.id}"><img src="images/edit.gif" width="16" height="16" border="0" alt="Edit"></a></td></tr>
 {foreachelse}
 <tr><td colspan="9">{$_ADMINLANG.global.norecordsfound}</td></tr>
 {/foreach}
@@ -288,10 +278,10 @@ $(document).ready(function(){
 <tr><td align="center">
 
 <div class="tablebg">
-<table class="datatable" width="100%" border="0" cellspacing="1" cellpadding="3">
+<table class="datatable filterable" width="100%" border="0" cellspacing="1" cellpadding="3">
 <tr><th width="20"><input type="checkbox" id="addonsall" /></th><th>ID</th><th>{$_ADMINLANG.addons.name}</th><th>{$_ADMINLANG.fields.amount}</th><th>{$_ADMINLANG.fields.billingcycle}</th><th>{$_ADMINLANG.fields.signupdate}</th><th>{$_ADMINLANG.fields.nextduedate}</th><th>{$_ADMINLANG.fields.status}</th><th width="20"></th></tr>
 {foreach key=num from=$addonsummary item=addon}
-<tr><td><input type="checkbox" name="seladdons[]" value="{$addon.id}" class="checkaddons" /></td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$addon.serviceid}&aid={$addon.id}">{$addon.idshort}</a></td><td style="padding-left:5px;padding-right:5px">{$addon.addonname}<br>{$addon.dpackage} - <a href="http://{$addon.domain}" target="_blank">{$addon.domain}</a></td><td>{$addon.amount}</td><td>{$addon.dbillingcycle}</td><td>{$addon.regdate}</td><td>{$addon.nextduedate}</td><td>{$addon.status}</td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$addon.serviceid}&aid={$addon.id}"><img src="images/edit.gif" width="16" height="16" border="0" alt="Edit"></a></td></tr>
+<tr><td><input type="checkbox" name="seladdons[]" value="{$addon.id}" class="checkaddons" /></td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$addon.serviceid}&aid={$addon.id}">{$addon.idshort}</a></td><td style="padding-left:5px;padding-right:5px">{$addon.addonname}<br>{$addon.dpackage} - <a href="http://{$addon.domain}" target="_blank">{$addon.domain}</a></td><td>{$addon.amount}</td><td>{$addon.dbillingcycle}</td><td>{$addon.regdate}</td><td>{$addon.nextduedate}</td><td class="status" data-filter-value="{$addon.originalstatus}">{$addon.status}</td><td><a href="clientsservices.php?userid={$clientsdetails.userid}&id={$addon.serviceid}&aid={$addon.id}"><img src="images/edit.gif" width="16" height="16" border="0" alt="Edit"></a></td></tr>
 {foreachelse}
 <tr><td colspan="9">{$_ADMINLANG.global.norecordsfound}</td></tr>
 {/foreach}
@@ -307,10 +297,10 @@ $(document).ready(function(){
 <tr><td align="center">
 
 <div class="tablebg">
-<table class="datatable" width="100%" border="0" cellspacing="1" cellpadding="3">
+<table class="datatable filterable" width="100%" border="0" cellspacing="1" cellpadding="3">
 <tr><th width="20"><input type="checkbox" id="domainsall" /></th><th>{$_ADMINLANG.fields.id}</th><th>{$_ADMINLANG.fields.domain}</th><th>{$_ADMINLANG.fields.registrar}</th><th>{$_ADMINLANG.fields.regdate}</th><th>{$_ADMINLANG.fields.nextduedate}</th><th>{$_ADMINLANG.fields.expirydate}</th><th>{$_ADMINLANG.fields.status}</th><th width="20"></th></tr>
 {foreach key=num from=$domainsummary item=domain}
-<tr><td><input type="checkbox" name="seldomains[]" value="{$domain.id}" class="checkdomains" /></td><td><a href="clientsdomains.php?userid={$clientsdetails.userid}&domainid={$domain.id}">{$domain.idshort}</a></td><td style="padding-left:5px;padding-right:5px"><a href="http://{$domain.domain}" target="_blank">{$domain.domain}</a></td><td>{$domain.registrar}</td><td>{$domain.registrationdate}</td><td>{$domain.nextduedate}</td><td>{$domain.expirydate}</td><td>{$domain.status}</td><td><a href="clientsdomains.php?userid={$clientsdetails.userid}&domainid={$domain.id}"><img src="images/edit.gif" width="16" height="16" border="0" alt="Edit"></a></td></tr>
+<tr><td><input type="checkbox" name="seldomains[]" value="{$domain.id}" class="checkdomains" /></td><td><a href="clientsdomains.php?userid={$clientsdetails.userid}&domainid={$domain.id}">{$domain.idshort}</a></td><td style="padding-left:5px;padding-right:5px"><a href="http://{$domain.domain}" target="_blank">{$domain.domain}</a></td><td>{$domain.registrar}</td><td>{$domain.registrationdate}</td><td>{$domain.nextduedate}</td><td>{$domain.expirydate}</td><td class="status" data-filter-value="{$domain.originalstatus}">{$domain.status}</td><td><a href="clientsdomains.php?userid={$clientsdetails.userid}&domainid={$domain.id}"><img src="images/edit.gif" width="16" height="16" border="0" alt="Edit"></a></td></tr>
 {foreachelse}
 <tr><td colspan="9">{$_ADMINLANG.global.norecordsfound}</td></tr>
 {/foreach}
@@ -340,14 +330,92 @@ $(document).ready(function(){
 
 <p align="center"><input type="button" value="{$_ADMINLANG.clientsummary.massupdateitems}" class="button btn btn-default" onclick="$('#massupdatebox').slideToggle()" /> <input type="submit" name="inv" value="{$_ADMINLANG.clientsummary.invoiceselected}" class="button btn btn-default" /> <input type="submit" name="del" value="{$_ADMINLANG.clientsummary.deleteselected}" class="button btn btn-default" /></p>
 
-<div id="massupdatebox" style="width:75%;background-color:#f7f7f7;border:1px dashed #cccccc;padding:10px;margin-left:auto;margin-right:auto;display:none;">
+<div id="massupdatebox" style="width:90%;background-color:#f7f7f7;border:1px dashed #cccccc;padding:10px;margin-left:auto;margin-right:auto;display:none;">
 <h2 style="text-align:center;margin:0 0 10px 0">{$_ADMINLANG.clientsummary.massupdateitems}</h2>
 <table class="form" width="100%" border="0" cellspacing="2" cellpadding="3">
-<tr><td width="15%" class="fieldlabel" nowrap>{$_ADMINLANG.fields.firstpaymentamount}</td><td class="fieldarea"><input type="text" size="20" name="firstpaymentamount" /></td><td width="15%" class="fieldlabel" nowrap>{$_ADMINLANG.fields.recurringamount}</td><td class="fieldarea"><input type="text" size="20" name="recurringamount" /></td></tr>
-<tr><td class="fieldlabel" width="15%">{$_ADMINLANG.fields.nextduedate}</td><td class="fieldarea"><input type="text" size="20" name="nextduedate" class="datepick" /> <input type="checkbox" name="proratabill" id="proratabill" /> <label for="proratabill">{$_ADMINLANG.clientsummary.createproratainvoice}</label></td><td width="15%" class="fieldlabel">{$_ADMINLANG.fields.billingcycle}</td><td class="fieldarea"><select name="billingcycle"><option value="">- {$_ADMINLANG.global.nochange} -</option><option value="Free Account">{$_ADMINLANG.billingcycles.free}</option><option value="One Time">{$_ADMINLANG.billingcycles.onetime}</option><option value="Monthly">{$_ADMINLANG.billingcycles.monthly}</option><option value="Quarterly">{$_ADMINLANG.billingcycles.quarterly}</option><option value="Semi-Annually">{$_ADMINLANG.billingcycles.semiannually}</option><option value="Annually">{$_ADMINLANG.billingcycles.annually}</option><option value="Biennially">{$_ADMINLANG.billingcycles.biennially}</option><option value="Triennially">{$_ADMINLANG.billingcycles.triennially}</option></select></td></tr>
-<tr><td class="fieldlabel" width="15%">{$_ADMINLANG.fields.paymentmethod}</td><td class="fieldarea">{$paymentmethoddropdown}</td><td class="fieldlabel" width="15%">{$_ADMINLANG.fields.status}</td><td class="fieldarea"><select name="status"><option value="">- {$_ADMINLANG.global.nochange} -</option><option value="Pending">{$_ADMINLANG.status.pending}</option><option value="Active">{$_ADMINLANG.status.active}</option><option value="Suspended">{$_ADMINLANG.status.suspended}</option><option value="Terminated">{$_ADMINLANG.status.terminated}</option><option value="Cancelled">{$_ADMINLANG.status.cancelled}</option><option value="Fraud">{$_ADMINLANG.status.fraud}</option></select></td></tr>
-<tr><td class="fieldlabel" width="15%">{$_ADMINLANG.services.modulecommands}</td><td class="fieldarea" colspan="3"><input type="submit" name="masscreate" value="{$_ADMINLANG.modulebuttons.create}" class="button btn btn-default" /> <input type="submit" name="masssuspend" value="{$_ADMINLANG.modulebuttons.suspend}" class="button btn btn-default" /> <input type="submit" name="massunsuspend" value="{$_ADMINLANG.modulebuttons.unsuspend}" class="button btn btn-default" /> <input type="submit" name="massterminate" value="{$_ADMINLANG.modulebuttons.terminate}" class="button btn btn-default" /> <input type="submit" name="masschangepackage" value="{$_ADMINLANG.modulebuttons.changepackage}" class="button btn btn-default" /> <input type="submit" name="masschangepw" value="{$_ADMINLANG.modulebuttons.changepassword}" class="button btn btn-default" /></td></tr>
-<tr><td class="fieldlabel" width="15%">{$_ADMINLANG.services.overrideautosusp}</td><td class="fieldarea" colspan="3"><input type="checkbox" name="overideautosuspend" id="overridesuspend" /> <label for="overridesuspend">{$_ADMINLANG.services.nosuspenduntil}</label> <input type="text" name="overidesuspenduntil" class="datepick" /></td></tr>
+    <tr>
+        <td width="15%" class="fieldlabel" nowrap>
+            {$_ADMINLANG.fields.firstpaymentamount}
+        </td>
+        <td class="fieldarea" width="35%">
+            <input type="text" name="firstpaymentamount" class="form-control input-200" />
+        </td>
+        <td width="15%" class="fieldlabel" nowrap>
+            {$_ADMINLANG.fields.recurringamount}
+        </td>
+        <td class="fieldarea">
+            <input type="text" name="recurringamount" class="form-control input-200" />
+        </td>
+    </tr>
+    <tr>
+        <td class="fieldlabel" width="15%">
+            {$_ADMINLANG.fields.nextduedate}
+        </td>
+        <td class="fieldarea">
+            <input type="text" id="nextDueDate" name="nextduedate" class="datepick form-control input-inline" /> &nbsp;&nbsp; <input type="checkbox" name="proratabill" id="proratabill" /> {$_ADMINLANG.clientsummary.createproratainvoice}
+        </td>
+        <td width="15%" class="fieldlabel">
+            {$_ADMINLANG.fields.billingcycle}
+        </td>
+        <td class="fieldarea">
+            <select name="billingcycle" class="form-control input-200">
+                <option value="">- {$_ADMINLANG.global.nochange} -</option>
+                <option value="Free Account">{$_ADMINLANG.billingcycles.free}</option>
+                <option value="One Time">{$_ADMINLANG.billingcycles.onetime}</option>
+                <option value="Monthly">{$_ADMINLANG.billingcycles.monthly}</option>
+                <option value="Quarterly">{$_ADMINLANG.billingcycles.quarterly}</option>
+                <option value="Semi-Annually">{$_ADMINLANG.billingcycles.semiannually}</option>
+                <option value="Annually">{$_ADMINLANG.billingcycles.annually}</option>
+                <option value="Biennially">{$_ADMINLANG.billingcycles.biennially}</option>
+                <option value="Triennially">{$_ADMINLANG.billingcycles.triennially}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="fieldlabel" width="15%">
+            {$_ADMINLANG.fields.paymentmethod}
+        </td>
+        <td class="fieldarea">
+            {$paymentmethoddropdown|replace:'select-inline':'input-200'}
+        </td>
+        <td class="fieldlabel" width="15%">
+            {$_ADMINLANG.fields.status}
+        </td>
+        <td class="fieldarea">
+            <select name="status" class="form-control input-200">
+                <option value="">- {$_ADMINLANG.global.nochange} -</option>
+                <option value="Pending">{$_ADMINLANG.status.pending}</option>
+                <option value="Active">{$_ADMINLANG.status.active}</option>
+                <option value="Suspended">{$_ADMINLANG.status.suspended}</option>
+                <option value="Terminated">{$_ADMINLANG.status.terminated}</option>
+                <option value="Cancelled">{$_ADMINLANG.status.cancelled}</option>
+                <option value="Fraud">{$_ADMINLANG.status.fraud}</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td class="fieldlabel" width="15%">
+            {$_ADMINLANG.services.modulecommands}
+        </td>
+        <td class="fieldarea" colspan="3">
+            <input type="submit" name="masscreate" value="{$_ADMINLANG.modulebuttons.create}" class="button btn btn-default" />
+            <input type="submit" name="masssuspend" value="{$_ADMINLANG.modulebuttons.suspend}" class="button btn btn-default" />
+            <input type="submit" name="massunsuspend" value="{$_ADMINLANG.modulebuttons.unsuspend}" class="button btn btn-default" />
+            <input type="submit" name="massterminate" value="{$_ADMINLANG.modulebuttons.terminate}" class="button btn btn-default" />
+            <input type="submit" name="masschangepackage" value="{$_ADMINLANG.modulebuttons.changepackage}" class="button btn btn-default" />
+            <input type="submit" name="masschangepw" value="{$_ADMINLANG.modulebuttons.changepassword}" class="button btn btn-default" />
+        </td>
+    </tr>
+    <tr>
+        <td class="fieldlabel" width="15%">
+            {$_ADMINLANG.services.overrideautosusp}
+        </td>
+        <td class="fieldarea" colspan="3">
+            <input type="checkbox" name="overideautosuspend" id="overridesuspend" />
+            {$_ADMINLANG.services.nosuspenduntil}
+            <input type="text" name="overidesuspenduntil" class="datepick input-inline form-control" />
+        </td>
+    </tr>
 </table>
 <br />
 <div align="center">

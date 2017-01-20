@@ -1,5 +1,12 @@
 {include file="orderforms/standard_cart/common.tpl"}
 
+<script>
+var _localLang = {
+    'addToCart': '{$LANG.orderForm.addToCart|escape}',
+    'addedToCartRemove': '{$LANG.orderForm.addedToCartRemove|escape}'
+}
+</script>
+
 <div id="order-standard_cart">
 
     <div class="row">
@@ -61,8 +68,8 @@
                             <div class="col-sm-12">
                                 <div class="form-group prepend-icon">
                                     <input type="text" name="epp[{$num}]" id="inputEppcode{$num}" value="{$domain.eppvalue}" class="field" placeholder="{$LANG.domaineppcode}" />
-                                    <label for="cardno" class="field-icon">
-                                        <i class="fa fa-calendar"></i>
+                                    <label for="inputEppcode{$num}" class="field-icon">
+                                        <i class="fa fa-lock"></i>
                                     </label>
                                     <span class="field-help-text">
                                         {$LANG.domaineppcodedesc}
